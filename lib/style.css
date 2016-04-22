@@ -50,6 +50,29 @@ table {
 	border-spacing: 0;
 }
 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
 body {
-  background: green;
+  color: black;
+  font-size: 1.6em;
+  letter-spacing: 0.01em;
+  line-height: 1.6;
+  font-family: 'Helvetica';
+}
+
+.events {
+  margin-top: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+.event {
+  max-width: 980px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
 }

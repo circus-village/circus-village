@@ -92,8 +92,7 @@ function sync(/*cb*/) {
   // watch source files
   chokidar.watch('doc/events', {ignored: /[\/\\]\./})
     .on('change', function() {
-      //console.error('events file changed build index.html');
-      site(function() {
+      mk.run([site], function noop(){
         if(bs) {
           bs.reload();
         }
@@ -122,7 +121,11 @@ function site(cb) {
     {
       title: 'Circus Village',
       app: ['assets/js/app.js'],
-      style: ['assets/css/style.css']
+      style: ['assets/css/style.css'],
+      element: 'div',
+      attr: {
+        class: 'events'
+      }
     };
 
   if(this.args && this.args.flags.sync) {
