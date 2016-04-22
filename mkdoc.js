@@ -1,5 +1,5 @@
 var mk = require('mktask')
-  , ast = mk.ast
+  //, ast = mk.ast
   , moment = require('moment')
   , path = require('path')
   , fs = require('fs');
@@ -11,16 +11,30 @@ function events(cb) {
     , list = [];
 
   function build() {
-    var sorted = list.sort(function(a, b) {
-      a = a.start;
-      b = b.start;
-      if(a === b) {
-        return 0;
+    var output = 'doc/events.md'
+      , stream
+      , sorted = list.sort(function(a, b) {
+          a = a.start;
+          b = b.start;
+          if(a === b) {
+            return 0;
+          }
+          return a < b ? 1 : -1;
+        })
+
+    stream = fs.createWriteStream(output);
+
+    stream.once('open', function() {
+      for(var i = 0;i < sorted.length;i++) {
+        stream.write(sorted[i].contents + '\n'); 
       }
-      return a < b ? 1 : -1;
+      stream.end();
     })
-    console.error(sorted)
-    cb(); 
+
+    stream.once('finish', cb);
+
+    //console.error(sorted)
+    //cb(); 
   }
 
   function next(err) {
