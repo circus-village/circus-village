@@ -72,16 +72,68 @@ function events(cb) {
   next();
 }
 
+function sync(/*cb*/) {
+
+  // browsersync
+  var bs = require('browser-sync').create()
+    , chokidar = require('chokidar')
+    //, exec = require('child_process').execSync;
+
+  bs.init({
+    //port: 5000,
+    //ui: {
+      //port: 5001
+    //},
+    ghostMode: false,
+    notify: false,
+    logLevel: 'silent',
+    files: ['./lib/*.js', './lib/*.css']
+  });
+
+  // js files
+  chokidar.watch('www/lib', {ignored: /[\/\\]\./})
+    .on('change', function() {
+      //if(env.production) {
+        //exec('npm run minify'); 
+      //}else{
+        //exec('npm run compile'); 
+      //}
+    });
+
+  // css files
+  chokidar.watch('www/css', {ignored: /[\/\\]\./})
+    .on('change', function() {
+      //if(env.production) {
+        //exec('npm run minify-css');
+      //}else{
+        //exec('npm run css'); 
+      //}
+    });
+}
+
+// @task serve run a static web server
+function serve() {
+  var app = require('./server');
+  app.listen(process.env.PORT || 3000);
+}
+
 // @task site build the site
 function site(cb) {
+  var page = 
+    {
+      title: 'Circus Village',
+      app: ['assets/js/app.js'],
+      style: ['assets/css/style.css']
+    };
+
+  if(this.args.flags.sync) {
+    serve();
+    sync();
+    page.footer = 'doc/sync.md';
+  }
+
   mk.doc('doc/events.md')
-    .pipe(mk.page(
-      {
-        title: 'Circus Village',
-        app: ['assets/js/app.js'],
-        style: ['assets/css/style.css']
-      }
-    ))
+    .pipe(mk.page(page))
     .pipe(mk.out({type: 'html'}))
     .pipe(mk.dest('build/index.html'))
     .on('finish', cb);
@@ -89,3 +141,4 @@ function site(cb) {
 
 mk.task(events);
 mk.task([events], site);
+mk.task(sync);

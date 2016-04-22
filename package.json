@@ -6,6 +6,9 @@
   "author": "muji <noop@xpm.io>",
   "license": "MIT",
   "devDependencies": {
+    "browser-sync": "~2.12.3",
+    "chokidar": "~1.4.3",
+    "express": "~5.0.0-alpha.2",
     "js-yaml": "~3.6.0",
     "moment": "~2.13.0"
   }
