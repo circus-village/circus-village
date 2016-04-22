@@ -122,6 +122,7 @@ function site(cb) {
       title: 'Circus Village',
       app: ['assets/js/app.js'],
       style: ['assets/css/style.css'],
+      favicon: 'assets/favicon.png',
       element: 'div',
       attr: {
         class: 'events'

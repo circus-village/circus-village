@@ -76,3 +76,16 @@ body {
   margin-right: auto;
   margin-bottom: 3rem;
 }
+
+.event h3 {
+  margin-bottom: 2rem;
+  font-size: 2.6rem;
+}
+
+.event h4 {
+  text-transform: uppercase;
+}
+
+.event p {
+  margin-top: 1rem;
+}
