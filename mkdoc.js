@@ -1,7 +1,7 @@
 var mk = require('mktask')
   , moment = require('moment')
   , path = require('path')
-  , fs = require('fs');
+  , fs = require('fs-extra');
 
 // @task events build the events (order by date desc)
 function events(cb) {
@@ -111,6 +111,13 @@ function sync(/*cb*/) {
     });
 }
 
+// @task copy static files to the build directory
+function copy(cb) {
+  fs.copySync('lib/app.js', 'build/assets/js/app.js');
+  fs.copySync('lib/style.css', 'build/assets/css/style.css');
+  cb();
+}
+
 // @task serve run a static web server
 function serve() {
   var app = require('./server');
@@ -140,5 +147,6 @@ function site(cb) {
 }
 
 mk.task(events);
-mk.task([events], site);
+mk.task(copy);
+mk.task([events, copy], site);
 mk.task(sync);

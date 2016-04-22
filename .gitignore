@@ -4,6 +4,8 @@ coverage
 target
 /doc/events.md
 /build/index.html
+/build/assets/css
+/build/assets/js
 *.log
 *.bak
 *.pid
