@@ -117,6 +117,7 @@ function serve() {
 
 // @task site build the site
 function site(cb) {
+
   var page = 
     {
       title: 'Circus Village',
@@ -124,7 +125,9 @@ function site(cb) {
       app: ['assets/js/app.js'],
       style: [
         'assets/css/style.css',
-        'https://fonts.googleapis.com/css?family=Kurale'],
+        'https://fonts.googleapis.com/css?family=Kurale',
+        'https://fonts.googleapis.com/css?family=Droid'
+      ],
       favicon: 'assets/favicon.png',
       element: 'div',
       attr: {
