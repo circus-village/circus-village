@@ -6,7 +6,7 @@
 
 Major Konstantin Komarov
 
-Major Konstantin Komarov is a PhD in Combat Psychology, a commander and pedagogue to military professionals, a highly experienced bodyguard, a mentor to troubled youth and a trainer to numerous Systema practitioners around the world. Konstantin is one of the most knowledgeable and thorough instructors of our time.
+![konstantin](assets/img/teachers/konstantin.jpg) Major Konstantin Komarov is a PhD in Combat Psychology, a commander and pedagogue to military professionals, a highly experienced bodyguard, a mentor to troubled youth and a trainer to numerous Systema practitioners around the world. Konstantin is one of the most knowledgeable and thorough instructors of our time.
 
 PENDING CONFIRMATION
 
