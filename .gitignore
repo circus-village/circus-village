@@ -3,6 +3,7 @@ node_modules
 coverage
 target
 /doc/events.md
+/build/index.html
 *.log
 *.bak
 *.pid

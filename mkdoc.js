@@ -1,5 +1,4 @@
 var mk = require('mktask')
-  //, ast = mk.ast
   , moment = require('moment')
   , path = require('path')
   , fs = require('fs');
@@ -73,4 +72,20 @@ function events(cb) {
   next();
 }
 
+// @task site build the site
+function site(cb) {
+  mk.doc('doc/events.md')
+    .pipe(mk.page(
+      {
+        title: 'Circus Village',
+        app: ['assets/js/app.js'],
+        style: ['assets/css/style.css']
+      }
+    ))
+    .pipe(mk.out({type: 'html'}))
+    .pipe(mk.dest('build/index.html'))
+    .on('finish', cb);
+}
+
 mk.task(events);
+mk.task([events], site);
