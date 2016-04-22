@@ -74,6 +74,23 @@ header {
   min-height: 726px;
 }
 
+p {
+  vertical-align: top;
+}
+
+p img {
+  float: left;
+  margin-top: .5rem;
+  margin-right: 2rem;
+  border-radius: 6px;
+}
+
+p:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+  
 a {
   padding-bottom: 2px;
   text-decoration: none;
