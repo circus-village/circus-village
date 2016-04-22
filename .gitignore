@@ -1,0 +1,8 @@
+.DS_Store
+node_modules
+coverage
+target
+/doc/events.md
+*.log
+*.bak
+*.pid

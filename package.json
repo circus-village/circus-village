@@ -1,0 +1,12 @@
+{
+  "name": "circus-village",
+  "version": "1.0.0",
+  "description": "Circus village static website",
+  "main": "index.js",
+  "author": "muji <noop@xpm.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "js-yaml": "~3.6.0",
+    "moment": "~2.13.0"
+  }
+}
