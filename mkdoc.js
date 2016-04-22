@@ -120,6 +120,7 @@ function site(cb) {
   var page = 
     {
       title: 'Circus Village',
+      header: 'doc/header.html',
       app: ['assets/js/app.js'],
       style: ['assets/css/style.css'],
       favicon: 'assets/favicon.png',
