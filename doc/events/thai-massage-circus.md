@@ -4,7 +4,7 @@
 
 #### Thai Massage Circus - 10 year anniversary!
 
-Teachers: Arno Lhermitte and friends 
+Arno Lhermitte and friends 
 
 The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, Hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition. Away from dogma, weeks after weeks, most found freedom.
 

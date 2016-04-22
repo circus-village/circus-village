@@ -59,10 +59,10 @@ html {
 
 body {
   color: black;
-  font-size: 1.6em;
+  font-size: 2em;
   letter-spacing: 0.01em;
   line-height: 1.6;
-  font-family: 'Helvetica';
+  font-family: 'Kurale', 'Helvetica', sans-serif;
   height: 100%;
   min-height: 100%;
   text-align: center;
@@ -72,6 +72,21 @@ header {
   background: url(../img/background.jpg) no-repeat center center fixed;
   background-size: cover;
   min-height: 726px;
+}
+
+a {
+  padding-bottom: 2px;
+  text-decoration: none;
+  transition: color 0.5s ease;
+  /* blue */
+  color: #268bd2;
+}
+
+a:hover {
+  transition: color 0.5s ease;
+  /* violet */
+  color: #6c71c4;
+  border-bottom: 2px solid #6c71c4;
 }
 
 .events, .intro {
@@ -85,6 +100,10 @@ header {
 
 .intro p {
   margin-bottom: 2rem;
+}
+
+.intro p:first-child {
+  font-size: 2.6rem;
 }
 
 .event {
@@ -102,4 +121,12 @@ header {
 
 .event p {
   margin-top: 1rem;
+}
+
+.event h4 + p, .event h4 + p:before {
+  margin-top: -.5rem;
+  font-size: 1.6rem;
+}
+.event h4 + p:before {
+  content: 'By ';
 }

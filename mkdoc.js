@@ -122,7 +122,9 @@ function site(cb) {
       title: 'Circus Village',
       header: 'doc/header.html',
       app: ['assets/js/app.js'],
-      style: ['assets/css/style.css'],
+      style: [
+        'assets/css/style.css',
+        'https://fonts.googleapis.com/css?family=Kurale'],
       favicon: 'assets/favicon.png',
       element: 'div',
       attr: {
