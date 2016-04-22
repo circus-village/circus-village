@@ -1,6 +1,7 @@
 var mk = require('mktask')
   , moment = require('moment')
   , path = require('path')
+  , bs
   , fs = require('fs-extra');
 
 // @task events build the events (order by date desc)
@@ -31,9 +32,6 @@ function events(cb) {
     })
 
     stream.once('finish', cb);
-
-    //console.error(sorted)
-    //cb(); 
   }
 
   function next(err) {
@@ -73,41 +71,33 @@ function events(cb) {
 }
 
 function sync(/*cb*/) {
+  bs = require('browser-sync').create();
 
-  // browsersync
-  var bs = require('browser-sync').create()
-    , chokidar = require('chokidar')
-    //, exec = require('child_process').execSync;
+  var chokidar = require('chokidar');
 
   bs.init({
-    //port: 5000,
-    //ui: {
-      //port: 5001
-    //},
     ghostMode: false,
     notify: false,
     logLevel: 'silent',
-    files: ['./lib/*.js', './lib/*.css']
+    files: [
+      './lib/*.js', './lib/*.css', 'doc/events.md']
   });
 
-  // js files
-  chokidar.watch('www/lib', {ignored: /[\/\\]\./})
+  // watch source files
+  chokidar.watch('lib', {ignored: /[\/\\]\./})
     .on('change', function() {
-      //if(env.production) {
-        //exec('npm run minify'); 
-      //}else{
-        //exec('npm run compile'); 
-      //}
+      copy();
     });
 
-  // css files
-  chokidar.watch('www/css', {ignored: /[\/\\]\./})
+  // watch source files
+  chokidar.watch('doc/events', {ignored: /[\/\\]\./})
     .on('change', function() {
-      //if(env.production) {
-        //exec('npm run minify-css');
-      //}else{
-        //exec('npm run css'); 
-      //}
+      //console.error('events file changed build index.html');
+      site(function() {
+        if(bs) {
+          bs.reload();
+        }
+      });
     });
 }
 
@@ -115,7 +105,9 @@ function sync(/*cb*/) {
 function copy(cb) {
   fs.copySync('lib/app.js', 'build/assets/js/app.js');
   fs.copySync('lib/style.css', 'build/assets/css/style.css');
-  cb();
+  if(cb) {
+    cb();
+  }
 }
 
 // @task serve run a static web server
@@ -133,17 +125,22 @@ function site(cb) {
       style: ['assets/css/style.css']
     };
 
-  if(this.args.flags.sync) {
+  if(this.args && this.args.flags.sync) {
     serve();
     sync();
     page.footer = 'doc/sync.md';
   }
 
-  mk.doc('doc/events.md')
+  //console.error('building site');
+
+  var stream = mk.doc('doc/events.md')
     .pipe(mk.page(page))
     .pipe(mk.out({type: 'html'}))
     .pipe(mk.dest('build/index.html'))
-    .on('finish', cb);
+
+  if(cb) {
+    stream.once('finish', cb);
+  }
 }
 
 mk.task(events);
