@@ -14,6 +14,8 @@ The village is located 15 minutes walk from the the extraordinary Kuang Sii Wate
 
 </div>
 
+<!--- close containers -->
+</div>
 </div>
 
 <script id="__bs_script__">//<![CDATA[
