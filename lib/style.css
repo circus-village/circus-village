@@ -115,7 +115,7 @@ a:hover {
   border-bottom: 2px solid #6c71c4;
 }
 
-.events, .intro, h2 {
+.container {
   max-width: 980px;
   text-align: left;
   margin-left: auto;
@@ -125,8 +125,17 @@ a:hover {
 
 h2 {
   border-bottom: medium double #93a1a1;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   font-size: 4rem;
+}
+
+.events-intro p {
+  font-size: 2.8rem;
+  margin-bottom: 2rem;
+}
+
+.intro {
+  padding-top: 4rem;
 }
 
 .intro p {
