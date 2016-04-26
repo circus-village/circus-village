@@ -24,6 +24,10 @@ The village is located 15 minutes walk from the the extraordinary Kuang Sii Wate
 </div>
 </div>
 
+<footer>
+Copyright Circus Village | <a href="#top" title"Home: Back to top">Back to Top</a>
+</footer>
+
 <script id="__bs_script__">//<![CDATA[
     document.write("<script async src='http://HOST:3001/browser-sync/browser-sync-client.2.12.3.js'><\/script>".replace("HOST", location.hostname));
 //]]></script>
