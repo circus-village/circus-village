@@ -81,14 +81,26 @@ header {
   z-index: 1;
 }
 
-header span {
+header > p {
   position: absolute;
   background: rgba(255,255,255,0.6);
-  left: 2rem;
-  bottom: 2rem;
-  max-width: 60%;
-  padding: 0.5rem 1rem;
+  left: 0;
+  bottom: 0;
+  max-width: 65%;
+  padding: 0.5rem 0rem 0.5rem 2rem;
   font-size: 2.8rem;
+}
+
+header > p > span {
+  border-left: 2px solid rgba(255,255,255,0.3);
+  display: inline-block;
+  padding: 0;
+  padding-left: 2rem;
+}
+
+.logo a.top {
+  color: white;
+  text-decoration: none;
 }
 
 h1 {
@@ -173,8 +185,12 @@ a[href]:not(.top):hover {
   transition: color 0.5s ease;
   /* violet */
   color: #6c71c4;
+}
+
+.event a[href]:hover {
   border-bottom: 2px solid #6c71c4;
 }
+
 
 h2 {
   border-bottom: medium double #93a1a1;
@@ -231,3 +247,18 @@ p {
 .event h4 + p:before {
   content: 'By ';
 }
+
+.getting-there .section {
+  background: url(../img/kuang-si-waterfall1-1200x799.jpg) no-repeat center center fixed;
+  background-size: cover;
+  min-height: 550px;
+}
+
+.getting-there .section > p:first-child {
+  position: relative;
+  top: 2rem;
+  background: rgba(255,255,255,0.6);
+  margin: 2rem;
+  padding: 2rem;
+}
+
