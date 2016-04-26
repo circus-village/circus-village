@@ -125,8 +125,7 @@ function site(cb) {
       app: ['assets/js/app.js'],
       style: [
         'assets/css/style.css',
-        'https://fonts.googleapis.com/css?family=Kurale',
-        'https://fonts.googleapis.com/css?family=Droid'
+        'https://fonts.googleapis.com/css?family=Kurale'
       ],
       favicon: 'assets/favicon.png',
       element: 'div',
