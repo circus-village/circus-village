@@ -129,8 +129,8 @@ h2 {
   font-size: 4rem;
 }
 
-.events-intro p {
-  font-size: 2.8rem;
+p {
+  font-size: 2.6rem;
   margin-bottom: 2rem;
 }
 
@@ -144,10 +144,6 @@ h2 {
 
 .intro p:first-child {
   font-size: 2.8rem;
-}
-
-.intro p:first-child + p {
-  font-size: 2.6rem;
 }
 
 .event {
@@ -167,7 +163,6 @@ h2 {
 
 .event p {
   margin-top: 1.5rem;
-  font-size: 2.6rem;
 }
 
 .event p:last-child {
