@@ -122,6 +122,7 @@ function site(cb) {
     {
       title: 'Circus Village',
       header: 'doc/header.html',
+      footer: 'doc/footer.html',
       app: ['assets/js/app.js'],
       style: [
         'assets/css/style.css',
@@ -137,7 +138,6 @@ function site(cb) {
   if(this.args && this.args.flags.sync) {
     serve();
     sync();
-    page.footer = 'doc/sync.md';
   }
 
   //console.error('building site');

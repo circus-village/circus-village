@@ -273,5 +273,20 @@ p {
 }
 
 footer {
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(180deg, #fdf6e3, #fdf6e3 20%, #93a1a1); 
   padding-bottom: 2rem;
+  padding-top: 4rem;
+}
+
+footer > nav {
+  display: inline-block;
+  /*padding-top: 1rem;*/
+  margin-bottom: 1rem;
+}
+
+footer > nav:first-child {
+  border-bottom: 1px solid black;
+  padding-bottom: 1rem;
 }
