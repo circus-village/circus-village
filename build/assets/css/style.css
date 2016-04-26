@@ -167,10 +167,13 @@ p {
   vertical-align: top;
 }
 
-p img {
+p img:first-child {
   float: left;
-  margin-top: .5rem;
   margin-right: 2rem;
+}
+
+.event p img {
+  margin-top: 1rem;
   border-radius: 6px;
 }
 
