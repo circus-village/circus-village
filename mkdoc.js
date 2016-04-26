@@ -152,7 +152,18 @@ function site(cb) {
   }
 }
 
+function js(cb) {
+  var browserify = require('browserify');
+  var b = browserify();
+  b.add('./lib/main.js');
+  var bundle = b.bundle();
+  bundle
+    .pipe(fs.createWriteStream('build/assets/js/app.js'))
+    .on('finish', cb);
+}
+
 mk.task(events);
 mk.task(copy);
-mk.task([events, copy], site);
+mk.task([events, copy, js], site);
 mk.task(sync);
+mk.task(js);
