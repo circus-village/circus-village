@@ -115,12 +115,18 @@ a:hover {
   border-bottom: 2px solid #6c71c4;
 }
 
-.events, .intro {
+.events, .intro, h2 {
   max-width: 980px;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 4rem;
+  /*margin-top: 4rem;*/
+}
+
+h2 {
+  border-bottom: medium double #93a1a1;
+  margin-bottom: 4rem;
+  font-size: 4rem;
 }
 
 .intro p {
@@ -143,7 +149,7 @@ a:hover {
   display: inline-block;
   margin-bottom: 1rem;
   font-size: 3.2rem;
-  border-bottom: medium double black;
+  border-bottom: medium double #839496;
 }
 
 .event h4 {
