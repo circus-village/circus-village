@@ -136,7 +136,7 @@ h1 {
   padding: .5rem 1rem;
 }
 
-header nav a:not(:last-child) {
+.menu nav a:not(:last-child) {
   margin-right: 1rem;
 }
 
@@ -317,14 +317,46 @@ footer > nav:first-child {
     position: relative;
     display: block;
     left: 0;
+    font-size: 3rem;
+  }
+
+  header {
+    position: relative;
+    left: auto;
+    top: auto;
+    min-height: auto;
+  }
+
+  header > p {
+    position: relative;
+    font-size: 1.8rem;
+    bottom: auto;
+  }
+
+  .menu {
+    background: rgba(255,255,255, 1);
+    color: black;
   }
 
   .menu nav {
     position: relative;
+    background: transparent;
     display: block;
-    top: 0;
-    left: .5rem;
+    top: auto;
+    left: auto;
     /*right: 1rem;*/
     /*margin: .5rem;*/
+  }
+
+  .menu a {
+    color: black !important;
+  }
+
+  .menu nav a:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .menu nav a {
+    font-size: 2rem;
   }
 }
