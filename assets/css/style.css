@@ -111,13 +111,20 @@ h1 {
 
 .menu {
   z-index: 1000;
-  position: fixed;
+  position: absolute;
   left: 0;
   right: 0;
   top: 0;
   padding: 10px;
   height: 44px;
+  transition: opacity 0.5s ease;
+  opacity: 1;
   background: rgba(255, 255, 255, .25);
+}
+
+.menu.transparent{
+  transition: opacity 0.5s ease;
+  opacity: 0;
 }
 
 .menu nav {
