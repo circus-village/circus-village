@@ -275,9 +275,9 @@ p {
 footer {
   position: relative;
   z-index: 2;
-  background: linear-gradient(180deg, #fdf6e3, #fdf6e3 20%, #93a1a1); 
   padding-bottom: 2rem;
   padding-top: 4rem;
+  min-height: 12rem;
 }
 
 footer > nav {
