@@ -6,6 +6,7 @@
   "author": "muji <noop@xpm.io>",
   "license": "MIT",
   "devDependencies": {
+    "air": "~0.4.13",
     "browser-sync": "~2.12.3",
     "browserify": "~13.0.0",
     "chokidar": "~1.4.3",

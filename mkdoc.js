@@ -154,8 +154,7 @@ function site(cb) {
 
 function js(cb) {
   var browserify = require('browserify');
-  var b = browserify();
-  b.add('./lib/main.js');
+  var b = browserify(['./lib/main.js'], {paths: ['./node_modules/air/lib']});
   var bundle = b.bundle();
   bundle
     .pipe(fs.createWriteStream('build/assets/js/app.js'))
