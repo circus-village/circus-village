@@ -116,7 +116,15 @@ h1 {
   position: absolute;
   left: 2rem;
   top: 0;
+  /*line-height: .5;*/
+  /*text-align: left;*/
+  /*padding-top: 1rem;*/
 }
+
+/*h1 span {*/
+  /*font-size: 2rem;*/
+  /*text-transform: uppercase;*/
+/*}*/
 
 .logo a.top {
   color: white;
