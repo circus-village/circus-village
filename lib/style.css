@@ -98,15 +98,15 @@ header > p > span {
   padding-left: 2rem;
 }
 
-.logo a.top {
-  color: white;
-  text-decoration: none;
-}
-
 h1 {
   position: absolute;
   left: 2rem;
   top: 0;
+}
+
+.logo a.top {
+  color: white;
+  text-decoration: none;
 }
 
 .menu {

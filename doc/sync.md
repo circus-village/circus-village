@@ -14,7 +14,7 @@ For all general enquiries contact [Arno Lhermitte](mailto:arnothehermit@hotmail.
 
 <div class="section">
 
-The village is located 15 minutes walk from the the extraordinary Kuang Sii Waterfalls national park, 29 kilometres from Luang Prabang, the historical capital of Laos.
+[![satellite map](assets/img/satellite-340x220.jpg)](#map) The village is located 15 minutes walk from the extraordinary Kuang Sii Waterfalls national park, 29 kilometres from Luang Prabang, the historical capital of Laos.
 
 </div>
 
