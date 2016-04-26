@@ -50,6 +50,14 @@ table {
 	border-spacing: 0;
 }
 
+::selection {
+  background: #eee8d5;
+}
+
+::-moz-selection {
+  background: #eee8d5;
+}
+
 html {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -188,7 +196,7 @@ p:after {
   display: block;
   clear: both;
 }
-  
+
 a[href]:not(.top) {
   padding-bottom: 2px;
   text-decoration: none;
