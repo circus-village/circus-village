@@ -65,23 +65,29 @@ body {
   line-height: 1.6;
   font-family: 'Kurale', 'Helvetica', sans-serif;
   height: 100%;
-  min-height: 100%;
+  /*min-height: 100%;*/
   text-align: center;
 }
 
 header {
   background: url(../img/background.jpg) no-repeat center center fixed;
   background-size: cover;
-  min-height: 726px;
+  height: 100%;
+  /*min-height: 726px;*/
   width: 100%;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
   text-align: left;
   z-index: 1;
+  max-height: 726px;
 }
 
 header > p {
+  display: inline-block;
+  /*height: 100%;*/
   position: absolute;
   background: rgba(255,255,255,0.6);
   left: 0;
@@ -272,6 +278,10 @@ p {
   padding: 2rem;
 }
 
+.getting-there .section > p:first-child a {
+  display: block;
+}
+
 footer {
   position: relative;
   z-index: 2;
@@ -313,6 +323,11 @@ footer > nav:first-child {
 }
 
 @media (max-width: 640px) {
+
+  p {
+    line-height: 1.4;
+  }
+
   h1 {
     position: relative;
     display: block;
@@ -320,10 +335,13 @@ footer > nav:first-child {
     font-size: 3rem;
   }
 
+  h2 {
+    font-size: 3rem;
+  }
+
   .menu {
     position: relative;
     background: rgba(255,255,255, 1);
-    color: black;
   }
 
   header {
@@ -331,11 +349,12 @@ footer > nav:first-child {
     left: auto;
     top: auto;
     padding-top: 2rem;
+    max-height: 100%;
   }
 
   header > p {
     position: relative;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     bottom: auto;
     max-width: 85%;
   }
@@ -355,12 +374,12 @@ footer > nav:first-child {
     right: auto;
   }
 
-  .menu a {
+  h1 a {
     color: black !important;
   }
 
   .menu nav a:not(:last-child) {
-    margin-right: 0;
+    margin-right: .5rem;
   }
 
   .menu nav a {
@@ -379,5 +398,46 @@ footer > nav:first-child {
 
   header > p {
     max-width: 100%;
+  }
+
+  .event h3 {
+    font-size: 1.6rem;
+  }
+
+  .event h4 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  .getting-there .section > p:first-child a {
+    text-align: center;
+  }
+
+  .getting-there .section > p:first-child a img {
+    margin-right: 0;
+    float: none;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 320px) {
+
+  h1 {
+    border-bottom: medium double black;
+  }
+
+  .menu nav a {
+    display: block;
+    margin-right: 0;
+  }
+
+  header > p {
+    font-size: 1.8rem;
+  }
+
+  footer nav:first-child {
+    font-size: 1.6rem;
+    margin: 0 2rem;
   }
 }
