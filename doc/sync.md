@@ -1,3 +1,19 @@
+<div class="info">
+
+## Information
+
+We offer delicious Asian and international food, and host everyone in traditional antique teak houses and bamboo bungalows along the riverside. With a herbal steam sauna and wooden fire ovens, a spacious open Shala, organic garden and more than an hectare of orchids, the circus village can host big groups on an enchanted private island and untouched paradise.
+
+</div>
+
+<div class="getting-there">
+
+## Getting There
+
+The village is located 15 minutes walk from the the extraordinary Kuang Sii Waterfalls national park, 29 kilometres from Luang Prabang, the historical capital of Laos.
+
+</div>
+
 </div>
 
 <script id="__bs_script__">//<![CDATA[
