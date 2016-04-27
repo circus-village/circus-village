@@ -99,9 +99,7 @@ body {
 }
 
 header {
-  background: url(../img/background.jpg) no-repeat center center fixed;
   transition: opacity 1s ease-out;
-  background-size: cover;
   height: 100%;
   /*min-height: 726px;*/
   width: 100%;
@@ -113,6 +111,11 @@ header {
   text-align: left;
   z-index: 1;
   max-height: 726px;
+}
+
+header.welcome {
+  background: url(../img/background.jpg) no-repeat bottom center fixed;
+  background-size: cover;
 }
 
 header > p {
@@ -135,21 +138,13 @@ header > p > span {
 }
 
 h1 {
-  /*position: absolute;*/
+  text-shadow: 1px 1px 1px #000;
   float: left;
-  /*margin-left: 2rem;*/
-  /*top: 0;*/
   line-height: 1;
-  /*text-align: left;*/
-  /*padding-top: 1rem;*/
+  font-weight: normal;
 }
 
-/*h1 span {*/
-  /*font-size: 2rem;*/
-  /*text-transform: uppercase;*/
-/*}*/
-
-.logo a.top {
+h1 a {
   color: white;
   text-decoration: none;
 }
@@ -165,7 +160,7 @@ h1 {
   /*min-height: 44px;*/
   transition: opacity 0.5s ease;
   opacity: 1;
-  background: rgba(255, 255, 255, .25);
+  background: rgba(255, 255, 255, .5);
 }
 
 .menu.transparent{
