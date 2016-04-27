@@ -129,6 +129,10 @@ function site(cb) {
   var page = 
     {
       title: 'Circus Village',
+      meta: {
+        description: 'Circus Village: School of Freedom',
+        keywords: 'circus village, circus, village, retreat'
+      },
       header: 'doc/header.html',
       footer: 'doc/footer.html',
       app: ['assets/js/app.js'],
