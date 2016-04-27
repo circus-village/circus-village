@@ -71,38 +71,46 @@ function events(cb) {
 }
 
 function sync(/*cb*/) {
-  bs = require('browser-sync').create();
-
   var chokidar = require('chokidar');
+  bs = require('browser-sync').create();
 
   bs.init({
     ghostMode: false,
     notify: false,
     logLevel: 'silent',
+    injectChanges: false,
     files: [
-      './lib/*.js', './lib/*.css', 'doc/events.md']
+      './build/assets/js/*.js',
+      './build/assets/css/*.css',
+      './build/index.html'
+    ]
   });
 
-  // watch source files
-  chokidar.watch('lib', {ignored: /[\/\\]\./})
+  // watch css files
+  chokidar.watch('lib/*.css', {ignored: /[\/\\]\./})
     .on('change', function() {
       copy();
+    });
+
+  // watch js files
+  chokidar.watch('lib/*.js', {ignored: /[\/\\]\./})
+    .on('change', function() {
+      js(function() {
+        bs.reload(); 
+      });
     });
 
   // watch source files
   chokidar.watch('doc/events', {ignored: /[\/\\]\./})
     .on('change', function() {
-      mk.run([site], function noop(){
-        if(bs) {
-          bs.reload();
-        }
+      mk.run([site], function(){
+        bs.reload();
       });
     });
 }
 
 // @task copy static files to the build directory
 function copy(cb) {
-  fs.copySync('lib/app.js', 'build/assets/js/app.js');
   fs.copySync('lib/style.css', 'build/assets/css/style.css');
   if(cb) {
     cb();
@@ -140,8 +148,6 @@ function site(cb) {
     sync();
   }
 
-  //console.error('building site');
-
   var stream = mk.doc('doc/events.md')
     .pipe(mk.page(page))
     .pipe(mk.out({type: 'html'}))
@@ -156,9 +162,11 @@ function js(cb) {
   var browserify = require('browserify');
   var b = browserify(['./lib/main.js'], {paths: ['./node_modules/air/lib']});
   var bundle = b.bundle();
-  bundle
-    .pipe(fs.createWriteStream('build/assets/js/app.js'))
-    .on('finish', cb);
+  var stream = bundle
+    .pipe(fs.createWriteStream('build/assets/js/app.js'));
+  if(cb) {
+    stream.on('finish', cb);
+  }
 }
 
 mk.task(events);
