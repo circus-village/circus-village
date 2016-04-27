@@ -280,6 +280,12 @@ p {
   content: 'By ';
 }
 
+.info > p > img {
+  width: 280px;
+  height: 187px;
+  box-shadow: 3px 3px 6px 0px #9f9f9f;
+}
+
 .getting-there .section {
   background: url(../img/kuang-si-waterfall1-1200x799.jpg) no-repeat center center fixed;
   background-size: cover;
