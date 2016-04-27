@@ -131,7 +131,8 @@ function site(cb) {
       title: 'Circus Village',
       meta: {
         description: 'Circus Village: School of Freedom',
-        keywords: 'circus village, circus, village, retreat'
+        keywords: 'circus village, circus, village, retreat, massage, '
+          + 'waterfall, river, kuang si, freedom'
       },
       header: 'doc/header.html',
       footer: 'doc/footer.html',
