@@ -219,6 +219,7 @@ h1 span {
   /*margin-top: 726px;*/
   position: relative;
   z-index: 999;
+  padding-top: 4rem;
 }
 
 .container {
