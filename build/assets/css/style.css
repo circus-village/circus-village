@@ -140,13 +140,22 @@ header > p > span {
 h1 {
   text-shadow: 1px 1px 1px #000;
   float: left;
-  line-height: 1;
+  line-height: .7;
   font-weight: normal;
+  font-size: 4rem;
 }
 
-h1 a {
+h1 > a {
   color: white;
   text-decoration: none;
+}
+
+h1 span {
+  display: inline-block;
+}
+
+h1 span::first-letter {
+  font-size: 5rem;
 }
 
 .menu {
