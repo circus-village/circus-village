@@ -451,13 +451,11 @@ footer > nav:first-child {
   /*}*/
 }
 
-@media (max-width: 360px) {
-  header {
-    padding-top: 4rem;
-  }
+
+@media (max-width: 480px) {
 
   header > p {
-    max-width: 100%;
+    font-size: 1.9rem;
   }
 
   h1 {
@@ -472,10 +470,25 @@ footer > nav:first-child {
     float: none;
   }
 
-  .menu nav a {
-    display: block;
+}
+
+@media (max-width: 360px) {
+  /*header {*/
+    /*padding-top: 4rem;*/
+  /*}*/
+
+  header > p {
+    max-width: 100%;
   }
 
+  .menu nav.main a[href] {
+    display: block;
+    border-color: #eee8d5;
+  }
+
+  .menu nav.main a[href]:hover {
+    border-color: #268bd2;
+  }
 
   .event h3 {
     font-size: 1.6rem;
