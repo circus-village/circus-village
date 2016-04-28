@@ -326,7 +326,10 @@ p {
 .info > p > img {
   width: 280px;
   height: 187px;
-  box-shadow: 3px 3px 6px 0px #9f9f9f;
+}
+
+.info > p > img, .event > p > img {
+  box-shadow: 1px 1px 6px 0px #839496;
 }
 
 .getting-there .section {
