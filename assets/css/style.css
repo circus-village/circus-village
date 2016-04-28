@@ -346,18 +346,19 @@ p {
   box-shadow: 1px 1px 6px 0px #839496;
 }
 
-.getting-there .section {
-  background: url(../img/kuang-si-waterfall1-1200x799.jpg) no-repeat center center fixed;
+.getting-there .banner {
+  background: url(../img/kuang-si-waterfall1-1200x799.jpg) no-repeat bottom center fixed;
   background-size: cover;
-  min-height: 550px;
+  min-height: 240px;
 }
 
-.getting-there .section > p:first-child {
-  position: relative;
-  top: 2rem;
-  background: rgba(255,255,255,0.6);
-  margin: 2rem;
-  padding: 2rem;
+.getting-there .section {
+  margin-top: 2rem;
+  /*position: relative;*/
+  /*top: 2rem;*/
+  /*background: rgba(255,255,255,0.6);*/
+  /*margin: 2rem;*/
+  /*padding: 2rem;*/
 }
 
 .getting-there .section > p:first-child a {
