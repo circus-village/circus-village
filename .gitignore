@@ -6,6 +6,7 @@ target
 /build/index.html
 /build/assets/css
 /build/assets/js
+*.zip
 *.log
 *.bak
 *.pid
