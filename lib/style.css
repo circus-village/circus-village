@@ -189,6 +189,10 @@ h1 span {
   /*padding: .5rem 1rem;*/
 }
 
+a[href^="mailto"]:after {
+  content: " (" attr(title) ")";
+}
+
 .menu nav a[href] {
   display: inline-block;
   transition: background 0.5s ease;
@@ -242,14 +246,14 @@ p {
   vertical-align: top;
 }
 
-p img:first-child {
-  float: left;
-  margin-right: 2rem;
-}
-
 .event p img {
   margin-top: 1rem;
   border-radius: 6px;
+}
+
+.event p img, .info p img {
+  float: left;
+  margin-right: 2rem;
 }
 
 p:after {
@@ -333,16 +337,12 @@ p {
   content: 'By ';
 }
 
-/*.event > p:last-child > a:not(:last-child):after {*/
-  /*content: ' | ';*/
-/*}*/
-
 .info > p > img {
   width: 280px;
   height: 187px;
 }
 
-.info > p > img, .event > p > img {
+p > img, p > a > img, .section > p > a:first-child {
   box-shadow: 1px 1px 6px 0px #839496;
 }
 
@@ -350,20 +350,35 @@ p {
   background: url(../img/kuang-si-waterfall1-1200x799.jpg) no-repeat bottom center fixed;
   background-size: cover;
   min-height: 240px;
+  padding-bottom: 1rem;
 }
 
 .getting-there .section {
   margin-top: 2rem;
-  /*position: relative;*/
-  /*top: 2rem;*/
-  /*background: rgba(255,255,255,0.6);*/
-  /*margin: 2rem;*/
-  /*padding: 2rem;*/
+  border-top: medium double black;
+  padding-top: 2rem;
 }
 
-.getting-there .section > p:first-child a {
-  display: block;
+.getting-there .section a:first-child {
+  float: left;
+  margin-right: 2rem;
+  margin-top: 1rem;
+  width: 200px;
+  height: 200px;
+  transition: border-color 0.5s ease-out;
+  border: medium double #073642;
+  overflow: hidden;
 }
+
+.getting-there .section > p > a:first-child > img {
+  position: relative;
+  z-index: -2;
+}
+
+.getting-there .section > p > a:first-child:hover {
+  border-color: #268bd2;
+}
+
 
 footer {
   position: relative;
