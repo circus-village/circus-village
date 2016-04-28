@@ -12,6 +12,7 @@ Kaypacha and Arno Lhermitte
 
 ![arno](assets/img/teachers/arno.jpg) This 10 day retreat in the beautiful surroundings and magic majesty of Laos will unite the astrological correlations to our physical bodies with the wisdom of modern physiotherapy and Thai massage.
 
-[Information](http://newparadigmastrology.com) | [Registration](http://newparadigmastrology.com/november-20-december-2-2016-the-bambou-island-laos/)
+* [Information](http://newparadigmastrology.com)
+* [Registration](http://newparadigmastrology.com/november-20-december-2-2016-the-bambou-island-laos/)
 
 </div>

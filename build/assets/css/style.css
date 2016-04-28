@@ -323,6 +323,10 @@ p {
   content: 'By ';
 }
 
+/*.event > p:last-child > a:not(:last-child):after {*/
+  /*content: ' | ';*/
+/*}*/
+
 .info > p > img {
   width: 280px;
   height: 187px;
@@ -441,19 +445,22 @@ footer > nav:first-child {
     margin-right: 1rem;
   }
 
-  /*.menu nav a:not(:last-child) {*/
-    /*margin-right: .5rem;*/
-  /*}*/
-
   .menu nav a {
     font-size: 2rem;
   }
 
-  /*.content {*/
-    /*margin-top: -4rem;*/
-  /*}*/
 }
 
+/* inline list items for event links */
+@media(min-width: 640px) {
+  .event > ul:last-child > li {
+    display: inline-block;
+  }
+
+  .event > ul:last-child > li:not(:last-child):after {
+    content: ' | ';
+  }
+}
 
 @media (max-width: 480px) {
 

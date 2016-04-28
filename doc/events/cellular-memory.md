@@ -10,6 +10,8 @@ Don Hanson
 
 These sacred healing energies combine with Don's psychic, intuitive skills and group process experience. The result is an unlocking on a cellular level of all inherited behavior patterns that keep you stuck in a limited level of consciousness and perspective.
 
-[Information](http://www.donhanson.com) | [Registration](mailto:pearson_cathy@hotmail.com) | [Transforming Cellular Memory](http://www.transformingcellularmemory.com)
+* [Information](http://www.donhanson.com)
+* [Registration](mailto:pearson_cathy@hotmail.com)
+* [Transforming Cellular Memory](http://www.transformingcellularmemory.com)
 
 </div>
