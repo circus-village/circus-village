@@ -207,8 +207,8 @@ h1 {
   position: absolute;
   right: -11px;
   top: -20px;
-  opacity: 0;
-  /*opacity: .5;*/
+  /*opacity: 0;*/
+  /*opacity: .75;*/
 }
 
 .controls {
@@ -225,14 +225,14 @@ h1 {
   display: inline-block;
   padding: .5rem 1rem;
   border-radius: 4px;
-  background: rgba(255, 255, 255, .55);
+  background: rgba(0, 0, 0, .55);
 }
 
 .controls > ul > li {
   cursor: pointer;
   display: inline-block;
-  /*opacity: .5;*/
-  /*transition: opacity 0.5s ease-out;*/
+  opacity: .5;
+  transition: opacity 0.5s ease-out;
 }
 
 .controls > ul > li:not(:last-child) {
@@ -240,7 +240,7 @@ h1 {
 }
 
 .controls > ul > li:hover {
-  /*opacity: 1;*/
+  opacity: 1;
 }
 
 .controls > ul > li img {
@@ -256,12 +256,12 @@ a[href^="mailto"]:after {
   display: inline-block;
   transition: background 0.5s ease;
   color: white;
-  /*transition: border-color 0.5s ease;*/
+  transition: border-color 0.5s ease;
   /*background: #fdf6e3;*/
-  background: rgba(0,0,0,1);
+  background: rgba(0,0,0,.15);
   padding: .5rem 1rem;
-  border-color: #268bd2;
-  /*border-bottom: 2px solid;*/
+  border-color: transparent;
+  border-bottom: 2px solid transparent;
 }
 
 .menu nav a[href]:hover {
@@ -272,7 +272,7 @@ a[href^="mailto"]:after {
   /*background: #268bd2;*/
   background: rgba(0,0,0,.65);
   color: white;
-  /*border-color: #fdf6e3;*/
+  border-color: #fdf6e3;
 }
 
 
