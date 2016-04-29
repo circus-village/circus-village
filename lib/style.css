@@ -390,7 +390,7 @@ p > img, p > a > img, .section > p > a:first-child {
 
 .getting-there .section {
   margin-top: 2rem;
-  border-top: medium double black;
+  border-top: medium double #93a1a1;
   padding-top: 2rem;
 }
 
