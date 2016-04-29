@@ -154,6 +154,7 @@ header.welcome .slide {
   font-size: 2.8rem;
   margin-bottom: 0;
   text-align: left;
+  pointer-events: none;
 }
 
 .leader > span {
