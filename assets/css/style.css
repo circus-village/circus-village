@@ -110,16 +110,13 @@ body {
 header {
   transition: opacity 1s ease-out;
   height: 100%;
-  /*max-height: 726px;*/
-  /*max-height: 100%;*/
   width: 100%;
   position: relative;
   left: 0;
   top: 0;
-  /*right: 0;*/
-  /*bottom: 0;*/
   text-align: left;
   z-index: 1;
+  cursor: pointer;
 
   background-repeat: no-repeat;
   background-attachment: fixed;
