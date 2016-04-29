@@ -136,7 +136,7 @@ header.welcome .slide {
   background-image: url(../img/background.jpg);
 }
 
-.menu, .leader, .controls {
+.menu, .leader, .play-pause {
   opacity: 1;
   transition: opacity 0.5s ease;
 }
@@ -203,6 +203,7 @@ h1 {
   position: absolute;
   right: -11px;
   top: -20px;
+  opacity: 0;
   /*opacity: .5;*/
 }
 
