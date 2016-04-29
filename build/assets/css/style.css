@@ -145,7 +145,8 @@ header.welcome .slide {
   display: inline-block;
   position: absolute;
   z-index: 4;
-  background: rgba(255,255,255,0.6);
+  color: white;
+  background: rgba(0,0,0,0.55);
   left: 0;
   top: 12rem;
   max-width: 75%;
@@ -166,6 +167,7 @@ h1 {
   float: left;
   line-height: 1;
   font-weight: normal;
+  margin-left: 1rem;
   color: white;
   text-shadow: 1px 1px 1px #000;
   cursor: default;
@@ -178,7 +180,9 @@ h1 {
   right: 0;
   top: 0;
   padding: 10px;
-  background: rgba(255, 255, 255, .5);
+  background: rgba(0, 0, 0, .35);
+  /*background: #268bd2;*/
+  /*opacity: .75;*/
 }
 
 .transparent{
@@ -251,11 +255,13 @@ a[href^="mailto"]:after {
 .menu nav a[href] {
   display: inline-block;
   transition: background 0.5s ease;
-  transition: border-color 0.5s ease;
-  background: #fdf6e3;
+  color: white;
+  /*transition: border-color 0.5s ease;*/
+  /*background: #fdf6e3;*/
+  background: rgba(0,0,0,1);
   padding: .5rem 1rem;
   border-color: #268bd2;
-  border-bottom: 2px solid;
+  /*border-bottom: 2px solid;*/
 }
 
 .menu nav a[href]:hover {
@@ -263,9 +269,10 @@ a[href^="mailto"]:after {
   /*text-decoration: none;*/
   transition: background 0.5s ease;
   /* blue */
-  background: #268bd2;
+  /*background: #268bd2;*/
+  background: rgba(0,0,0,.65);
   color: white;
-  border-color: #fdf6e3;
+  /*border-color: #fdf6e3;*/
 }
 
 
