@@ -59,6 +59,10 @@ table {
 	font-style: normal;
 }
 
+.hidden {
+  display: none !important;
+}
+
 ::selection {
   background: #eee8d5;
 }
@@ -197,7 +201,7 @@ h1 {
 .play-pause {
   display: inline-block;
   position: absolute;
-  right: -10px;
+  right: -11px;
   top: -20px;
   /*opacity: .5;*/
 }
