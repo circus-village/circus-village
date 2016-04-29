@@ -151,17 +151,19 @@ h1 {
   float: left;
   line-height: 1;
   font-weight: normal;
+  color: white;
+  cursor: default;
   /*font-size: 4rem;*/
 }
 
-h1 > a {
-  color: white;
-  text-decoration: none;
-}
+/*h1 > a {*/
+  /*color: white;*/
+  /*text-decoration: none;*/
+/*}*/
 
-h1 span {
-  display: inline-block;
-}
+/*h1 span {*/
+  /*display: inline-block;*/
+/*}*/
 
 /*h1 span::first-letter {*/
   /*font-size: 5rem;*/
