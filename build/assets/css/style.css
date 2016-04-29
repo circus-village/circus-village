@@ -239,7 +239,7 @@ h1 {
   margin-right: 1rem;
 }
 
-.controls > ul > li:hover {
+.controls > ul > li:hover, .controls > ul > li.selected {
   opacity: 1;
 }
 
