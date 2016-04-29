@@ -108,27 +108,36 @@ body {
 }
 
 header {
-  transition: opacity 1s ease-out;
-  height: 100%;
   width: 100%;
+  height: 100%;
   position: relative;
   left: 0;
   top: 0;
   text-align: left;
   z-index: 1;
   cursor: pointer;
+}
 
+header .slide {
+  transition: opacity 1s ease-out;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
   background-size: cover;
 }
 
-header.welcome {
+header.welcome .slide {
   background-image: url(../img/background.jpg);
 }
 
-.menu + p {
+.menu, .leader, .controls {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.leader {
   display: inline-block;
   position: absolute;
   z-index: 4;
@@ -142,7 +151,7 @@ header.welcome {
   text-align: left;
 }
 
-.menu + p > span {
+.leader > span {
   border-left: 2px solid rgba(255,255,255,0.3);
   display: inline-block;
   padding: 0;
@@ -165,13 +174,11 @@ h1 {
   right: 0;
   top: 0;
   padding: 10px;
-  transition: opacity 0.5s ease;
-  opacity: 1;
   background: rgba(255, 255, 255, .5);
 }
 
-.menu.transparent{
-  transition: opacity 0.5s ease;
+.transparent{
+  /*transition: opacity 0.5s ease;*/
   opacity: 0;
 }
 
@@ -187,43 +194,40 @@ h1 {
   /*padding: .5rem 1rem;*/
 }
 
-.slideshow-info {
-  /*display: inline-block;*/
+.controls {
   position: absolute;
   z-index: 3;
-  /*top: 0;*/
   left: 0;
   right: 0;
   bottom: 1rem;
   text-align: center;
-  margin-top: 8rem;
   color: white;
   text-transform: uppercase;
 }
 
-.slideshow-info > ul {
+.controls > ul {
   display: inline-block;
   padding: .5rem 1rem;
   border-radius: 4px;
   background: rgba(255, 255, 255, .25);
 }
 
-.slideshow-info > ul > li {
+.controls > ul > li {
   cursor: pointer;
   display: inline-block;
   opacity: .5;
   transition: opacity 0.5s ease-out;
 }
 
-.slideshow-info > ul > li:not(:last-child) {
+.controls > ul > li:not(:last-child) {
   margin-right: 1rem;
 }
 
-.slideshow-info > ul > li:hover {
+.controls > ul > li:hover {
   opacity: 1;
 }
 
-.slideshow-info > ul > li img {
+.controls > ul > li img {
   width: 12px;
   height: 12px;
 }
@@ -542,7 +546,7 @@ footer > nav:first-child {
     position: relative;
     left: auto;
     top: auto;
-    padding-top: 2rem;
+    /*padding-top: 2rem;*/
     max-height: 100%;
   }
 
