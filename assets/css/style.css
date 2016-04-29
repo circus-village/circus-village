@@ -382,7 +382,7 @@ p > img, p > a > img, .section > p > a:first-child {
 }
 
 .getting-there .banner {
-  background: url(../img/kuang-si-waterfall1-1200x799.jpg) no-repeat bottom center fixed;
+  background: url(../img/footer.jpg) no-repeat bottom center fixed;
   background-size: cover;
   min-height: 240px;
   padding-bottom: 1rem;
