@@ -140,7 +140,7 @@ header > p {
   max-width: 75%;
   padding: 0.5rem 0rem 0.5rem 2rem;
   font-size: 2.8rem;
-  margin-bottom: 0;
+  /*margin-bottom: 0;*/
 }
 
 header > p > span {
@@ -345,35 +345,26 @@ h3 {
   margin-bottom: 2rem;
 }
 
-.info > .accomodation:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
 .info > .accomodation > div {
-  float: left;
   border: 1px solid #839496;
   border-radius: 6px;
-  max-width: 280px;
   padding: 1rem;
   margin-bottom: 2rem;
   box-shadow: 1px 1px 6px 0px #839496;
 }
 
-.info > .accomodation > div > p > img + span {
+.info > .accomodation > div span {
   display: block;
   text-transform: uppercase;
-}
-
-.info > .accomodation > div:not(:last-child){
-  margin-right: 2rem;
+  border-bottom: 1px solid #839496;
+  margin-bottom: 1rem;
 }
 
 .info > .accomodation > div > p {
   margin-bottom: 0;
   font-size: 2rem;
 }
+
 
 .info > .accomodation > div > p > img {
   width: 260px;
@@ -446,6 +437,10 @@ footer > nav:first-child {
   header, .content {
     box-shadow: 3px 0px 6px 0px #9f9f9f;
   }
+
+  .info > .accomodation > div:not(:last-child){
+    margin-right: 60px !important;
+  }
 }
 
 @media (max-width: 980px) {
@@ -465,6 +460,20 @@ footer > nav:first-child {
 
   h3 {
     font-size: 2.6rem;
+  }
+}
+
+
+@media (min-width: 960px) {
+  .info > .accomodation > div {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 280px;
+  }
+
+  .info > .accomodation > div:not(:last-child){
+    /* fits three into 960px including margins */
+    margin-right: 26px;
   }
 }
 
