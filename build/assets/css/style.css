@@ -194,6 +194,14 @@ h1 {
   /*padding: .5rem 1rem;*/
 }
 
+.play-pause {
+  display: inline-block;
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  /*opacity: .5;*/
+}
+
 .controls {
   position: absolute;
   z-index: 3;
@@ -201,7 +209,6 @@ h1 {
   right: 0;
   bottom: 1rem;
   text-align: center;
-  color: white;
   text-transform: uppercase;
 }
 
@@ -215,8 +222,8 @@ h1 {
 .controls > ul > li {
   cursor: pointer;
   display: inline-block;
-  opacity: .5;
-  transition: opacity 0.5s ease-out;
+  /*opacity: .5;*/
+  /*transition: opacity 0.5s ease-out;*/
 }
 
 .controls > ul > li:not(:last-child) {
@@ -224,7 +231,7 @@ h1 {
 }
 
 .controls > ul > li:hover {
-  opacity: 1;
+  /*opacity: 1;*/
 }
 
 .controls > ul > li img {
