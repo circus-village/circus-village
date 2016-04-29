@@ -258,7 +258,7 @@ a[href^="mailto"]:after {
   color: white;
   transition: border-color 0.5s ease;
   /*background: #fdf6e3;*/
-  background: rgba(0,0,0,.15);
+  background: rgba(0,0,0,.35);
   padding: .5rem 1rem;
   border-color: transparent;
   border-bottom: 2px solid transparent;
@@ -270,7 +270,7 @@ a[href^="mailto"]:after {
   transition: background 0.5s ease;
   /* blue */
   /*background: #268bd2;*/
-  background: rgba(0,0,0,.65);
+  background: rgba(0,0,0,.7);
   color: white;
   border-color: #fdf6e3;
 }
