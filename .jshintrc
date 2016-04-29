@@ -11,5 +11,5 @@
   "mocha"                   : true,
   "unused"                  : true,
   "asi"                     : true,
-  "predef"                  : ["window","document","history"]
+  "predef"                  : ["window","document","history","Image","XMLHttpRequest","Blob"]
 }
