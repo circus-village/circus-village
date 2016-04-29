@@ -138,8 +138,7 @@ function site(cb) {
       footer: 'doc/footer.html',
       app: ['assets/js/app.js'],
       style: [
-        'assets/css/style.css',
-        'https://fonts.googleapis.com/css?family=Kurale'
+        'assets/css/style.css'
       ],
       favicon: 'assets/favicon.png',
       element: 'div',

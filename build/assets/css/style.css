@@ -49,6 +49,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+/* end reset.css */
+
+@font-face {
+	font-family: 'Kurale';
+	src: url('../font/Kurale-Regular.eot');
+	src: local('☺'), url('../font/Kurale-Regular.woff') format('woff'), url('../font/Kurale-Regular.ttf') format('truetype'), url('../font/Kurale-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 
 ::selection {
   background: #eee8d5;
@@ -308,7 +317,7 @@ p {
   margin-bottom: 3rem;
 }
 
-.event h3 {
+h3 {
   display: inline-block;
   margin-bottom: 1rem;
   font-size: 3.2rem;
@@ -362,6 +371,11 @@ p {
   box-shadow: 1px 1px 6px 0px #839496;
 }
 
+.info > .accomodation > div > p > img + span {
+  display: block;
+  text-transform: uppercase;
+}
+
 .info > .accomodation > div:not(:last-child){
   margin-right: 2rem;
 }
@@ -398,8 +412,8 @@ p > img, p > a > img, .section > p > a:first-child {
   float: left;
   margin-right: 2rem;
   margin-top: 1rem;
-  width: 200px;
-  height: 200px;
+  width: 160px;
+  height: 160px;
   transition: border-color 0.5s ease-out;
   border: medium double #073642;
   overflow: hidden;
@@ -459,7 +473,7 @@ footer > nav:first-child {
   }
 
 
-  .event h3 {
+  h3 {
     font-size: 2.6rem;
   }
 }
@@ -561,7 +575,7 @@ footer > nav:first-child {
     border-color: #268bd2;
   }
 
-  .event h3 {
+  h3 {
     font-size: 1.6rem;
   }
 
@@ -571,15 +585,16 @@ footer > nav:first-child {
     margin-bottom: 1rem;
   }
 
-  .getting-there .section > p:first-child a {
-    text-align: center;
+  .getting-there .section a:first-child {
+    width: 128px;
+    height: 128px;
   }
 
-  .getting-there .section > p:first-child a img {
-    margin-right: 0;
-    float: none;
-    display: inline-block;
-  }
+  /*.getting-there .section > p:first-child a img {*/
+    /*margin-right: 0;*/
+    /*float: none;*/
+    /*display: inline-block;*/
+  /*}*/
 }
 
 @media (max-width: 320px) {
