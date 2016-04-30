@@ -173,8 +173,57 @@ function js(cb) {
   }
 }
 
+function gallery(cb) {
+  var pth = 'build/assets/img/gallery/'
+    , ExifImage = require('exif')
+    , files = fs.readdirSync(pth)
+    , list = [];
+
+  function done() {
+    console.error(list) 
+    fs.writeFileSync('lib/gallery.json', JSON.stringify(list, undefined, 2));
+    cb();
+  }
+
+  function next(err) {
+    if(err) {
+      return cb(err); 
+    } 
+
+    var file
+      , name = files.shift();
+
+    if(!name) {
+      return done(); 
+    }
+
+    file = pth + name;
+    //console.error(file);
+
+    try {
+      new ExifImage({image : file}, function (err, data) {
+        if(err) {
+          return cb(err);
+        }else{
+          list.push({
+            name: name, 
+            width: data.exif.ExifImageWidth,
+            height: data.exif.ExifImageHeight})
+        }
+
+        next();
+      });
+    }catch(e) {
+      return cb(e);
+    }
+  }
+
+  next();
+}
+
 mk.task(events);
 mk.task(copy);
 mk.task([events, copy, js], site);
 mk.task(sync);
 mk.task(js);
+mk.task(gallery);
