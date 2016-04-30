@@ -630,10 +630,17 @@ footer > nav:first-child {
 .modal a.close[href] {
   position: absolute;
   top: 1rem;
-  right: 2rem;
-  color: white;
-  background: rgba(0,0,0,0.5);
+  right: 1rem;
+  color: black;
+  background: rgba(255,255,255,0.8);
   padding: 0 1rem;
+  border-radius: 4px;
+}
+
+.modal a.close[href] img {
+  vertical-align: middle;
+  display: inline-block;
+  margin-top: 1rem;
 }
 
 @media (max-width: 980px) {
