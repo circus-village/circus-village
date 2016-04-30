@@ -2,14 +2,18 @@
   "name": "circus-village",
   "version": "1.0.0",
   "description": "Circus village static website",
-  "main": "index.js",
   "author": "muji <noop@xpm.io>",
   "license": "MIT",
+  "repository":{
+    "type": "git",
+    "url": "https://github.com/tmpfs/circus-village.git"
+  },
   "devDependencies": {
     "air": "~0.4.13",
     "browser-sync": "~2.12.3",
     "browserify": "~13.0.0",
     "chokidar": "~1.4.3",
+    "exif": "~0.6.0",
     "express": "~5.0.0-alpha.2",
     "fs-extra": "~0.28.0",
     "js-yaml": "~3.6.0",
