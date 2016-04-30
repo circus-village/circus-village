@@ -4,7 +4,7 @@
 
 #### Astromassage - astrology and thai healing touch
 
-Kaypacha and Arno Lhermitte
+Kaypacha and Arno L&#39;Hermitte
 
 This 10 day retreat will unite the astrological correlations to our physical bodies with the wisdom of modern physiotherapy and Thai massage.
 
