@@ -555,7 +555,12 @@ footer > nav:first-child {
 }
 
 .viewer > .previous > a, .viewer > .next > a {
-  opacity: 0.75;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+
+.viewer a:hover {
+  opacity: 1;
 }
 
 .viewer > .previous > a > img, .viewer > .next > a > img {
@@ -650,14 +655,14 @@ footer > nav:first-child {
   top: 1rem;
   right: 1rem;
   color: black;
-  background: white;
+  background: rgba(255,255,255, .3);
   padding: 0 1rem;
   border-radius: 4px;
   transition: background 0.35s ease-in;
 }
 
 .modal a.close[href]:hover {
-  background: rgba(255,255,255, .3);
+  background: white;
 }
 
 .modal a.close[href] img {
