@@ -563,16 +563,28 @@ footer > nav:first-child {
   opacity: 1;
 }
 
-.viewer > .previous > a > img, .viewer > .next > a > img {
+.viewer > .previous > a,
+.viewer > .next > a,
+.viewer > .previous > a > img, 
+.viewer > .next > a > img {
+  display: inline-block;
   width: 32px;
   height: 32px;
 }
 
-.viewer > .previous > a > img {
+.viewer > .previous > a > img, 
+.viewer > .next > a > img {
+  position: relative;
+  display: block;
+  left: 0;
+  top: 0;
+}
+
+.viewer > .previous > a {
   margin-left: 3rem;
 }
 
-.viewer > .next > a > img {
+.viewer > .next > a {
   margin-right: 3rem;
 }
 
