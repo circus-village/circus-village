@@ -544,6 +544,19 @@ footer > nav:first-child {
   font-size: 8rem;
 }
 
+.viewer > .previous > a, .viewer > .next > a {
+  opacity: 0.75;
+}
+
+.viewer > .previous > a > img, .viewer > .next > a > img {
+  width: 32px;
+  height: 32px;
+}
+
+.viewer > .previous img {
+  transform: rotate(180deg);
+}
+
 .viewer .image {
   display: table-cell;
   width: 60%;
