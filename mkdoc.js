@@ -117,7 +117,6 @@ function copy(cb) {
   }
 }
 
-// @task serve run a static web server
 function serve() {
   var app = require('./server');
   app.listen(process.env.PORT || 3000);
@@ -162,6 +161,7 @@ function site(cb) {
   }
 }
 
+// @task js build the client-side javascript
 function js(cb) {
   var browserify = require('browserify');
   var b = browserify(['./lib/main.js'], {paths: ['./node_modules/air/lib']});
@@ -173,6 +173,7 @@ function js(cb) {
   }
 }
 
+// @task gallery build the list of images and dimensions
 function gallery(cb) {
   var pth = 'build/assets/img/gallery/'
     , ExifImage = require('exif')
