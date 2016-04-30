@@ -200,6 +200,7 @@ h1 {
 .menu nav {
   float: right;
   display: inline-block;
+  text-shadow: 1px 1px 1px #000;
   /*padding: .5rem 1rem;*/
 }
 
