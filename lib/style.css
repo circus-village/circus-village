@@ -596,6 +596,12 @@ footer > nav:first-child {
   max-width: 128px;
   border: 1px solid white;
   cursor: pointer;
+  opacity: .75;
+  transition: opacity 0.5s ease-in;
+}
+
+.preview > .images img:hover {
+  opacity: 1;
 }
 
 .preview > .images img:not(:last-child) {
