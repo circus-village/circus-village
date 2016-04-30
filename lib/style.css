@@ -192,9 +192,14 @@ h1 span:nth-child(2) {
   /*opacity: .75;*/
 }
 
-.transparent{
+.transparent {
   /*transition: opacity 0.5s ease;*/
-  opacity: 0;
+  opacity: 0 !important;
+}
+
+.opaque {
+  /*transition: opacity 0.5s ease;*/
+  opacity: 1 !important;
 }
 
 .menu:after {
@@ -541,9 +546,12 @@ footer > nav:first-child {
 .viewer > .previous, .viewer > .next {
   display: table-cell;
   width: 20%;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   font-size: 8rem;
+}
+.viewer > .next {
+  text-align: right;
 }
 
 .viewer > .previous > a, .viewer > .next > a {
@@ -553,6 +561,14 @@ footer > nav:first-child {
 .viewer > .previous > a > img, .viewer > .next > a > img {
   width: 32px;
   height: 32px;
+}
+
+.viewer > .previous > a > img {
+  margin-left: 3rem;
+}
+
+.viewer > .next > a > img {
+  margin-right: 3rem;
 }
 
 .viewer > .previous img {
@@ -577,6 +593,8 @@ footer > nav:first-child {
   display: inline-block;
   position: relative;
   z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
 
 .preview {
