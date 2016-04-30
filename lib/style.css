@@ -610,11 +610,11 @@ footer > nav:first-child {
   max-height: 128px;
   border: 1px solid white;
   cursor: pointer;
-  opacity: .75;
+  opacity: .5;
   transition: opacity 0.5s ease-in;
 }
 
-.preview > .images img:hover {
+.preview > .images img:hover, .preview > .images .selected {
   opacity: 1;
 }
 
