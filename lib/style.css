@@ -555,8 +555,10 @@ footer > nav:first-child {
 }
 
 .viewer > .previous > a, .viewer > .next > a {
+  position: relative;
   opacity: 0.5;
   transition: opacity 0.5s ease;
+  top: -16px;
 }
 
 .viewer a:hover {
@@ -577,7 +579,6 @@ footer > nav:first-child {
   position: relative;
   display: block;
   left: 0;
-  top: 0;
 }
 
 .viewer > .previous > a {
