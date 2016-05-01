@@ -540,7 +540,6 @@ footer > nav:first-child {
   display: table;
   width: 100%;
   height: 100%;
-  padding-bottom: 160px;
 }
 
 .viewer > .previous, .viewer > .next {
@@ -608,7 +607,6 @@ footer > nav:first-child {
 
 .vignette {
   display: inline-block;
-  box-shadow: inset 0px 0px 45px 45px rgba(0,0,0,0.9);
 }
 
 .viewer .image img {
@@ -620,7 +618,7 @@ footer > nav:first-child {
 }
 
 .preview {
-  display: block;
+  display: none;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -759,12 +757,28 @@ footer > nav:first-child {
 
 }
 
-@media(min-height: 480px) {
+@media(min-height: 481px) {
+
+  /* show image thumbnail preview */
+  .viewer {
+    padding-bottom: 160px;
+  }
+  .preview {
+    display: block;
+  }
+
   /* show large style close icon in gallery */
   .modal a.close[href] img {
     vertical-align: middle;
     display: inline-block;
     margin-top: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (min-height: 641px) {
+  /* show vignette */
+  .vignette {
+    box-shadow: inset 0px 0px 45px 45px rgba(0,0,0,0.9);
   }
 }
 
