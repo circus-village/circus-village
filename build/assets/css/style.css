@@ -655,7 +655,7 @@ footer > nav:first-child {
   opacity: 1;
 }
 
-.preview > .images img:not(:last-child) {
+.preview > .images a:not(:last-child) {
   margin-right: 1rem;
 }
 
