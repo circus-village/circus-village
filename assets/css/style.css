@@ -453,9 +453,8 @@ h3 {
   font-size: 2rem;
 }
 
-
-.info > .accomodation > div > p > img {
-  width: 260px;
+.info > .accomodation > div > p > a > img {
+  width: 258px;
   margin-bottom: 1rem;
   box-shadow: none;
 }
