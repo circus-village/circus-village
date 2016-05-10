@@ -87,7 +87,7 @@ function site(cb) {
     sync();
   }
 
-  var stream = mk.doc('doc/events.md')
+  var stream = mk.doc('doc/events.html')
     .pipe(mk.page(page))
     .pipe(mk.out({type: 'html'}))
     .pipe(mk.dest('build/index.html'))

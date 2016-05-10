@@ -9,7 +9,7 @@ function events(cb) {
     , list = [];
 
   function build() {
-    var output = 'doc/events.md'
+    var output = 'doc/events.html'
       , stream
       , sorted = list.sort(function(a, b) {
           a = a.start;
