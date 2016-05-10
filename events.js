@@ -60,10 +60,14 @@ function events(cb) {
 
       // parse the YAML
       yaml.safeLoadAll(yml, function(doc) {
-        var start
-          , end;
-        start = moment(doc.start, 'DD/MM/YYYY');
-        end = moment(doc.end, 'DD/MM/YYYY');
+        var start = moment(doc.start, 'DD/MM/YYYY')
+          , end = moment(doc.end, 'DD/MM/YYYY')
+          , fmt = 'MMMM Do'
+          , title = start.format(fmt)
+          + ' to ' + end.format(fmt) + ' ' + end.format('YYYY');
+
+        // prepend h3 heading
+        contents = '### ' + title + '\n\n' + contents;
 
         // add wrapper `event` div
         contents = '<div class="event" data-start="'

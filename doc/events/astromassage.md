@@ -3,8 +3,6 @@ start: 22/11/2016
 end: 01/12/2016
 ---
 
-### November 22nd to December 1st 2016
-
 #### Astromassage - astrology and thai healing touch
 
 Kaypacha and Arno L&#39;Hermitte
