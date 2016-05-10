@@ -4,6 +4,7 @@
   "description": "Circus village static website",
   "author": "muji <noop@xpm.io>",
   "license": "MIT",
+  "private": true,
   "repository":{
     "type": "git",
     "url": "https://github.com/tmpfs/circus-village.git"
