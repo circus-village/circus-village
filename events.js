@@ -1,5 +1,6 @@
 var moment = require('moment')
   , path = require('path')
+  , yaml = require('js-yaml')
   , fs = require('fs-extra');
 
 // @task events build the events (order by date desc)
@@ -46,22 +47,39 @@ function events(cb) {
       }
 
       contents = '' + contents;
-      var start
-        , end;
 
-      contents.replace(/data-start="([^"]+)"\s+data-end="([^"]+)"/, 
-        function(all, begin, finish) {
-          start = begin;
-          end = finish;
-        }
-      )
+      //contents.replace(/data-start="([^"]+)"\s+data-end="([^"]+)"/, 
+        //function(all, begin, finish) {
+          //start = begin;
+          //end = finish;
+        //}
+      //)
 
-      start = moment(start, 'DD/MM/YYYY');
-      end = moment(end, 'DD/MM/YYYY');
+      var fm = /^---\s+([^\-]+)\s+---\n\n(.*)$/m
+        , yml;
 
-      list.push({file: file, start: start, end: end, contents: contents});
+      contents = contents.replace(fm, function(match, yaml, body) {
+        yml = yaml;
+        return body;
+      })
 
-      next();
+      yaml.safeLoadAll(yml, function(doc) {
+        var start
+          , end;
+        start = moment(doc.start, 'DD/MM/YYYY');
+        end = moment(doc.end, 'DD/MM/YYYY');
+
+        contents = '<div class="event" data-start="'
+          + start.valueOf()
+          + '" data-end="'
+          + end.valueOf() 
+          + '">\n\n'
+          + contents + '\n</div>\n'
+
+        list.push({file: file, start: start, end: end, contents: contents});
+
+        next();
+      });
     })
   }
 
