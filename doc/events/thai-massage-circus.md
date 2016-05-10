@@ -1,3 +1,8 @@
+---
+start: 06/02/2017
+end: 03/03/2017
+---
+
 <div class="event" data-start="06/02/2017" data-end="03/03/2017">
 
 ### February 6th to 3rd March 2017
