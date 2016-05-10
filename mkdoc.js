@@ -23,7 +23,7 @@ function sync(/*cb*/) {
   });
 
   // watch css files
-  chokidar.watch('lib/*.css', {ignored: /[\/\\]\./})
+  chokidar.watch(['lib/*.css', 'lib/events.js'], {ignored: /[\/\\]\./})
     .on('change', function() {
       copy();
     });
@@ -48,6 +48,7 @@ function sync(/*cb*/) {
 // @task copy static files to the build directory
 function copy(cb) {
   fs.copySync('lib/style.css', 'build/assets/css/style.css');
+  fs.copySync('lib/events.js', 'build/assets/js/events.js');
   if(cb) {
     cb();
   }

@@ -42,6 +42,10 @@ function events(cb) {
       return build();
     }
 
+    if(!/\.md$/.test(file)) {
+      return next(); 
+    }
+
     fs.readFile(path.join(source, file), function(err, contents) {
       if(err) {
         return cb(err); 
