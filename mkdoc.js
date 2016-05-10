@@ -3,7 +3,7 @@ var mk = require('mktask')
   , bs
   , fs = require('fs-extra');
 
-// @task events build the events (order by date desc)
+// @task events build the events list
 events = require('./events');
 
 function sync(/*cb*/) {

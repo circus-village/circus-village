@@ -3,7 +3,6 @@ var moment = require('moment')
   , yaml = require('js-yaml')
   , fs = require('fs-extra');
 
-// @task events build the events (order by date desc)
 function events(cb) {
   var source = 'doc/events'
     , files = fs.readdirSync(source)
@@ -37,10 +36,12 @@ function events(cb) {
     if(err) {
       return cb(err);
     } 
+
     var file = files.shift();
     if(!file) {
       return build();
     }
+
     fs.readFile(path.join(source, file), function(err, contents) {
       if(err) {
         return cb(err); 
@@ -48,27 +49,23 @@ function events(cb) {
 
       contents = '' + contents;
 
-      //contents.replace(/data-start="([^"]+)"\s+data-end="([^"]+)"/, 
-        //function(all, begin, finish) {
-          //start = begin;
-          //end = finish;
-        //}
-      //)
-
       var fm = /^---\s+([^\-]+)\s+---\n\n(.*)$/m
         , yml;
 
+      // extract YAML frontmatter
       contents = contents.replace(fm, function(match, yaml, body) {
         yml = yaml;
         return body;
       })
 
+      // parse the YAML
       yaml.safeLoadAll(yml, function(doc) {
         var start
           , end;
         start = moment(doc.start, 'DD/MM/YYYY');
         end = moment(doc.end, 'DD/MM/YYYY');
 
+        // add wrapper `event` div
         contents = '<div class="event" data-start="'
           + start.valueOf()
           + '" data-end="'
@@ -76,6 +73,7 @@ function events(cb) {
           + '">\n\n'
           + contents + '\n</div>\n'
 
+        // add to the list for sorting
         list.push({file: file, start: start, end: end, contents: contents});
 
         next();
