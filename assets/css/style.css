@@ -136,6 +136,10 @@ header.welcome .slide {
   background-image: url(../img/background.jpg);
 }
 
+#past {
+  display: none;
+}
+
 .menu, .leader, .play-pause {
   opacity: 1;
   transition: opacity 0.5s ease;
