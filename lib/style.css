@@ -136,8 +136,18 @@ header.welcome .slide {
   background-image: url(../img/background.jpg);
 }
 
+/* past events are not shown unless they exist */
 #past {
   display: none;
+}
+
+#past > .event {
+  opacity: 0.75;
+}
+
+/* no links for past events */
+#past > .event > ul {
+  pointer-events: none;
 }
 
 .menu, .leader, .play-pause {
@@ -325,7 +335,7 @@ a[href^="mailto"]:after {
   /*margin-top: 4rem;*/
 }
 
-.event hr {
+hr {
   border: 0;
   margin: 2rem 0;
   height: 1px;
