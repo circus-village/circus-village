@@ -4,9 +4,6 @@ coverage
 target
 /doc/events.md
 /lib/gallery.json
-/build/index.html
-/build/assets/css
-/build/assets/js
 *.zip
 *.log
 *.bak
