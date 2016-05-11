@@ -27,6 +27,13 @@ function Application() {
   this.leader = $('.leader');
   this.controls = $('.controls');
   this.links = $('a[href^="#"]');
+  this.info = $('.accomodation > div');
+
+  this.info.on('click', function(e) {
+    var el = $(e.currentTarget)
+      , href = $(el.find('a[href]').get(0)).attr('href');
+    document.location.hash = href;
+  })
 }
 
 var proto = Application.prototype;
