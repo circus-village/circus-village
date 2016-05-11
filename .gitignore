@@ -2,7 +2,8 @@
 node_modules
 coverage
 target
-/doc/events.md
+/ref
+/doc/events.html
 /lib/gallery.json
 *.zip
 *.log
