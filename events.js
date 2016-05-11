@@ -46,24 +46,22 @@ function events(cb) {
       return next(); 
     }
 
-    fs.readFile(path.join(source, file), function(err, contents) {
+    file = path.join(source, file);
+
+    fs.readFile(file, function(err, contents) {
       if(err) {
         return cb(err); 
       }
 
       contents = '' + contents;
 
-      var fm = /^---\s+([^\-]+)\s+---\n\n(.*)$/m
-        , yml;
-
-      // extract YAML frontmatter
-      contents = contents.replace(fm, function(match, yaml, body) {
-        yml = yaml;
-        return body;
-      })
+      var yml = '' + fs.readFileSync(file.replace(/\.md$/, '.yml'));
 
       // parse the YAML
       yaml.safeLoadAll(yml, function(doc) {
+        if(!doc) {
+          return; 
+        }
         var start = moment(doc.start, 'DD/MM/YYYY')
           , end = moment(doc.end, 'DD/MM/YYYY')
           , fmt = 'MMMM Do'

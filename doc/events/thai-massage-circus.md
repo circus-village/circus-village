@@ -1,8 +1,3 @@
----
-start: 06/02/2017
-end: 03/03/2017
----
-
 #### Thai Massage Circus - 10 year anniversary!
 
 Arno L&#39;Hermitte and friends 

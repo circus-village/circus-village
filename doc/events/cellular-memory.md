@@ -1,8 +1,3 @@
----
-start: 04/03/2017
-end: 11/03/2017
----
-
 #### Transformation Cellular Memory
 
 Don Hanson
