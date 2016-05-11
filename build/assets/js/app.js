@@ -29,6 +29,7 @@ function Application() {
   this.links = $('a[href^="#"]');
   this.info = $('.accomodation > div');
 
+  // make the entire info div click to the gallery image
   this.info.on('click', function(e) {
     var el = $(e.currentTarget)
       , href = $(el.find('a[href]').get(0)).attr('href');
