@@ -21,6 +21,6 @@
     "moment": "~2.13.0"
   },
   "scripts": {
-    "pages": "git subtree push --prefix build origin gh-pages"
+    "pages": "mk site && git subtree push --prefix build origin gh-pages"
   }
 }
