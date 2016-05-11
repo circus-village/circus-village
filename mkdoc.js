@@ -118,14 +118,28 @@ function site(cb) {
 
 // @task js build the client-side javascript
 function js(cb) {
-  var browserify = require('browserify');
-  var b = browserify(['./lib/main.js'], {paths: ['./node_modules/air/lib']});
-  var bundle = b.bundle();
-  var stream = bundle
-    .pipe(fs.createWriteStream('build/assets/js/app.js'));
-  if(cb) {
-    stream.on('finish', cb);
+  var browserify = require('browserify')
+    , b = browserify(
+        ['./lib/main.js'], {paths: ['./node_modules/air/lib']})
+    , bundle = b.bundle()
+    , output = 'build/assets/js/app.js'
+    , stream;
+
+  stream = bundle
+    .pipe(fs.createWriteStream(output));
+
+  function done() {
+    var uglify = require('uglifyjs')
+      , result = uglify.minify(output);
+
+    fs.writeFileSync(output, result.code);
+
+    if(cb) {
+      cb(); 
+    }
   }
+
+  stream.once('finish', done);
 }
 
 // @task gallery build the list of images and dimensions

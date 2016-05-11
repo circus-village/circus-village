@@ -18,7 +18,8 @@
     "express": "~5.0.0-alpha.2",
     "fs-extra": "~0.28.0",
     "js-yaml": "~3.6.0",
-    "moment": "~2.13.0"
+    "moment": "~2.13.0",
+    "uglifyjs": "2.4.10"
   },
   "scripts": {
     "pages": "mk site && git subtree push --prefix build origin gh-pages"
