@@ -34,7 +34,7 @@ function sync(/*cb*/) {
   });
 
   // watch css files
-  chokidar.watch('lib/*.css', {ignored: /[\/\\]\./})
+  chokidar.watch('css/*.css', {ignored: /[\/\\]\./})
     .on('change', function() {
       css();
     });

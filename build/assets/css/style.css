@@ -486,6 +486,11 @@ h3 {
   padding: 1rem;
   margin-bottom: 2rem;
   box-shadow: 1px 1px 6px 0px #839496;
+  cursor: pointer;
+}
+
+.info > .accomodation > div:hover {
+  border-color: #268bd2;
 }
 
 .info > .accomodation > div span {
