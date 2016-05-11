@@ -18,7 +18,8 @@
     "express": "~5.0.0-alpha.2",
     "fs-extra": "~0.28.0",
     "js-yaml": "~3.6.0",
-    "moment": "~2.13.0"
+    "moment": "~2.13.0",
+    "stylus": "0.53.0"
   },
   "scripts": {
     "pages": "mk site && git subtree push --prefix build origin gh-pages"

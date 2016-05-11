@@ -6,6 +6,17 @@ var mk = require('mktask')
 // @task events build the events list
 events = require('./events');
 
+// @task css build the css file
+function css(cb) {
+  var exec = require('child_process').execSync
+    , cmd = 'cat css/reset.css css/fonts.css css/icons.css css/main.css'
+        + ' > build/assets/css/style.css';
+  exec(cmd);
+  if(cb) {
+    cb(); 
+  }
+}
+
 function sync(/*cb*/) {
   var chokidar = require('chokidar');
   bs = require('browser-sync').create();
@@ -23,7 +34,13 @@ function sync(/*cb*/) {
   });
 
   // watch css files
-  chokidar.watch(['lib/*.css', 'lib/events.js'], {ignored: /[\/\\]\./})
+  chokidar.watch('lib/*.css', {ignored: /[\/\\]\./})
+    .on('change', function() {
+      css();
+    });
+
+  // copy events re-order client-side js
+  chokidar.watch('lib/events.js', {ignored: /[\/\\]\./})
     .on('change', function() {
       copy();
     });
@@ -47,7 +64,7 @@ function sync(/*cb*/) {
 
 // @task copy static files to the build directory
 function copy(cb) {
-  fs.copySync('lib/style.css', 'build/assets/css/style.css');
+  //fs.copySync('lib/style.css', 'build/assets/css/style.css');
   fs.copySync('lib/events.js', 'build/assets/js/events.js');
   if(cb) {
     cb();
@@ -160,9 +177,10 @@ function gallery(cb) {
   next();
 }
 
+mk.task(css);
 mk.task(events);
 mk.task(copy);
-mk.task([events, copy, js], site);
+mk.task([css, events, copy, js], site);
 mk.task(sync);
 mk.task(js);
 mk.task(gallery);
