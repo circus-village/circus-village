@@ -68,7 +68,8 @@ function events(cb) {
           , end = moment(doc.end, 'DD/MM/YYYY')
           , fmt = 'MMMM Do'
           , title = start.format(fmt)
-          + ' to ' + end.format(fmt) + ' ' + end.format('YYYY');
+              + ' to ' + end.format(fmt)
+              + ' ' + end.format('YYYY');
 
         // prepend h3 heading
         contents = '### ' + title + '\n\n' + contents;

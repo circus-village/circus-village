@@ -67,8 +67,9 @@ function site(cb) {
       title: 'Circus Village',
       meta: {
         description: 'Circus Village: School of Freedom',
-        keywords: 'circus village, circus, village, retreat, massage, '
-          + 'waterfall, river, kuang si, freedom'
+        keywords: 
+          'circus village, circus, village, retreat, massage, '
+          + 'waterfall, river, kuang si, freedom, school of freedom'
       },
       header: 'doc/header.html',
       footer: 'doc/footer.html',
@@ -118,9 +119,9 @@ function gallery(cb) {
     , list = [];
 
   function done() {
+    // NOTE: useful to inspect the image data
     console.error(list) 
-    fs.writeFileSync(
-      'lib/gallery.json', JSON.stringify(list, undefined, 2));
+    fs.writeFileSync('lib/gallery.json', JSON.stringify(list, undefined, 2));
     cb();
   }
 
