@@ -900,6 +900,9 @@ footer > nav:first-child {
 }
 
 @media (max-width: 360px) {
+  .leader {
+    top: 14rem;
+  }
   .menu + p {
     margin-top: 14rem;
   }
