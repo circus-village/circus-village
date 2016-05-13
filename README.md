@@ -10,6 +10,8 @@ Static website for the circus village.
   - [Javascript](#javascript)
   - [Styles](#styles)
   - [Readme](#readme)
+  - [Lint](#lint)
+  - [Pages](#pages)
 - [License](#license)
 
 ---
@@ -56,6 +58,22 @@ Build [README.md](https://github.com/tmpfs/circus-village/blob/master/README.md)
 
 ```shell
 mk readme
+```
+
+### Lint
+
+Lint the javascript source:
+
+```shell
+npm run lint
+```
+
+### Pages
+
+Publish the website build to a `gh-pages` branch:
+
+```shell
+npm run pages
 ```
 
 ## License

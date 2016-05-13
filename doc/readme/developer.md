@@ -41,3 +41,19 @@ Build [README.md](/README.md):
 ```shell
 mk readme
 ```
+
+### Lint
+
+Lint the javascript source:
+
+```shell
+npm run lint
+```
+
+### Pages
+
+Publish the website build to a `gh-pages` branch:
+
+```shell
+npm run pages
+```
