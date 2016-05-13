@@ -56,25 +56,12 @@ function sync(/*cb*/) {
     });
 }
 
-// @task ejs build the events script
-function ejs(cb) {
-  var source = 'lib/events.js'
-    , output = 'build/assets/js/events.js'
-    , uglify = require('uglifyjs')
-    , result = uglify.minify(source);
-
-  fs.writeFileSync(output, result.code);
-  if(cb) {
-    cb(); 
-  }
-}
-
 function serve() {
   var app = require('./server');
   app.listen(process.env.PORT || 3000);
 }
 
-// @task site build the site
+// @task site build the website
 function site(cb) {
 
   var page = 
@@ -114,7 +101,7 @@ function site(cb) {
   }
 }
 
-// @task js build the client-side javascript
+// @task js build the client-side javascript application
 function js(cb) {
   var browserify = require('browserify')
     , b = browserify(
@@ -140,7 +127,33 @@ function js(cb) {
   stream.once('finish', done);
 }
 
-// @task gallery build the list of images and dimensions
+// @task ejs build the events javascript
+function ejs(cb) {
+  var source = 'lib/events.js'
+    , output = 'build/assets/js/events.js'
+    , uglify = require('uglifyjs')
+    , result = uglify.minify(source);
+
+  fs.writeFileSync(output, result.code);
+  if(cb) {
+    cb(); 
+  }
+}
+
+// @task slides build the list of slideshow images
+function slides(cb) {
+  var pth = 'build/assets/img/slides/'
+    , files = fs.readdirSync(pth);
+
+  fs.writeFileSync(
+    'lib/slides.json', JSON.stringify(files, undefined, 2));
+
+  if(cb) {
+    cb(); 
+  }
+}
+
+// @task gallery build the list of photo gallery images and dimensions
 function gallery(cb) {
   var pth = 'build/assets/img/gallery/'
     , ExifImage = require('exif')
@@ -205,6 +218,7 @@ function readme(cb) {
 
 mk.task(css);
 mk.task(events);
+mk.task(slides);
 mk.task(gallery);
 mk.task(ejs);
 mk.task([ejs], js);
