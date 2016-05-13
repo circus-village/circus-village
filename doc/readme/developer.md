@@ -10,12 +10,26 @@ Build the static website:
 mk site
 ```
 
+Build and serve the website with [browsersync][] enabled:
+
+```shell
+mk site --sync --dev
+```
+
 ### Events
 
 Build the intermediary `events.html` file from the [markdown event documents](/doc/events):
 
 ```shell
 mk events
+```
+
+### Gallery
+
+Build the `gallery.json` file describing the gallery images:
+
+```shell
+mk gallery
 ```
 
 ### Javascript

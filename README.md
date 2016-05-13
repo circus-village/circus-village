@@ -7,6 +7,7 @@ Static website for the circus village.
 - [Developer](#developer)
   - [Site](#site)
   - [Events](#events)
+  - [Gallery](#gallery)
   - [Javascript](#javascript)
   - [Styles](#styles)
   - [Readme](#readme)
@@ -28,12 +29,26 @@ Build the static website:
 mk site
 ```
 
+Build and serve the website with [browsersync][] enabled:
+
+```shell
+mk site --sync --dev
+```
+
 ### Events
 
 Build the intermediary `events.html` file from the [markdown event documents](https://github.com/tmpfs/circus-village/blob/master/doc/events):
 
 ```shell
 mk events
+```
+
+### Gallery
+
+Build the `gallery.json` file describing the gallery images:
+
+```shell
+mk gallery
 ```
 
 ### Javascript
@@ -84,6 +99,7 @@ MIT
 
 Created by [mkdoc](https://github.com/mkdoc/mkdoc) on May 13, 2016
 
+[browsersync]: http://browsersync.io
 [jshint]: http://jshint.com
 [jscs]: http://jscs.info
 
