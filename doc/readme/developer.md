@@ -40,6 +40,14 @@ Build the client-side javascript:
 mk js
 ```
 
+### Events Javascript
+
+Build the client-side javascript that orders the event elements based on the event dates:
+
+```shell
+mk ejs
+```
+
 ### Styles
 
 Build the stylesheet:

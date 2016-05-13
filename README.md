@@ -9,6 +9,7 @@ Static website for the circus village.
   - [Events](#events)
   - [Gallery](#gallery)
   - [Javascript](#javascript)
+  - [Events Javascript](#events-javascript)
   - [Styles](#styles)
   - [Readme](#readme)
   - [Lint](#lint)
@@ -57,6 +58,14 @@ Build the client-side javascript:
 
 ```shell
 mk js
+```
+
+### Events Javascript
+
+Build the client-side javascript that orders the event elements based on the event dates:
+
+```shell
+mk ejs
 ```
 
 ### Styles

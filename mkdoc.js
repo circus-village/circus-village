@@ -39,12 +39,6 @@ function sync(/*cb*/) {
       css();
     });
 
-  // copy events re-order client-side js
-  chokidar.watch('lib/events.js', {ignored: /[\/\\]\./})
-    .on('change', function() {
-      copy();
-    });
-
   // watch js files
   chokidar.watch('lib/*.js', {ignored: /[\/\\]\./})
     .on('change', function() {
@@ -62,8 +56,8 @@ function sync(/*cb*/) {
     });
 }
 
-// @task copy static files to the build directory
-function copy(cb) {
+// @task ejs build the events script
+function ejs(cb) {
   var source = 'lib/events.js'
     , output = 'build/assets/js/events.js'
     , uglify = require('uglifyjs')
@@ -156,7 +150,8 @@ function gallery(cb) {
   function done() {
     // NOTE: useful to inspect the image data
     console.error(list) 
-    fs.writeFileSync('lib/gallery.json', JSON.stringify(list, undefined, 2));
+    fs.writeFileSync(
+      'lib/gallery.json', JSON.stringify(list, undefined, 2));
     cb();
   }
 
@@ -210,10 +205,8 @@ function readme(cb) {
 
 mk.task(css);
 mk.task(events);
-mk.task(copy);
-mk.task([css, events, copy, js], site);
-mk.task(sync);
-mk.task(js);
 mk.task(gallery);
+mk.task(ejs);
+mk.task([ejs], js);
+mk.task([events, css, js], site);
 mk.task(readme);
-
