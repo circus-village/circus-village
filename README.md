@@ -18,7 +18,7 @@ Static website for the circus village.
 
 ## Developer
 
-Install dependencies (`npm i`) and the mkdoc tools globally `npm i -g mkdoc` then you can see the available tasks with `mk --tasks`.
+Install dependencies (`npm i`) and the mkdoc tools globally (`npm i -g mkdoc`) then you can see the available tasks with `mk --tasks`.
 
 ### Site
 
