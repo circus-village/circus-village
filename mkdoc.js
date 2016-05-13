@@ -64,10 +64,14 @@ function sync(/*cb*/) {
 
 // @task copy static files to the build directory
 function copy(cb) {
-  //fs.copySync('lib/style.css', 'build/assets/css/style.css');
-  fs.copySync('lib/events.js', 'build/assets/js/events.js');
+  var source = 'lib/events.js'
+    , output = 'build/assets/js/events.js'
+    , uglify = require('uglifyjs')
+    , result = uglify.minify(source);
+
+  fs.writeFileSync(output, result.code);
   if(cb) {
-    cb();
+    cb(); 
   }
 }
 
