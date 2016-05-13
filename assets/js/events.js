@@ -1,1 +1,21 @@
-!function(){var t,e,l=Date.now(),n=0,r=document.querySelectorAll("#past")[0],a=document.querySelectorAll(".events > .event");for(t=0;t<a.length;t++)e=parseInt(a[t].getAttribute("data-start")),l>e&&(r.appendChild(a[t]),n++);n&&r.setAttribute("style","display: block;")}();
+(function() {
+  var i
+    , now = Date.now()
+    , moved = 0
+    , start
+    , past = document.querySelectorAll('#past')[0]
+    , events = document.querySelectorAll('.events > .event');
+
+  for(i = 0;i < events.length;i++) {
+    start = parseInt(events[i].getAttribute('data-start'));
+    if(start < now) {
+      past.appendChild(events[i]);
+      moved++;
+    }
+  }
+
+  if(moved) {
+    past.setAttribute('style', 'display: block;') 
+  }
+
+})();
