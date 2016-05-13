@@ -16,6 +16,8 @@ Build and serve the website with [browsersync][] enabled:
 mk site --sync --dev
 ```
 
+When the `--dev` flag is used files are not minified.
+
 ### Events
 
 Build the intermediary `events.html` file from the [markdown event documents](/doc/events):
