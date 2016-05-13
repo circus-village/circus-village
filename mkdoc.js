@@ -108,16 +108,19 @@ function js(cb) {
         ['./lib/main.js'], {paths: ['./node_modules/air/lib']})
     , bundle = b.bundle()
     , output = 'build/assets/js/app.js'
+    , dev = this.args && this.args.flags.dev
     , stream;
 
   stream = bundle
     .pipe(fs.createWriteStream(output));
 
   function done() {
-    var uglify = require('uglifyjs')
-      , result = uglify.minify(output);
+    if(!dev) {
+      var uglify = require('uglifyjs')
+        , result = uglify.minify(output);
 
-    fs.writeFileSync(output, result.code);
+      fs.writeFileSync(output, result.code);
+    }
 
     if(cb) {
       cb(); 
@@ -131,10 +134,17 @@ function js(cb) {
 function ejs(cb) {
   var source = 'lib/events.js'
     , output = 'build/assets/js/events.js'
+    , dev = this.args && this.args.flags.dev
     , uglify = require('uglifyjs')
-    , result = uglify.minify(source);
+    , result;
 
-  fs.writeFileSync(output, result.code);
+  if(!dev) {
+    result = uglify.minify(source);
+    fs.writeFileSync(output, result.code);
+  }else{
+    fs.copySync(source, output);
+  }
+
   if(cb) {
     cb(); 
   }
