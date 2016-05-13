@@ -191,6 +191,19 @@ function gallery(cb) {
   next();
 }
 
+// @task readme build the readme
+function readme(cb) {
+  mk.doc('doc/readme.md')
+    .pipe(mk.pi())
+    .pipe(mk.ref())
+    .pipe(mk.abs())
+    .pipe(mk.msg())
+    .pipe(mk.toc({depth: 2}))
+    .pipe(mk.out())
+    .pipe(mk.dest('README.md'))
+    .on('finish', cb);
+}
+
 mk.task(css);
 mk.task(events);
 mk.task(copy);
@@ -198,3 +211,5 @@ mk.task([css, events, copy, js], site);
 mk.task(sync);
 mk.task(js);
 mk.task(gallery);
+mk.task(readme);
+

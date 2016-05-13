@@ -14,7 +14,7 @@
     "excludeFiles": [
       "doc/readme",
       "node_modules",
-      "lib/linkdownc.js",
+      "build/assets/js/app.js",
       "coverage",
       "target"
     ]

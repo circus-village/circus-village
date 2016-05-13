@@ -22,6 +22,7 @@
     "uglifyjs": "2.4.10"
   },
   "scripts": {
+    "lint": "jshint . && jscs .",
     "pages": "mk site && git subtree push --prefix build origin gh-pages"
   }
 }
