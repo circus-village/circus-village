@@ -8,6 +8,7 @@ Static website for the circus village.
   - [Site](#site)
   - [Events](#events)
   - [Gallery](#gallery)
+  - [Slides](#slides)
   - [Javascript](#javascript)
   - [Events Javascript](#events-javascript)
   - [Styles](#styles)
@@ -50,6 +51,14 @@ Build the `gallery.json` file describing the gallery images:
 
 ```shell
 mk gallery
+```
+
+### Slides
+
+Build the `slides.json` list of slideshow images:
+
+```shell
+mk slides
 ```
 
 ### Javascript

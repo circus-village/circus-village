@@ -32,6 +32,14 @@ Build the `gallery.json` file describing the gallery images:
 mk gallery
 ```
 
+### Slides
+
+Build the `slides.json` list of slideshow images:
+
+```shell
+mk slides
+```
+
 ### Javascript
 
 Build the client-side javascript:
