@@ -9,9 +9,21 @@ events = require('./events');
 // @task css build the css file
 function css(cb) {
   var exec = require('child_process').execSync
+    , output = 'build/assets/css/style.css'
+    , dev = this.args && this.args.flags.dev
     , cmd = 'cat css/reset.css css/fonts.css css/icons.css css/main.css'
-        + ' > build/assets/css/style.css';
+        + ' > ' + output;
   exec(cmd);
+
+  if(!dev) {
+    var cssnano = require('cssnano')
+      , contents = '' + fs.readFileSync(output);
+
+    cssnano.process(contents, {safe: true}).then(function (result) {
+      fs.writeFileSync(output, result.css);
+    });
+  }
+
   if(cb) {
     cb(); 
   }
