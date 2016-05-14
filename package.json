@@ -24,6 +24,7 @@
   },
   "scripts": {
     "lint": "jshint . && jscs .",
-    "pages": "mk site && git subtree push --prefix build origin gh-pages"
+    "pages": "mk site && git subtree push --prefix build origin gh-pages",
+    "deploy": "mk site && git subtree push --prefix build deploy master"
   }
 }
