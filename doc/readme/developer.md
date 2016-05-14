@@ -89,3 +89,17 @@ Publish the website build to a `gh-pages` branch:
 ```shell
 npm run pages
 ```
+
+### Deploy
+
+Publish the website for the `master` branch for `circus-village.github.io`:
+
+```shell
+npm run deploy
+```
+
+Must have a `deploy` remote configured:
+
+```shell
+git remote add deploy git@github.com:circus-village/circus-village.github.io.git
+```

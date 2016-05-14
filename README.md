@@ -15,6 +15,7 @@ Static website for the circus village.
   - [Readme](#readme)
   - [Lint](#lint)
   - [Pages](#pages)
+  - [Deploy](#deploy)
 - [License](#license)
 
 ---
@@ -111,13 +112,27 @@ Publish the website build to a `gh-pages` branch:
 npm run pages
 ```
 
+### Deploy
+
+Publish the website for the `master` branch for `circus-village.github.io`:
+
+```shell
+npm run deploy
+```
+
+Must have a `deploy` remote configured:
+
+```shell
+git remote add deploy git@github.com:circus-village/circus-village.github.io.git
+```
+
 ## License
 
 MIT
 
 ---
 
-Created by [mkdoc](https://github.com/mkdoc/mkdoc) on May 13, 2016
+Created by [mkdoc](https://github.com/mkdoc/mkdoc) on May 14, 2016
 
 [browsersync]: http://browsersync.io
 [jshint]: http://jshint.com
