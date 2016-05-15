@@ -25,6 +25,6 @@
   "scripts": {
     "lint": "jshint . && jscs .",
     "pages": "mk site && git subtree push --prefix build origin gh-pages",
-    "deploy": "mk site && git subtree push --prefix build deploy master"
+    "deploy": "mk site && mk cname && git subtree push --prefix build deploy master"
   }
 }

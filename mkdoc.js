@@ -225,6 +225,11 @@ function gallery(cb) {
   next();
 }
 
+// @task cname build the CNAME file
+function cname() {
+  fs.writeFileSync('build/CNAME', 'circus-village.com\n');
+}
+
 // @task readme build the readme
 function readme(cb) {
   mk.doc('doc/readme.md')
@@ -245,4 +250,5 @@ mk.task(gallery);
 mk.task(ejs);
 mk.task([ejs], js);
 mk.task([events, css, js], site);
+mk.task(cname);
 mk.task(readme);
