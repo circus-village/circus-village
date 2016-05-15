@@ -24,7 +24,7 @@
   },
   "scripts": {
     "lint": "jshint . && jscs .",
-    "prepages": "git branch -d gh-pages; git checkout -b gh-pages && git rm -f --cached build/CNAME",
+    "prepages": "git branch -D gh-pages; git checkout -b gh-pages && git rm -f --cached build/CNAME",
     "pages": "mk site && git subtree push --prefix build origin gh-pages",
     "postpages": "mk cname && git add build/CNAME && git checkout develop",
     "deploy": "mk site && git subtree push --prefix build deploy master"
