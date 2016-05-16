@@ -79,6 +79,9 @@ function site(cb) {
   var page = 
     {
       title: 'Circus Village',
+
+//http-equiv="X-UA-Compatible" content="IE=10"
+//meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" /"
       meta: {
         description: 'Circus Village: School of Freedom',
         keywords: 
