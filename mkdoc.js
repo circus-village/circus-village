@@ -80,13 +80,15 @@ function site(cb) {
     {
       title: 'Circus Village',
 
-//http-equiv="X-UA-Compatible" content="IE=10"
-//meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" /"
       meta: {
         description: 'Circus Village: School of Freedom',
         keywords: 
           'circus village, circus, village, retreat, massage, '
           + 'waterfall, river, kuang si, freedom, school of freedom'
+      },
+      equiv: {
+        // fight the IE11 border-radius bug
+        'X-UA-Compatible': 'IE=10' 
       },
       header: 'doc/header.html',
       footer: 'doc/footer.html',
