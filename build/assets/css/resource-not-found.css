@@ -39,10 +39,8 @@ body {
 }
 
 body > a {
-  display: table-cell;
-  vertical-align: middle;
+  padding-left: 2.5rem;
   width: 100%;
-  text-align: center;
 }
 
 span.info {
@@ -58,6 +56,8 @@ span.logo {
   text-transform: uppercase;
   display: inline-block;
   white-space: nowrap;
+  max-width: 280px;
+  overflow: hidden;
 }
 
 span.logo span:first-child {
