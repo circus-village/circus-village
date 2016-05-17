@@ -102,7 +102,7 @@ function site(cb) {
       },
       equiv: {
         // fight the IE11 border-radius bug
-        'X-UA-Compatible': 'IE=10' 
+        'X-UA-Compatible': 'IE=edge' 
       },
       header: 'doc/header.html',
       footer: 'doc/footer.html',
