@@ -82,14 +82,6 @@ Lint the javascript source:
 npm run lint
 ```
 
-### Pages
-
-Publish the website build to a `gh-pages` branch:
-
-```shell
-npm run pages
-```
-
 ### Deploy
 
 Publish the website for the `master` branch for `circus-village.github.io`:
