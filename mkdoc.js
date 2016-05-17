@@ -6,6 +6,20 @@ var mk = require('mktask')
 // @task events build the events list
 events = require('./events');
 
+// @task missing build the 404.html file
+function missing(cb) {
+  var exec = require('child_process').execSync
+    , output = 'build/404.html'
+    , cmd = 'cat doc/404.yml doc/404.html'
+        + ' > ' + output;
+  exec(cmd);
+
+  if(cb) {
+    cb(); 
+  }
+}
+
+
 // @task css build the css file
 function css(cb) {
   var exec = require('child_process').execSync
@@ -248,12 +262,13 @@ function readme(cb) {
     .on('finish', cb);
 }
 
+mk.task(missing);
 mk.task(css);
 mk.task(events);
 mk.task(slides);
 mk.task(gallery);
 mk.task(ejs);
 mk.task([ejs], js);
-mk.task([events, css, js], site);
+mk.task([missing, events, css, js], site);
 mk.task(cname);
 mk.task(readme);
