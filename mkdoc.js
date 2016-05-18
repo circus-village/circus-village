@@ -194,11 +194,75 @@ function slides(cb) {
   }
 }
 
+// @task thumbnails build the photo gallery thumbnails images
+function thumbnails(cb) {
+  var pth = 'build/assets/img/gallery/'
+    , output = 'build/assets/img/thumbnails/'
+    , bitmap = require('imagejs')
+    , sizeof = require('image-size')
+    , width = 128
+    , height
+    , files = fs.readdirSync(pth);
+
+  function done() {
+    cb();
+  }
+
+  function next(err) {
+    if(err) {
+      return cb(err); 
+    } 
+
+    var file
+      , dimensions
+      , bmp
+      , thumb
+      , w
+      , h
+      , name = files.shift();
+
+    if(!name) {
+      return done(); 
+    }
+
+    file = pth + name;
+
+    try {
+      dimensions = sizeof(file);
+      w = dimensions.width;
+      h = dimensions.height;
+
+      height = Math.round(h * (width / w));
+
+      bmp  = new bitmap.Bitmap();
+      bmp.readFile(file)
+        .then(function() {
+          thumb = bmp.resize(
+            {
+              width: width,
+              height: height,
+              //algorithm: 'nearestNeighbor'
+              algorithm: 'bicubicInterpolation'
+            });
+          console.error('%s %sx%s -> %sx%s', name, w, h, width, height);
+          thumb.writeFile(output + name).then(next);
+        });
+    }catch(e) {
+      return cb(e);
+    }
+  }
+
+  next();
+}
+
 // @task gallery build the list of photo gallery images and dimensions
 function gallery(cb) {
   var pth = 'build/assets/img/gallery/'
+    , thumbs = 'build/assets/img/thumbnails/'
     , sizeof = require('image-size')
     , files = fs.readdirSync(pth)
+    , item
+    , stat
     , list = [];
 
   function done() {
@@ -226,8 +290,21 @@ function gallery(cb) {
 
     try {
       dimensions = sizeof(file);
-      list.push(
-        {name: name, width: dimensions.width, height: dimensions.height});
+      item = {
+        name: name,
+        width: dimensions.width,
+        height: dimensions.height
+      }
+
+      try {
+        stat = fs.statSync(thumbs + name);
+      }catch(e){}
+
+      if(stat && stat.isFile()) {
+        item.thumbnail = name; 
+      }
+
+      list.push(item);
       next();
     }catch(e) {
       return cb(e);
@@ -259,6 +336,7 @@ mk.task(missing);
 mk.task(css);
 mk.task(events);
 mk.task(slides);
+mk.task(thumbnails);
 mk.task(gallery);
 mk.task(ejs);
 mk.task([ejs], js);
