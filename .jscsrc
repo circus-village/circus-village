@@ -15,6 +15,7 @@
       "doc/readme",
       "node_modules",
       "build/assets/js/app.js",
+      "build/assets/js/events.js",
       "coverage",
       "target"
     ]

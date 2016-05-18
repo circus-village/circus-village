@@ -2,3 +2,4 @@ node_modules
 coverage
 target
 build/assets/js/app.js
+build/assets/js/events.js

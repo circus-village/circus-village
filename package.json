@@ -24,7 +24,7 @@
     "uglifyjs": "2.4.10"
   },
   "scripts": {
-    "lint": "jshint . && jscs .",
+    "lint": "jshint lib && jscs lib",
     "deploy": "mk site && git subtree push --prefix build deploy master"
   }
 }
