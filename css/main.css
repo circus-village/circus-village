@@ -76,16 +76,16 @@ header.welcome .slide {
 }
 
 /* past events are not shown unless they exist */
-#past {
+.past {
   display: none;
 }
 
-#past > .event {
+.past > .event {
   opacity: 0.75;
 }
 
 /* no links for past events */
-#past > .event > ul {
+.past > .event > ul {
   pointer-events: none;
 }
 
