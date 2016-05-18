@@ -278,7 +278,7 @@ p {
   border-radius: 6px;
 }
 
-.event p img, .info p img {
+.event p img {
   float: left;
   margin-right: 2rem;
 }
