@@ -8,13 +8,13 @@ Static website for the circus village.
   - [Site](#site)
   - [Events](#events)
   - [Gallery](#gallery)
+  - [Thumbnail](#thumbnail)
   - [Slides](#slides)
   - [Javascript](#javascript)
   - [Events Javascript](#events-javascript)
   - [Styles](#styles)
   - [Readme](#readme)
   - [Lint](#lint)
-  - [Pages](#pages)
   - [Deploy](#deploy)
 - [License](#license)
 
@@ -54,6 +54,14 @@ Build the `gallery.json` file describing the gallery images:
 
 ```shell
 mk gallery
+```
+
+### Thumbnail
+
+Generate thumbnails for the photo gallery images:
+
+```shell
+mk thumbnails
 ```
 
 ### Slides
@@ -104,14 +112,6 @@ Lint the javascript source:
 npm run lint
 ```
 
-### Pages
-
-Publish the website build to a `gh-pages` branch:
-
-```shell
-npm run pages
-```
-
 ### Deploy
 
 Publish the website for the `master` branch for `circus-village.github.io`:
@@ -132,7 +132,7 @@ MIT
 
 ---
 
-Created by [mkdoc](https://github.com/mkdoc/mkdoc) on May 14, 2016
+Created by [mkdoc](https://github.com/mkdoc/mkdoc) on May 18, 2016
 
 [browsersync]: http://browsersync.io
 [jshint]: http://jshint.com

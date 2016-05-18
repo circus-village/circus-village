@@ -34,6 +34,14 @@ Build the `gallery.json` file describing the gallery images:
 mk gallery
 ```
 
+### Thumbnail
+
+Generate thumbnails for the photo gallery images:
+
+```shell
+mk thumbnails
+```
+
 ### Slides
 
 Build the `slides.json` list of slideshow images:
