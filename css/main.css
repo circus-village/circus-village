@@ -278,7 +278,7 @@ p {
   border-radius: 6px;
 }
 
-.event p img {
+.event p img, .info p img {
   float: left;
   margin-right: 2rem;
 }
@@ -445,19 +445,19 @@ footer {
   position: relative;
   z-index: 2;
   padding-bottom: 2rem;
-  padding-top: 4rem;
-  min-height: 12rem;
+  /*padding-top: 4rem;*/
+  /*min-height: 12rem;*/
 }
 
-footer > nav {
+footer > ul {
   display: inline-block;
-  /*padding-top: 1rem;*/
-  margin-bottom: 1rem;
-}
-
-footer > nav:first-child {
+  margin: 0 2rem 1rem 2rem;
   border-bottom: 1px solid black;
   padding-bottom: 1rem;
+}
+
+footer > ul > li {
+  display: inline-block;
 }
 
 .modal, .overlay {
@@ -737,6 +737,15 @@ footer > nav:first-child {
     content: ' | ';
   }
 }
+
+/* inline list items for event links */
+@media(min-width: 480px) {
+
+  footer > ul > li:not(:last-child):after {
+    content: ' | ';
+  }
+}
+
 
 /* logo type for larger screens */
 @media (min-width: 481px) {
