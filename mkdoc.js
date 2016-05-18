@@ -197,7 +197,7 @@ function slides(cb) {
 // @task gallery build the list of photo gallery images and dimensions
 function gallery(cb) {
   var pth = 'build/assets/img/gallery/'
-    , ExifImage = require('exif')
+    , sizeof = require('image-size')
     , files = fs.readdirSync(pth)
     , list = [];
 
@@ -215,6 +215,7 @@ function gallery(cb) {
     } 
 
     var file
+      , dimensions
       , name = files.shift();
 
     if(!name) {
@@ -224,18 +225,10 @@ function gallery(cb) {
     file = pth + name;
 
     try {
-      new ExifImage({image : file}, function (err, data) {
-        if(err) {
-          return cb(err);
-        }else{
-          list.push({
-            name: name, 
-            width: data.exif.ExifImageWidth,
-            height: data.exif.ExifImageHeight})
-        }
-
-        next();
-      });
+      dimensions = sizeof(file);
+      list.push(
+        {name: name, width: dimensions.width, height: dimensions.height});
+      next();
     }catch(e) {
       return cb(e);
     }
