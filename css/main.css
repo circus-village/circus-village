@@ -747,7 +747,14 @@ footer > ul > li {
 
 
 /* logo type for larger screens */
-@media (min-width: 481px) {
+@media (min-width: 600px) {
+
+  nav.main {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
   h1 {
     font-size: 2.6rem;
   }
@@ -778,7 +785,7 @@ footer > ul > li {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
 
   .menu + p {
     font-size: 1.9rem;
