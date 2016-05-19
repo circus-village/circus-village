@@ -119,6 +119,8 @@ function site(cb) {
     };
 
   if(this.args && this.args.flags.sync) {
+    // enable browsersync
+    page.footer.push('doc/sync.html'); 
     serve();
     sync();
   }
