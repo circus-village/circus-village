@@ -104,8 +104,9 @@ function site(cb) {
         // fight the IE11 border-radius bug
         'X-UA-Compatible': 'IE=edge' 
       },
-      header: 'doc/header.html',
-      footer: 'doc/footer.html',
+      header: ['doc/header.html'],
+      footer: ['doc/footer.html'],
+      markdown: true,
       app: ['assets/js/app.js'],
       style: [
         'assets/css/style.css'
