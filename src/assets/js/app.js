@@ -1,5 +1,5 @@
 var $ = require('air'),
-  HOME = '#!',
+  HOME = '',
   PHOTOS = '#photos'
 
 $.plugin([
@@ -75,7 +75,7 @@ function navigate (href, replace) {
     hash = document.location.hash
 
   // handle home navigation
-  if (href === HOME) {
+  if (href === HOME || id === 'top') {
     this.gallery.close()
     if (this.body.scrollTop !== 0) {
       this.scrollTo(0)

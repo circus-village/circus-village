@@ -38,6 +38,27 @@ extends(src='layout.sgr')
             h3 Accommodation
             p Our beautiful traditional Laos houses and bungalows are on the river with private natural pools. Bungalows and huts have shared bathrooms and toilets. We provide bedding for everyone.
 
+
+            .accomodation
+              #teak-house.teak-house
+                span Teak House
+                p
+                  a(href="#teak-house")
+                    img(src="assets/img/info/teak-house.jpg" alt="Teak House")
+                  | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
+              #jungle-bungalow.jungle-bungalow
+                span Jungle Bungalow
+                p
+                  a(href="#jungle-bungalow")
+                    img(src="assets/img/info/jungle-bungalow.jpg" alt="Jungle Bungalow")
+                  | Each bamboo bungalow has a river terrace and electricity.
+              #bamboo-hut.bamboo-hut
+                span Bamboo Hut
+                p
+                  a(href="#bamboo-hut")
+                    img(src="assets/img/info/bamboo-hut.jpg" alt="Bamboo Hut")
+                  | Bamboo huts are off-grid; ideal for an individual to retreat.
+
           #photos
 
           #getting-there.getting-there

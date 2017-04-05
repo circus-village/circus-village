@@ -108,6 +108,9 @@ header .slide
   background-position: center bottom
   background-size: cover
 
+header.welcome
+  min-height: 100%
+
 header.welcome .slide
   background-image: url(/assets/img/background.jpg)
 
@@ -629,6 +632,7 @@ footer > ul > li
 @media(min-width: 480px)
   footer > ul > li:not(:last-child):after
     content: ' | '
+    white-space: pre
 
 
 /* logo type for larger screens */
