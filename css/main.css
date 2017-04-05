@@ -176,7 +176,7 @@ h1 span:nth-child(2) {
   height: 4px;
   background: black;
   pointer-events: none;
-  opacity: 0; 
+  opacity: 0;
 }
 
 .controls {
@@ -509,14 +509,14 @@ footer > ul > li {
 
 .viewer > .previous > a,
 .viewer > .next > a,
-.viewer > .previous > a > img, 
+.viewer > .previous > a > img,
 .viewer > .next > a > img {
   display: inline-block;
   width: 32px;
   height: 32px;
 }
 
-.viewer > .previous > a > img, 
+.viewer > .previous > a > img,
 .viewer > .next > a > img {
   position: relative;
   display: block;
@@ -617,6 +617,11 @@ footer > ul > li {
   padding: 0 1rem;
   border-radius: 4px;
   transition: background 0.35s ease-in;
+}
+
+.modal a.close[href] img {
+  max-width: 53px;
+  max-height: 53px;
 }
 
 .modal a.close[href]:hover {
