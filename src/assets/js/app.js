@@ -114,6 +114,8 @@ function onScroll () {
 }
 
 function resize (e, el) {
+
+/*
   var max = 726,
     height,
     h = viewport().height
@@ -136,6 +138,7 @@ function resize (e, el) {
   }
 
   $('header').css({height: height})
+*/
 }
 
 function start () {
