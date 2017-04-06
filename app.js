@@ -4,7 +4,7 @@ const parse = require('makestatic-preset-parse')
 module.exports = {
 
   // indicate the deployment URL
-  url: 'http://circus-village.com',
+  url: 'https://circus-village.com',
 
   // change these to your preference
   input: 'src',
