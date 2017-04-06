@@ -2280,6 +2280,12 @@ makestatic-parse-js@^1.0.27:
     acorn "^4.0.4"
     escodegen "^1.8.1"
 
+makestatic-permalink@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/makestatic-permalink/-/makestatic-permalink-1.0.2.tgz#0660bb64c3f1509a596f197f00c6e324e1c18c97"
+  dependencies:
+    slugify "^1.1.0"
+
 makestatic-preset-optimize@^1.1.8:
   version "1.1.8"
   resolved "https://registry.yarnpkg.com/makestatic-preset-optimize/-/makestatic-preset-optimize-1.1.8.tgz#dd05c42e453546d3548f140d1bd69e4e3e22a626"
@@ -3469,6 +3475,10 @@ signal-exit@^3.0.0:
 slash@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-1.0.0.tgz#c41f2f6c39fc16d1cd17ad4b5d896114ae470d55"
+
+slugify@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/slugify/-/slugify-1.1.0.tgz#7e5b0938d52b5efab1878247ef0f6a4f05db7ee0"
 
 source-loader@^0.2.0:
   version "0.2.0"
