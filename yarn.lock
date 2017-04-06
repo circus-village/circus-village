@@ -2736,10 +2736,6 @@ makestatic-sitemap@^1.2.2:
   dependencies:
     entities "^1.1.1"
 
-makestatic-verify-anchor@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/makestatic-verify-anchor/-/makestatic-verify-anchor-1.0.8.tgz#ec479f754a34e27d2ee3559dafa49c2dd7b1428c"
-
 makestatic-verify-id@^1.0.9:
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/makestatic-verify-id/-/makestatic-verify-id-1.0.9.tgz#374d3cf6f73302b66cf72e6cd40869944b1c8652"
