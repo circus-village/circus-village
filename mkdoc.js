@@ -279,9 +279,9 @@ function gallery (cb) {
       return cb(err)
     }
 
-    var file,
-      dimensions,
-      name = files.shift()
+    var file
+    var dimensions
+    var name = files.shift()
 
     if (!name) {
       return done()
@@ -292,11 +292,13 @@ function gallery (cb) {
     try {
       dimensions = sizeof(file)
       item = {
-        name: name,
-        width: dimensions.width,
-        height: dimensions.height
+        pid: name.replace(/\.jpg$/, ''),
+        src: '/assets/img/gallery/' + name,
+        w: dimensions.width,
+        h: dimensions.height
       }
 
+      /*
       try {
         stat = fs.statSync(thumbs + name)
       } catch (e) {}
@@ -304,6 +306,7 @@ function gallery (cb) {
       if (stat && stat.isFile()) {
         item.thumbnail = name
       }
+      */
 
       list.push(item)
       next()

@@ -74,10 +74,13 @@ function preload (index) {
     scope.show(url)
   })
 
-  var items = this.controls.find('li'),
-    item = $(items.get(index))
+  var items = this.controls.find('li')
+  var item = $(items.get(index))
+
   items.removeClass('selected')
-  item.addClass('selected')
+  if (item) {
+    item.addClass('selected')
+  }
 
   $('body').append(el)
 }

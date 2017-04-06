@@ -1,6 +1,6 @@
-var $ = require('air'),
-  HOME = '',
-  PHOTOS = '#photos'
+var $ = require('air')
+var HOME = ''
+var PHOTOS = '#photos'
 
 $.plugin([
   require('air/append'),
@@ -18,8 +18,8 @@ $.plugin([
 ])
 
 function Application () {
-  var Slideshow = require('./slideshow'),
-    Gallery = require('./image-gallery')
+  var Slideshow = require('./slideshow')
+  var Gallery = require('./image-gallery')
   this.slideshow = new Slideshow({resize: resize})
   this.gallery = new Gallery(
     {viewport: viewport, navigate: this.navigate.bind(this)})
@@ -33,8 +33,8 @@ function Application () {
 
   // make the entire info div click to the gallery image
   this.info.on('click', function (e) {
-    var el = $(e.currentTarget),
-      href = $(el.find('a[href]').get(0)).attr('href')
+    var el = $(e.currentTarget)
+    var href = $(el.find('a[href]').get(0)).attr('href')
     document.location.hash = href
   })
 }
@@ -52,8 +52,8 @@ function viewport () {
 function onNavigate (e) {
   e.preventDefault()
 
-  var el = $(e.currentTarget),
-    href = el.attr('href')
+  var el = $(e.currentTarget)
+  var href = el.attr('href')
 
   this.navigate(href)
 
@@ -70,9 +70,9 @@ function navigate (href, replace) {
     return
   }
 
-  var id = href.replace(/^#/, ''),
-    target = $('[id="' + id + '"]'),
-    hash = document.location.hash
+  var id = href.replace(/^#/, '')
+  var target = $('[id="' + id + '"]')
+  var hash = document.location.hash
 
   // handle home navigation
   if (href === HOME || id === 'top') {
@@ -82,8 +82,8 @@ function navigate (href, replace) {
     }
   // handle navigation to `id` on the page
   } else if (target.length) {
-    var rect = target.get(0).getBoundingClientRect(),
-      val = this.body.scrollTop + rect.top
+    var rect = target.get(0).getBoundingClientRect()
+    var val = this.body.scrollTop + rect.top
 
     this.gallery.close()
     this.scrollTo(val)
@@ -214,20 +214,19 @@ function easeOutQuad (iteration, start, diff, total) {
 }
 
 function scrollTo (val) {
-  var start = this.body.scrollTop,
-    body = this.body,
-    iteration = 0,
-    duration = 50,
-    diff = val > start ? start - val : val - start,
-    requestAnimationFrame = window.requestAnimationFrame ||
+  var start = this.body.scrollTop
+  var body = this.body
+  var iteration = 0
+  var duration = 50
+  var diff = val > start ? start - val : val - start
+  var requestAnimationFrame = window.requestAnimationFrame ||
                               window.mozRequestAnimationFrame ||
                               window.webkitRequestAnimationFrame ||
                               window.msRequestAnimationFrame
 
   // catch when fully scrolled to the bottom and attempting to
   // scroll to last section - which is already visible
-  if (body.offsetHeight + body.scrollTop >= body.scrollHeight
-    && (start < val)) {
+  if (body.offsetHeight + body.scrollTop >= body.scrollHeight && (start < val)) {
     return
   }
 

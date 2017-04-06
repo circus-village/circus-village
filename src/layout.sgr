@@ -20,6 +20,8 @@ html(lang='en')
 
     block(name='stylesheets')
       link(rel='stylesheet' href='/assets/css/style.css')
+      link(rel="stylesheet" href="/assets/css/photoswipe.css")
+      link(rel="stylesheet" href="/assets/css/default-skin/default-skin.css")
 
   body(id="top")
     block(name='header')

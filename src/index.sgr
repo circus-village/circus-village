@@ -19,7 +19,6 @@ extends(src='layout.sgr')
         div.slide
         div.controls
         div.progress
-
       .content
         .container
           p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
@@ -114,8 +113,6 @@ extends(src='layout.sgr')
                     img(src="/assets/img/info/bamboo-hut.jpg" alt="Bamboo Hut")
                   | Bamboo huts are off-grid; ideal for an individual to retreat.
 
-          #photos
-
           #getting-there.getting-there
             h2 Getting There
             div.banner
@@ -142,3 +139,5 @@ extends(src='layout.sgr')
           br
           nav
             a(href="#top" title="Back to top") Back to Top
+
+    include(src='_gallery.sgr')

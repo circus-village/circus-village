@@ -1,134 +1,134 @@
 [
   {
-    "name": "bamboo-hut.jpg",
-    "width": 640,
-    "height": 640,
-    "thumbnail": "bamboo-hut.jpg"
+    "pid": "bamboo-hut",
+    "src": "/assets/img/gallery/bamboo-hut.jpg",
+    "w": 640,
+    "h": 640
   },
   {
-    "name": "bathing.jpg",
-    "width": 1068,
-    "height": 712,
-    "thumbnail": "bathing.jpg"
+    "pid": "bathing",
+    "src": "/assets/img/gallery/bathing.jpg",
+    "w": 1068,
+    "h": 712
   },
   {
-    "name": "bonfire-decorations.jpg",
-    "width": 2048,
-    "height": 1366,
-    "thumbnail": "bonfire-decorations.jpg"
+    "pid": "bonfire-decorations",
+    "src": "/assets/img/gallery/bonfire-decorations.jpg",
+    "w": 2048,
+    "h": 1366
   },
   {
-    "name": "bonfire-night.jpg",
-    "width": 960,
-    "height": 640,
-    "thumbnail": "bonfire-night.jpg"
+    "pid": "bonfire-night",
+    "src": "/assets/img/gallery/bonfire-night.jpg",
+    "w": 960,
+    "h": 640
   },
   {
-    "name": "bridge.jpg",
-    "width": 2048,
-    "height": 1366,
-    "thumbnail": "bridge.jpg"
+    "pid": "bridge",
+    "src": "/assets/img/gallery/bridge.jpg",
+    "w": 2048,
+    "h": 1366
   },
   {
-    "name": "danny-paradise.jpg",
-    "width": 960,
-    "height": 720,
-    "thumbnail": "danny-paradise.jpg"
+    "pid": "danny-paradise",
+    "src": "/assets/img/gallery/danny-paradise.jpg",
+    "w": 960,
+    "h": 720
   },
   {
-    "name": "food.jpg",
-    "width": 960,
-    "height": 640,
-    "thumbnail": "food.jpg"
+    "pid": "food",
+    "src": "/assets/img/gallery/food.jpg",
+    "w": 960,
+    "h": 640
   },
   {
-    "name": "garden.jpg",
-    "width": 2048,
-    "height": 1366,
-    "thumbnail": "garden.jpg"
+    "pid": "garden",
+    "src": "/assets/img/gallery/garden.jpg",
+    "w": 2048,
+    "h": 1366
   },
   {
-    "name": "jungle-bungalow.jpg",
-    "width": 720,
-    "height": 960,
-    "thumbnail": "jungle-bungalow.jpg"
+    "pid": "jungle-bungalow",
+    "src": "/assets/img/gallery/jungle-bungalow.jpg",
+    "w": 720,
+    "h": 960
   },
   {
-    "name": "massage-class.jpg",
-    "width": 960,
-    "height": 720,
-    "thumbnail": "massage-class.jpg"
+    "pid": "massage-class",
+    "src": "/assets/img/gallery/massage-class.jpg",
+    "w": 960,
+    "h": 720
   },
   {
-    "name": "misty-bamboo-hut.jpg",
-    "width": 3264,
-    "height": 2448,
-    "thumbnail": "misty-bamboo-hut.jpg"
+    "pid": "misty-bamboo-hut",
+    "src": "/assets/img/gallery/misty-bamboo-hut.jpg",
+    "w": 3264,
+    "h": 2448
   },
   {
-    "name": "natural-pool.jpg",
-    "width": 960,
-    "height": 720,
-    "thumbnail": "natural-pool.jpg"
+    "pid": "natural-pool",
+    "src": "/assets/img/gallery/natural-pool.jpg",
+    "w": 960,
+    "h": 720
   },
   {
-    "name": "pizza-oven.jpg",
-    "width": 1088,
-    "height": 726,
-    "thumbnail": "pizza-oven.jpg"
+    "pid": "pizza-oven",
+    "src": "/assets/img/gallery/pizza-oven.jpg",
+    "w": 1088,
+    "h": 726
   },
   {
-    "name": "pizza.jpg",
-    "width": 2048,
-    "height": 1366,
-    "thumbnail": "pizza.jpg"
+    "pid": "pizza",
+    "src": "/assets/img/gallery/pizza.jpg",
+    "w": 2048,
+    "h": 1366
   },
   {
-    "name": "pond.jpg",
-    "width": 1088,
-    "height": 726,
-    "thumbnail": "pond.jpg"
+    "pid": "pond",
+    "src": "/assets/img/gallery/pond.jpg",
+    "w": 1088,
+    "h": 726
   },
   {
-    "name": "pool-tube.jpg",
-    "width": 1088,
-    "height": 726,
-    "thumbnail": "pool-tube.jpg"
+    "pid": "pool-tube",
+    "src": "/assets/img/gallery/pool-tube.jpg",
+    "w": 1088,
+    "h": 726
   },
   {
-    "name": "sauna.jpg",
-    "width": 2048,
-    "height": 1366,
-    "thumbnail": "sauna.jpg"
+    "pid": "sauna",
+    "src": "/assets/img/gallery/sauna.jpg",
+    "w": 2048,
+    "h": 1366
   },
   {
-    "name": "shower-toilets.jpg",
-    "width": 1200,
-    "height": 900,
-    "thumbnail": "shower-toilets.jpg"
+    "pid": "shower-toilets",
+    "src": "/assets/img/gallery/shower-toilets.jpg",
+    "w": 1200,
+    "h": 900
   },
   {
-    "name": "teak-house-front.jpg",
-    "width": 2448,
-    "height": 2448,
-    "thumbnail": "teak-house-front.jpg"
+    "pid": "teak-house-front",
+    "src": "/assets/img/gallery/teak-house-front.jpg",
+    "w": 2448,
+    "h": 2448
   },
   {
-    "name": "teak-house-interior.jpg",
-    "width": 2048,
-    "height": 1366,
-    "thumbnail": "teak-house-interior.jpg"
+    "pid": "teak-house-interior",
+    "src": "/assets/img/gallery/teak-house-interior.jpg",
+    "w": 2048,
+    "h": 1366
   },
   {
-    "name": "teak-house.jpg",
-    "width": 1200,
-    "height": 900,
-    "thumbnail": "teak-house.jpg"
+    "pid": "teak-house",
+    "src": "/assets/img/gallery/teak-house.jpg",
+    "w": 1200,
+    "h": 900
   },
   {
-    "name": "waterfalls.jpg",
-    "width": 1088,
-    "height": 726,
-    "thumbnail": "waterfalls.jpg"
+    "pid": "waterfalls",
+    "src": "/assets/img/gallery/waterfalls.jpg",
+    "w": 1088,
+    "h": 726
   }
 ]
