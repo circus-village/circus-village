@@ -38,17 +38,18 @@ class Slideshow {
 
   toggle () {
     !this.playing ? this.start() : this.stop()
-    this.playing = !this.playing
   }
 
   start () {
     this.swipe.restart()
     this.wrap.show()
+    this.playing = true
   }
 
   stop () {
     this.swipe.stop()
     this.wrap.hide()
+    this.playing = false
   }
 }
 
