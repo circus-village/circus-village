@@ -42,7 +42,6 @@ function Application () {
   this.body = $('body').get(0)
   this.menu = $('.menu')
   this.leader = $('.leader')
-  // this.links = $('a[href^="#"]')
   this.info = $('.accomodation > div')
 
   // make the entire info div click to the gallery image
@@ -112,19 +111,6 @@ function start () {
   // allow animated scroll on page load
   this.body.scrollTop = 0
 
-  // gallery navigation on hash change
-  //
-  /*
-  function onHashChange (e) {
-    e.preventDefault()
-    e.stopImmediatePropagation()
-    var hash = document.location.hash
-    if (hash) {
-      this.navigate(hash)
-    }
-  }
-  */
-
   // check for hash on load
   function onLoad (e) {
     e.preventDefault()
@@ -154,15 +140,9 @@ function start () {
 
   this.scroller.start()
 
-  // this.links.on('click', onNavigate.bind(this))
-
   $(window).on('blur', blur.bind(this))
   $(window).on('focus', focus.bind(this))
-
-  // this.onHashChange = onHashChange.bind(this)
-
   $(window).on('load', onLoad.bind(this))
-  $(window).on('hashchange', this.onHashChange)
 }
 
 proto.start = start
