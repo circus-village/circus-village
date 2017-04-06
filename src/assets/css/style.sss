@@ -1,3 +1,6 @@
+:root
+  --green: #4d5a00
+
 @font-face
   font-family: 'fontello'
   src: url('/assets/font/fontello.eot?24825423')
@@ -58,6 +61,9 @@ a[href^="mailto"]:before, a[href^="http"]:before
 
   -webkit-font-smoothing: antialiased
   -moz-osx-font-smoothing: grayscale
+
+.event ul, footer ul
+  color: var(--green)
 
 .event a[href^="mailto"]:before
   content: '\e800'
@@ -254,13 +260,13 @@ p:after
 
 a[href]:not(.top)
   text-decoration: none
-  color: #4d5a00
+  color: var(--green)
   border-bottom: 1px solid
   border-color: transparent
   transition: all 0.5s ease
 
 a[href]:not(.top):hover
-  color: #4d5a00
+  color: var(--green)
   border-color: inherit
 
 h2 a, h3 a, h4 a
@@ -387,7 +393,7 @@ footer
 footer > ul
   display: inline-block
   margin: 0 2rem 1rem 2rem
-  border-bottom: 1px solid black
+  border-bottom: 1px solid currentColor
   padding-bottom: 1rem
 
 footer > ul > li
