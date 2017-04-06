@@ -79,8 +79,6 @@ extends(src='layout.sgr')
                     a(href='https://www.donhanson.com') Information
                   li
                     a(href='mailto:pearson_cathy@hotmail.com' title='pearson_cathy@hotmail.com') Registration
-                  li
-                    a(href='http://www.transformingcellularmemory.com')Transforming Cellular Memory
 
           #information.info
             h2 Information
