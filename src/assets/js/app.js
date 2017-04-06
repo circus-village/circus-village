@@ -69,6 +69,7 @@ class Application {
   }
 
   navigate (href) {
+    console.log('navigate: ' + href)
     const id = href.replace(/^#/, '')
     const target = id ? $('#' + id) : null
     const hash = document.location.hash
@@ -119,13 +120,14 @@ class Application {
 
   onScroll () {
     var val = this.body.scrollTop
+    console.log('scroll: ' + val)
     if (!val) {
       this.menu.removeClass('transparent')
       this.leader.removeClass('transparent')
     } else {
+      this.slideshow.stop()
       this.menu.addClass('transparent')
       this.leader.addClass('transparent')
-      this.slideshow.stop()
     }
   }
 

@@ -8,7 +8,6 @@ class Scroll {
 
   constructor (options = {}) {
     this.top = document.querySelectorAll('[href="#top"]')
-
     this.links = document.querySelectorAll(
       'nav.main a:not([href^="#photos"]), footer a, .permalink[href^="#"]')
     this.scrollTop = this.onScrollTop.bind(this)
@@ -70,8 +69,8 @@ class Scroll {
 
   start () {
     for (let i = 0; i < this.top.length; i++) {
-      this.top[i].addEventListener('click', this.scrollTop)
-      this.top[i].addEventListener('touchend', this.scrollTop)
+      this.top[i].addEventListener('click', this.scrollTop, false)
+      this.top[i].addEventListener('touchend', this.scrollTop, false)
     }
     for (let i = 0; i < this.links.length; i++) {
       this.links[i].addEventListener('click', this.scrollToLink, false)

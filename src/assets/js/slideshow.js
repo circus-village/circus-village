@@ -31,7 +31,15 @@ class Slideshow {
       transitionEnd: (index, element) => {}
     })
 
-    document.querySelector('header').addEventListener('click', () => { this.toggle() })
+    const header = document.querySelector('header')
+    const toggle = (e) => {
+      e.stopPropagation()
+      e.preventDefault()
+      this.toggle()
+    }
+
+    header.addEventListener('click', toggle, false)
+    // header.addEventListener('touchend', toggle, false)
 
     this.swipe.stop()
     this.wrap = wrap
