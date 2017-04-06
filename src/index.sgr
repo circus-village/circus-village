@@ -1,141 +1,140 @@
 extends(src='layout.sgr')
   block(name='content')
-    div#scroll
-      div#main
-      div.menu
-        h1
-          span C
-          span ircus
-          span Village
-        nav.main
-          a(href='#events' title='Events') Events
-          a(href='#information' title='Information') Information
-          a(href='#photos' title='Photo Gallery') Photos
-          a(href='#getting-there' title='Getting to the village') Getting There
-          a(href='#contact' title='Get in touch') Contact
-      p.leader
-        span An enchanted private island near the Kuang Si waterfall in Laos where we host events by renowned teachers in an untouched paradise.
-      header.welcome
-        div.slide
-        div.progress
-      .content
-        .container
-          .intro
-            p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
+    div#main
+    div.menu
+      h1
+        span C
+        span ircus
+        span Village
+      nav.main
+        a(href='#events' title='Events') Events
+        a(href='#information' title='Information') Information
+        a(href='#photos' title='Photo Gallery') Photos
+        a(href='#getting-there' title='Getting to the village') Getting There
+        a(href='#contact' title='Get in touch') Contact
+    p.leader
+      span An enchanted private island near the Kuang Si waterfall in Laos where we host events by renowned teachers in an untouched paradise.
+    header.welcome
+      div.slide
+      div.progress
+    .content
+      .container
+        .intro
+          p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
 
-          #events.events
-            h2 Events
-            p After ten years hosting the Thai Massage Circus, the Circus Village is now happy to present more events and great international teachers.
+        .events
+          h2 Events
+          p After ten years hosting the Thai Massage Circus, the Circus Village is now happy to present more events and great international teachers.
 
-            .events
-              .event
-                h3 December 2nd to December 6th 2017
-                h4 Acro Yoga Lunar Immersion
-                p Marc Bauchet and friends
-                //- ![Marc Bauchet](assets/img/teachers/marc-bauchet.jpg)
-                p Waiting for confirmation of acro yoga classes.
-                ul
+          .events
+            .event
+              h3 Acro Yoga Lunar Immersion
+              h4 December 2nd to December 6th 2017
+              p Marc Bauchet and friends
+              //- ![Marc Bauchet](assets/img/teachers/marc-bauchet.jpg)
+              p Waiting for confirmation of acro yoga classes.
+              ul
+                li
+                  a(href='https://www.facebook.com/acromarcopolo') Registration
+            .event
+              h3 Acro Yoga Solar Weekend
+              h4 December 9th to December 10th 2017
+              p Marc Bauchet and friends
+              p Waiting for confirmation of acro yoga classes.
+              ul
+                li
+                  a(href='https://www.facebook.com/acromarcopolo') Registration
+            .event
+              h3 Thai Massage Circus
+              h4 February 4th to March 1st 2018
+              p Arno L'Hermitte and friends
+              p
+                img(src='assets/img/teachers/arno.jpg' alt='arno')
+                | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.</p>
+              ul
+                li
+                  a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
                   li
-                    a(href='https://www.facebook.com/acromarcopolo') Registration
-              .event
-                h3 December 9th to December 10th 2017
-                h4 Acro Yoga Solar Weekend
-                p Marc Bauchet and friends
-                p Waiting for confirmation of acro yoga classes.
-                ul
-                  li
-                    a(href='https://www.facebook.com/acromarcopolo') Registration
-              .event
-                h3 February 4th to March 1st 2018
-                h4 Thai Massage Circus
-                p Arno L'Hermitte and friends
-                p
-                  img(src='assets/img/teachers/arno.jpg' alt='arno')
-                  | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.</p>
-                ul
-                  li
-                    a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
-                    li
-                      a(href='http://www.thaimassagecircus.com') Registration
-              .event
-                h3 March 3rd to March 8th 2018
-                h4 Acro Yoga Immersion
-                p Luka Agreš and friends
-                p Waiting for confirmation of acro yoga classes.
-                ul
-                  li
-                    a(href='https://www.facebook.com/profile.php?id=100008581514226') Registration
-              .event
-                h3 March 8th to March 14th 2018
-                h4 Transformation Cellular Memory
-                 p Don Hanson
-                p
-                  img(src='assets/img/teachers/don-hanson.jpg' alt='don-hanson')
-                  | Don Hanson M.A. is an international teacher, healer and group process facilitator. He has spent over 40 years unraveling his own fear-based belief systems and mind-sets and has awakened a profound ability to bring through powerful healing energies.
-                p These sacred healing energies combine with Don's psychic, intuitive skills and group process experience. The result is an unlocking on a cellular level of all inherited behavior patterns that keep you stuck in a limited level of consciousness and perspective.
-                ul
-                  li
-                    a(href='https://www.donhanson.com') Information
-                  li
-                    a(href='mailto:pearson_cathy@hotmail.com' title='pearson_cathy@hotmail.com') Registration
+                    a(href='http://www.thaimassagecircus.com') Registration
+            .event
+              h3 Acro Yoga Immersion
+              h4 March 3rd to March 8th 2018
+              p Luka Agreš and friends
+              p Waiting for confirmation of acro yoga classes.
+              ul
+                li
+                  a(href='https://www.facebook.com/profile.php?id=100008581514226') Registration
+            .event
+              h3 Transformation Cellular Memory
+              h4 March 8th to March 14th 2018
+              p Don Hanson
+              p
+                img(src='assets/img/teachers/don-hanson.jpg' alt='don-hanson')
+                | Don Hanson M.A. is an international teacher, healer and group process facilitator. He has spent over 40 years unraveling his own fear-based belief systems and mind-sets and has awakened a profound ability to bring through powerful healing energies.
+              p These sacred healing energies combine with Don's psychic, intuitive skills and group process experience. The result is an unlocking on a cellular level of all inherited behavior patterns that keep you stuck in a limited level of consciousness and perspective.
+              ul
+                li
+                  a(href='https://www.donhanson.com') Information
+                li
+                  a(href='mailto:pearson_cathy@hotmail.com' title='pearson_cathy@hotmail.com') Registration
 
-          #information.info
-            h2 Information
-            p The village has a herbal steam sauna next to a river beach, wood fire ovens and a spacious open Shala for group events.
-            p The land is cultivated with an organic garden producing leafy greens and an orchard with saplings and mature fruit trees. Many species of bamboo have been planted to diversify the ecosystem and supply building materials for the environmentally friendly bungalows.
+        .info
+          h2 Information
+          p The village has a herbal steam sauna next to a river beach, wood fire ovens and a spacious open Shala for group events.
+          p The land is cultivated with an organic garden producing leafy greens and an orchard with saplings and mature fruit trees. Many species of bamboo have been planted to diversify the ecosystem and supply building materials for the environmentally friendly bungalows.
 
-            h3 Food
-            p We offer delicious Asian and international food using organic produce from the garden or other local farms where possible. The type of food varies for each event please contact your event organizer for more information.
+          h3 Food
+          p We offer delicious Asian and international food using organic produce from the garden or other local farms where possible. The type of food varies for each event please contact your event organizer for more information.
 
-            h3 Accommodation
-            p Our beautiful traditional Laos houses and bungalows are on the river with private natural pools. Bungalows and huts have shared bathrooms and toilets. We provide bedding for everyone.
+          h3 Accommodation
+          p Our beautiful traditional Laos houses and bungalows are on the river with private natural pools. Bungalows and huts have shared bathrooms and toilets. We provide bedding for everyone.
 
 
-            .accomodation
-              #teak-house.teak-house
-                span Teak House
-                p
-                  a(href='#photos' aria-hidden='true')
-                    img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
-                  | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
-              #jungle-bungalow.jungle-bungalow
-                span Jungle Bungalow
-                p
-                  a(href='#photos' aria-hidden='true')
-                    img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
-                  | Each bamboo bungalow has a river terrace and electricity.
-              #bamboo-hut.bamboo-hut
-                span Bamboo Hut
-                p
-                  a(href='#photos' aria-hidden='true')
-                    img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
-                  | Bamboo huts are off-grid; ideal for an individual to retreat.
+          .accomodation
+            #teak-house.teak-house
+              span Teak House
+              p
+                a(href='#photos' aria-hidden='true')
+                  img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
+                | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
+            #jungle-bungalow.jungle-bungalow
+              span Jungle Bungalow
+              p
+                a(href='#photos' aria-hidden='true')
+                  img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
+                | Each bamboo bungalow has a river terrace and electricity.
+            #bamboo-hut.bamboo-hut
+              span Bamboo Hut
+              p
+                a(href='#photos' aria-hidden='true')
+                  img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
+                | Bamboo huts are off-grid; ideal for an individual to retreat.
 
-          #getting-there.getting-there
-            h2 Getting There
-            div.banner
-            div.section
+        .getting-there
+          h2 Getting There
+          div.banner
+          div.section
 
-              p(mdi) [![satellite map](assets/img/satellite.jpg)](https://www.google.com/maps/@19.7577325,101.9932579,236m/data=!3m1!1e3u)The village is located 15 minutes walk from the extraordinary Kuang Si waterfall national park, 29 kilometres from Luang Prabang, historical capital of Laos.
+            p(mdi) [![satellite map](assets/img/satellite.jpg)](https://www.google.com/maps/@19.7577325,101.9932579,236m/data=!3m1!1e3u)The village is located 15 minutes walk from the extraordinary Kuang Si waterfall national park, 29 kilometres from Luang Prabang, historical capital of Laos.
 
-              p(mdi) [![meeting point](assets/img/meeting-point.jpg)](https://www.google.com/maps/place/Joma+Bakery+Caf%C3%A9/@19.8885404,102.1305129,17z/data=!3m1!4b1!4m2!3m1!1s0x312f2a426fb70085:0xb1ae7742ff2c3baf)You can fly to Luang Prabang international airport. [Air Asia](http://www.airasia.com/) often have cheap flights. On the day of the event the circus trucks will collect you from the meeting point at Joma bakery next to the post office in Luang Prabang.
+            p(mdi) [![meeting point](assets/img/meeting-point.jpg)](https://www.google.com/maps/place/Joma+Bakery+Caf%C3%A9/@19.8885404,102.1305129,17z/data=!3m1!4b1!4m2!3m1!1s0x312f2a426fb70085:0xb1ae7742ff2c3baf)You can fly to Luang Prabang international airport. [Air Asia](http://www.airasia.com/) often have cheap flights. On the day of the event the circus trucks will collect you from the meeting point at Joma bakery next to the post office in Luang Prabang.
 
-          #contact.contact
-            h2 Contact
-            p(mdi) Questions about a specific event should be sent to the event organizer. For other general enquiries email [Arno L&#39;Hermitte](mailto:arnothehermit@hotmail.com 'arnothehermit@hotmail.com').
+        .contact
+          h2 Contact
+          p(mdi) Questions about a specific event should be sent to the event organizer. For other general enquiries email [Arno L&#39;Hermitte](mailto:arnothehermit@hotmail.com 'arnothehermit@hotmail.com').
 
-        footer
-          ul
-            li
-              a(href='#events' title='Events') Events
-            li
-              a(href='#information' title='Information') Information
-            li
-              a(href='#photos' title='Photo Gallery') Photos
-            li
-              a(href='#getting-there' title='Getting to the Circus Village') Getting There
-          br
-          nav
-            a(href='#top' title='Back to top') Back to Top
+      footer
+        ul
+          li
+            a(href='#events' title='Events') Events
+          li
+            a(href='#information' title='Information') Information
+          li
+            a(href='#photos' title='Photo Gallery') Photos
+          li
+            a(href='#getting-there' title='Getting to the Circus Village') Getting There
+        br
+        nav
+          a(href='#top' title='Back to top') Back to Top
 
     include(src='_gallery.sgr')

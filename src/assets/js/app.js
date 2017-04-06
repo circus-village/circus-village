@@ -1,5 +1,7 @@
 /* global history */
 
+import {Scroll} from './scroll'
+
 var $ = require('air')
 var HOME = ''
 var PHOTOS = '#photos'
@@ -22,11 +24,12 @@ $.plugin([
 function Application () {
   var Slideshow = require('./slideshow')
   var Gallery = require('./image-gallery')
+  this.scroller = new Scroll()
   this.slideshow = new Slideshow()
   this.gallery = new Gallery(
     {viewport: viewport, navigate: this.navigate.bind(this)})
 
-  this.body = $('#scroll').get(0)
+  this.body = $('body').get(0)
   this.menu = $('.menu')
   this.leader = $('.leader')
   this.links = $('a[href^="#"]')
@@ -72,22 +75,18 @@ function navigate (href, replace) {
   }
 
   var id = href.replace(/^#/, '')
-  var target = $('[id="' + id + '"]')
+  var target = $('#' + id)
   var hash = document.location.hash
 
   // handle home navigation
   if (href === HOME || id === 'top') {
     this.gallery.close()
     if (this.body.scrollTop !== 0) {
-      this.scrollTo(0)
+      this.scroller.scrollToTop(0)
     }
   // handle navigation to `id` on the page
   } else if (target.length) {
-    var rect = target.get(0).getBoundingClientRect()
-    var val = this.body.scrollTop + rect.top
-
-    this.gallery.close()
-    this.scrollTo(val)
+    this.scroller.scrollToId(id)
   // show photo gallery
   } else if (href === PHOTOS) {
     this.gallery.start(null, hash)
@@ -113,13 +112,13 @@ function onScroll () {
 }
 
 function start () {
-
   var blurPlaying
 
   // allow animated scroll on page load
   this.body.scrollTop = 0
 
   // handle navigation on back button
+  /*
   function onPopState (e) {
     e.preventDefault()
     if (!e.state) {
@@ -128,6 +127,7 @@ function start () {
       // this.navigate(e.state.hash);
     }
   }
+  */
 
   // gallery navigation on hash change
   function onHashChange (e) {
@@ -165,6 +165,8 @@ function start () {
     }
   }
 
+  this.scroller.start()
+
   $(this.body).on('scroll', onScroll.bind(this))
   this.links.on('click', onNavigate.bind(this))
 
@@ -175,9 +177,10 @@ function start () {
 
   $(window).on('load', onLoad.bind(this))
   $(window).on('hashchange', this.onHashChange)
-  $(window).on('popstate', onPopState.bind(this))
+  // $(window).on('popstate', onPopState.bind(this))
 }
 
+/*
 function easeOutQuad (iteration, start, diff, total) {
   return -diff * (iteration /= total) * (iteration - 2) + start
 }
@@ -218,9 +221,10 @@ function scrollTo (val) {
 
   doScroll()
 }
+*/
 
 proto.start = start
-proto.scrollTo = scrollTo
+// proto.scrollTo = scrollTo
 proto.navigate = navigate
 
 module.exports = Application
