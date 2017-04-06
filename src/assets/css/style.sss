@@ -168,8 +168,10 @@ footer ul
 .transparent
   opacity: 0 !important
 
+/*
 .opaque
   opacity: 1 !important
+ */
 
 .menu:after
   content: ""
@@ -191,37 +193,6 @@ footer ul
   background: black
   pointer-events: none
   opacity: 0
-
-.controls
-  position: absolute
-  z-index: 3
-  left: 0
-  right: 0
-  bottom: 1rem
-  text-align: center
-  text-transform: uppercase
-
-.controls > ul
-  display: inline-block
-  padding: .5rem 1rem
-  border-radius: 4px
-  background: rgba(0, 0, 0, .55)
-
-.controls > ul > li
-  cursor: pointer
-  display: inline-block
-  opacity: .5
-  transition: opacity 0.5s ease-out
-
-.controls > ul > li:not(:last-child)
-  margin-right: 1rem
-
-.controls > ul > li:hover, .controls > ul > li.selected
-  opacity: 1
-
-.controls > ul > li img
-  width: 12px
-  height: 12px
 
 .menu nav a[href]
   display: inline-block
@@ -417,154 +388,6 @@ footer > ul
 footer > ul > li
   display: inline-block
 
-.modal, .overlay
-  position: absolute
-  left: 0
-  top: 0
-  right: 0
-  bottom: 0
-
-.modal
-  width: 100%
-  height: 100%
-  z-index: 2000
-  color: white
-  overflow: hidden
-
-.overlay
-  z-index: -1
-
-.viewer
-  display: table
-  width: 100%
-  height: 100%
-
-.viewer > .previous, .viewer > .next
-  display: table-cell
-  width: 10%
-  text-align: left
-  vertical-align: middle
-  font-size: 8rem
-
-.viewer > .next
-  text-align: right
-
-.viewer > .previous > a, .viewer > .next > a
-  position: relative
-  opacity: 0.5
-  transition: opacity 0.5s ease
-  top: -16px
-
-.viewer a:hover
-  opacity: 1
-
-.viewer > .previous > a,
-.viewer > .next > a,
-.viewer > .previous > a > img,
-.viewer > .next > a > img
-  display: inline-block
-  width: 32px
-  height: 32px
-
-.viewer > .previous > a > img,
-.viewer > .next > a > img
-  position: relative
-  display: block
-  left: 0
-
-.viewer > .previous > a
-  margin-left: 3rem
-
-.viewer > .next > a
-  margin-right: 3rem
-
-.viewer > .previous img
-  transform: rotate(180deg)
-
-.viewer .image
-  display: table-cell
-  width: 80%
-  height: 100%
-  overflow: hidden
-  vertical-align: middle
-
-  /* must have inline-block on vignette but do not want bottom margin */
-  font-size: 0px
-  letter-spacing: 0px
-  word-spacing: 0px
-
-.vignette
-  display: inline-block
-
-.viewer .image img
-  display: inline-block
-  position: relative
-  z-index: -1
-  opacity: 0
-  transition: opacity 0.5s ease
-
-.preview
-  display: none
-  position: absolute
-  left: 0
-  bottom: 0
-  width: 100%
-  height: 160px
-  background: rgba(0,0,0,0.8)
-
-.preview > .images
-  display: block
-  text-align: left
-  white-space: nowrap
-  width: 100%
-  height: 100%
-  padding: 1rem 1rem
-
-  overflow-y: hidden
-  overflow-x: auto
-  background: rgba(0,0,0,0.5)
-  border-top: 2px solid rgba(255,255,255,0.3)
-
-.preview > .images img
-  display: inline-block
-  vertical-align: top
-  max-width: 128px
-  max-height: 128px
-  border: 1px solid white
-  cursor: pointer
-  opacity: .5
-  transition: opacity 0.5s ease-in
-
-.preview > .images img:hover, .preview > .images .selected
-  opacity: 1
-
-.preview > .images a:not(:last-child)
-  margin-right: 1rem
-
-.overlay
-  pointer-events: none
-  background: rgba(0,0,0,1)
-
-.modal a.close[href]
-  position: absolute
-  top: 1rem
-  right: 1rem
-  color: black
-  background: rgba(255,255,255, .3)
-  padding: 0 1rem
-  border-radius: 4px
-  transition: background 0.35s ease-in
-
-.modal a.close[href] img
-  max-width: 53px
-  max-height: 53px
-
-.modal a.close[href]:hover
-  background: white
-
-.modal a.close[href] img
-  display: none
-
 @media (max-width: 980px)
   p
     font-size: 2rem
@@ -606,22 +429,6 @@ footer > ul > li
   .menu nav a
     font-size: 1.6rem
 
-@media(min-height: 481px)
-  .viewer
-    padding-bottom: 160px
-
-  .preview
-    display: block
-
-  .modal a.close[href] img
-    vertical-align: middle
-    display: inline-block
-    margin-top: 1rem
-
-@media (min-width: 641px) and (min-height: 641px)
-  .vignette
-    box-shadow: inset 0px 0px 45px 45px rgba(0,0,0,0.9)
-
 @media(min-width: 640px)
   .event > ul:last-child > li
     display: inline-block
@@ -634,7 +441,6 @@ footer > ul > li
   footer > ul > li:not(:last-child):after
     content: ' | '
     white-space: pre
-
 
 /* logo type for larger screens */
 @media (min-width: 600px)

@@ -8,11 +8,11 @@ extends(src='layout.sgr')
           span ircus
           span Village
         nav.main
-          a(href="#events" title="Events") Events
-          a(href="#information" title="Information") Information
-          a(href="#photos" title="Photo Gallery") Photos
-          a(href="#getting-there" title="Getting to the village") Getting There
-          a(href="#contact" title="Get in touch") Contact
+          a(href='#events' title='Events') Events
+          a(href='#information' title='Information') Information
+          a(href='#photos' title='Photo Gallery') Photos
+          a(href='#getting-there' title='Getting to the village') Getting There
+          a(href='#contact' title='Get in touch') Contact
       p.leader
         span An enchanted private island near the Kuang Si waterfall in Laos where we host events by renowned teachers in an untouched paradise.
       header.welcome
@@ -21,7 +21,8 @@ extends(src='layout.sgr')
         div.progress
       .content
         .container
-          p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
+          .intro
+            p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
 
           #events.events
             h2 Events
@@ -36,7 +37,7 @@ extends(src='layout.sgr')
                 p Waiting for confirmation of acro yoga classes.
                 ul
                   li
-                    a(href="https://www.facebook.com/acromarcopolo") Registration
+                    a(href='https://www.facebook.com/acromarcopolo') Registration
               .event
                 h3 December 9th to December 10th 2017
                 h4 Acro Yoga Solar Weekend
@@ -44,19 +45,19 @@ extends(src='layout.sgr')
                 p Waiting for confirmation of acro yoga classes.
                 ul
                   li
-                    a(href="https://www.facebook.com/acromarcopolo") Registration
+                    a(href='https://www.facebook.com/acromarcopolo') Registration
               .event
                 h3 February 4th to March 1st 2018
                 h4 Thai Massage Circus
                 p Arno L'Hermitte and friends
                 p
-                  img(src="assets/img/teachers/arno.jpg" alt="arno")
+                  img(src='assets/img/teachers/arno.jpg' alt='arno')
                   | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.</p>
                 ul
                   li
-                    a(href="mailto:arnothehermit@hotmail.com" title="arnothehermit@hotmail.com") Information
+                    a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
                     li
-                      a(href="http://www.thaimassagecircus.com") Registration
+                      a(href='http://www.thaimassagecircus.com') Registration
               .event
                 h3 March 3rd to March 8th 2018
                 h4 Acro Yoga Immersion
@@ -64,22 +65,22 @@ extends(src='layout.sgr')
                 p Waiting for confirmation of acro yoga classes.
                 ul
                   li
-                    a(href="https://www.facebook.com/profile.php?id=100008581514226") Registration
+                    a(href='https://www.facebook.com/profile.php?id=100008581514226') Registration
               .event
                 h3 March 8th to March 14th 2018
                 h4 Transformation Cellular Memory
                  p Don Hanson
                 p
-                  img(src="assets/img/teachers/don-hanson.jpg" alt="don-hanson")
+                  img(src='assets/img/teachers/don-hanson.jpg' alt='don-hanson')
                   | Don Hanson M.A. is an international teacher, healer and group process facilitator. He has spent over 40 years unraveling his own fear-based belief systems and mind-sets and has awakened a profound ability to bring through powerful healing energies.
                 p These sacred healing energies combine with Don's psychic, intuitive skills and group process experience. The result is an unlocking on a cellular level of all inherited behavior patterns that keep you stuck in a limited level of consciousness and perspective.
                 ul
                   li
-                    a(href="http://www.donhanson.com") Information
+                    a(href='http://www.donhanson.com') Information
                   li
-                    a(href="mailto:pearson_cathy@hotmail.com" title="pearson_cathy@hotmail.com") Registration
+                    a(href='mailto:pearson_cathy@hotmail.com' title='pearson_cathy@hotmail.com') Registration
                   li
-                    a(href="http://www.transformingcellularmemory.com")Transforming Cellular Memory
+                    a(href='http://www.transformingcellularmemory.com')Transforming Cellular Memory
 
           #information.info
             h2 Information
@@ -97,20 +98,20 @@ extends(src='layout.sgr')
               #teak-house.teak-house
                 span Teak House
                 p
-                  a(href="#teak-house")
-                    img(src="/assets/img/info/teak-house.jpg" alt="Teak House")
+                  a(href='#photos' aria-hidden='true')
+                    img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
                   | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
               #jungle-bungalow.jungle-bungalow
                 span Jungle Bungalow
                 p
-                  a(href="#jungle-bungalow")
-                    img(src="/assets/img/info/jungle-bungalow.jpg" alt="Jungle Bungalow")
+                  a(href='#photos' aria-hidden='true')
+                    img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
                   | Each bamboo bungalow has a river terrace and electricity.
               #bamboo-hut.bamboo-hut
                 span Bamboo Hut
                 p
-                  a(href="#bamboo-hut")
-                    img(src="/assets/img/info/bamboo-hut.jpg" alt="Bamboo Hut")
+                  a(href='#photos' aria-hidden='true')
+                    img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
                   | Bamboo huts are off-grid; ideal for an individual to retreat.
 
           #getting-there.getting-there
@@ -124,20 +125,20 @@ extends(src='layout.sgr')
 
           #contact.contact
             h2 Contact
-            p(mdi) Questions about a specific event should be sent to the event organizer. For other general enquiries email [Arno L&#39;Hermitte](mailto:arnothehermit@hotmail.com "arnothehermit@hotmail.com").
+            p(mdi) Questions about a specific event should be sent to the event organizer. For other general enquiries email [Arno L&#39;Hermitte](mailto:arnothehermit@hotmail.com 'arnothehermit@hotmail.com').
 
         footer
           ul
             li
-              a(href="#events" title="Events") Events
+              a(href='#events' title='Events') Events
             li
-              a(href="#information" title="Information") Information
+              a(href='#information' title='Information') Information
             li
-              a(href="#photos" title="Photo Gallery") Photos
+              a(href='#photos' title='Photo Gallery') Photos
             li
-              a(href="#getting-there" title="Getting to the Circus Village") Getting There
+              a(href='#getting-there' title='Getting to the Circus Village') Getting There
           br
           nav
-            a(href="#top" title="Back to top") Back to Top
+            a(href='#top' title='Back to top') Back to Top
 
     include(src='_gallery.sgr')

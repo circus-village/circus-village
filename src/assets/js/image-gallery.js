@@ -27,14 +27,4 @@ function close () {
 proto.start = start
 proto.close = close
 
-/*
-proto.item = item
-proto.load = load
-proto.next = next
-proto.find = find
-proto.previous = previous
-proto.constrain = constrain
-proto.layout = layout
-*/
-
 module.exports = ImageGallery
