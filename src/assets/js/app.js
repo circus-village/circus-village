@@ -22,14 +22,13 @@ $.plugin([
 function Application () {
   var Slideshow = require('./slideshow')
   var Gallery = require('./image-gallery')
-  this.slideshow = new Slideshow({resize: resize})
+  this.slideshow = new Slideshow()
   this.gallery = new Gallery(
     {viewport: viewport, navigate: this.navigate.bind(this)})
 
   this.body = $('#scroll').get(0)
   this.menu = $('.menu')
   this.leader = $('.leader')
-  this.controls = $('.controls')
   this.links = $('a[href^="#"]')
   this.info = $('.accomodation > div')
 
@@ -106,45 +105,14 @@ function onScroll () {
   if (!val) {
     this.menu.removeClass('transparent')
     this.leader.removeClass('transparent')
-    this.controls.show()
   } else {
     this.menu.addClass('transparent')
     this.leader.addClass('transparent')
-    this.controls.hide()
     this.slideshow.stop()
   }
 }
 
-function resize (e, el) {
-
-/*
-  var max = 726,
-    height,
-    h = viewport().height
-  el = el || $('header .slide')
-
-  if (h > max) {
-    height = max + 'px'
-    el.css({
-      height: height,
-      'background-position': '0 0',
-      'background-size': 'auto'
-    })
-  } else {
-    height = '100%'
-    el.css({
-      height: height,
-      'background-position': 'center bottom',
-      'background-size': 'cover'
-    })
-  }
-
-  $('header').css({height: height})
-*/
-}
-
 function start () {
-  resize()
 
   var blurPlaying
 
@@ -200,7 +168,6 @@ function start () {
   $(this.body).on('scroll', onScroll.bind(this))
   this.links.on('click', onNavigate.bind(this))
 
-  $(window).on('resize', resize)
   $(window).on('blur', blur.bind(this))
   $(window).on('focus', focus.bind(this))
 

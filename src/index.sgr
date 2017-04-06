@@ -17,7 +17,6 @@ extends(src='layout.sgr')
         span An enchanted private island near the Kuang Si waterfall in Laos where we host events by renowned teachers in an untouched paradise.
       header.welcome
         div.slide
-        div.controls
         div.progress
       .content
         .container

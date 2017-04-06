@@ -1,18 +1,11 @@
-var $ = require('air'),
-  preloader = require('./preloader')
+var $ = require('air')
+var preloader = require('./preloader')
 
 function Slideshow (opts) {
-  var scope = this,
-    i,
-    item,
-    img
-
   this.base = 'assets/img/slides/'
   this.slides = require('./slides.json')
   this.playing = false
   this.index = -1
-
-  this.resize = opts.resize
 
   // pause between slides
   this.delay = 1000
@@ -39,9 +32,9 @@ function preload (index) {
 
   this.loading = true
 
-  var url = this.base + this.slides[index],
-    scope = this,
-    el = $.el('img')
+  var url = this.base + this.slides[index]
+  var scope = this
+  var el = $.el('img')
 
   function progress (img, ratio) {
     $('.progress').css(
@@ -65,14 +58,14 @@ function wait (delay) {
 }
 
 function show (url) {
-  var scope = this,
-    previous = $('header .slide'),
-    header = $.el('div', {class: 'slide'}),
-    style = {
-      'background-image': 'url(' + url + ')',
-      opacity: '0',
-      'z-index': '1'
-    }
+  var scope = this
+  var previous = $('header .slide')
+  var header = $.el('div', {class: 'slide'})
+  var style = {
+    'background-image': 'url(' + url + ')',
+    opacity: '0',
+    'z-index': '1'
+  }
 
   // shift previous slide behind
   var prev = {
@@ -89,12 +82,8 @@ function show (url) {
   header.css(style)
 
   // inject new slide into the DOM
-  /*
   previous.get(0).parentNode.insertBefore(
-    header.get(0), this.controls.get(0))
-  */
-
-  this.resize(null, header)
+    header.get(0), $('.progress').get(0))
 
   function remove () {
     $('header').removeClass('welcome')
