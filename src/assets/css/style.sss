@@ -164,7 +164,6 @@ h1
   text-transform: uppercase
   line-height: 1
   font-weight: normal
-  /*margin-left: 1rem*/
   font-size: 4rem
   color: white
   text-shadow: 1px 1px 1px #000
@@ -180,7 +179,7 @@ h1 span:nth-child(2)
   right: 0
   top: 0
   padding: 10px 10px 0 10px
-  background: rgba(0, 0, 0, .35)
+  background: rgba(0, 0, 0, .55)
 
 footer ul
   padding: 0
@@ -254,16 +253,15 @@ p:after
   clear: both
 
 a[href]:not(.top)
-  padding-bottom: 2px
   text-decoration: none
+  color: #4d5a00
+  border-bottom: 1px solid
+  border-color: transparent
   transition: all 0.5s ease
-  /* blue */
-  color: #268bd2
 
 a[href]:not(.top):hover
-  transition: all 0.5s ease
-  /* violet */
-  color: #6c71c4
+  color: #4d5a00
+  border-color: inherit
 
 h2 a, h3 a, h4 a
   border-color: inherit !important

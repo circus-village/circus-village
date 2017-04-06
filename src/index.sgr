@@ -49,7 +49,7 @@ extends(src='layout.sgr')
               h4 February 4th to March 1st 2018
               p Arno L'Hermitte and friends
               p
-                img(src='assets/img/teachers/arno.jpg' alt='arno')
+                img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
                 | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.</p>
               ul
                 li
@@ -69,7 +69,7 @@ extends(src='layout.sgr')
               h4 March 8th to March 14th 2018
               p Don Hanson
               p
-                img(src='assets/img/teachers/don-hanson.jpg' alt='don-hanson')
+                img(src='assets/img/teachers/don-hanson.jpg' alt='don-hanson' width='128' height='147')
                 | Don Hanson M.A. is an international teacher, healer and group process facilitator. He has spent over 40 years unraveling his own fear-based belief systems and mind-sets and has awakened a profound ability to bring through powerful healing energies.
               p These sacred healing energies combine with Don's psychic, intuitive skills and group process experience. The result is an unlocking on a cellular level of all inherited behavior patterns that keep you stuck in a limited level of consciousness and perspective.
               ul
