@@ -16,8 +16,6 @@ Build and serve the website with [browsersync][] enabled:
 makestatic -w
 ```
 
-When the `--dev` flag is used files are not minified.
-
 ### Gallery
 
 Build the `gallery.json` file describing the gallery images:
