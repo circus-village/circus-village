@@ -1,6 +1,8 @@
+/* global Image XMLHttpRequest */
+
 function preloader (url, progress, callback) {
-  var img = new Image(),
-    req = new XMLHttpRequest()
+  var img = new Image()
+  var req = new XMLHttpRequest()
 
   img.loaded = 0
 

@@ -1,3 +1,3 @@
-var Application = require('./app'),
-  app = new Application()
+const Application = require('./app')
+const app = new Application()
 app.start()
