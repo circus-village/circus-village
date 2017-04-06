@@ -13,17 +13,12 @@ class Scroll {
       'nav.main a:not([href^="#photos"]), footer a, .permalink[href^="#"]')
     this.scrollTop = this.onScrollTop.bind(this)
     this.scrollToLink = this.onScrollToLink.bind(this)
-    this.popstate = options.popstate || this.onPopState.bind(this)
+    this.popstate = options.popstate
     this.navigate = options.navigate
   }
 
   onScrollTop (e) {
     e.preventDefault()
-    const pos = this.getScrollPosition()
-    // don't push a state if we are already at the top
-    if (pos.top === 0) {
-      return false
-    }
     this.scrollToTop(0)
   }
 
@@ -73,30 +68,17 @@ class Scroll {
     }
   }
 
-  onPopState (evt) {
-    if (evt.state && evt.state.id) {
-      this.scrollToId(evt.state.id, false)
-    } else {
-      // allow hash changes to navigate to named anchors
-      // when there are no state items in the history
-      if (document.location.hash) {
-        const id = document.location.hash.replace(/^#/, '')
-        return this.scrollToId(id, false)
-      }
-      this.scrollToTop(0)
-    }
-  }
-
   start () {
     for (let i = 0; i < this.top.length; i++) {
       this.top[i].addEventListener('click', this.scrollTop)
+      this.top[i].addEventListener('touchend', this.scrollTop)
     }
     for (let i = 0; i < this.links.length; i++) {
-      this.links[i].addEventListener('click', this.scrollToLink)
+      this.links[i].addEventListener('click', this.scrollToLink, false)
+      this.links[i].addEventListener('touchend', this.scrollToLink, false)
     }
     window.addEventListener('popstate', this.popstate)
   }
-
 }
 
 export {Scroll}
