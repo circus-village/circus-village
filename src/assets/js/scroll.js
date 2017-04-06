@@ -1,5 +1,3 @@
-/* global history */
-
 function easeOutQuad (iteration, start, diff, total) {
   return -diff * (iteration /= total) * (iteration - 2) + start
 }
@@ -27,10 +25,6 @@ class Scroll {
       return false
     }
     this.scrollToTop(0)
-    if (document.location.hash) {
-      const url = document.location.pathname
-      history.pushState({href: url}, '', url)
-    }
   }
 
   getScrollPosition () {
@@ -71,16 +65,9 @@ class Scroll {
     this.navigate(e.currentTarget.getAttribute('href'))
   }
 
-  scrollToId (id, push = true) {
+  scrollToId (id) {
     const el = document.getElementById(id)
     if (el) {
-      const url = document.location.pathname + '#' + id
-      if (document.location.hash === ('#' + id)) {
-        push = false
-      }
-      if (push) {
-        history.pushState({href: url, id: id}, '', url)
-      }
       const bounds = el.getBoundingClientRect()
       this.scrollToTop(bounds.top)
     }

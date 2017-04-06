@@ -28,6 +28,7 @@ class Application {
     const Slideshow = require('./slideshow')
     const Gallery = require('./image-gallery')
 
+    this.history = []
     this.body = $('body').get(0)
     this.menu = $('.menu')
     this.leader = $('.leader')
@@ -65,22 +66,29 @@ class Application {
   }
 
   navigate (href) {
-    console.log('navigate: ' + href)
-
-    if (this.replace) {
-      history.replaceState({hash: href}, null, href)
-      this.replace = false
-      return
-    }
-
     const id = href.replace(/^#/, '')
     const target = id ? $('#' + id) : null
     const hash = document.location.hash
+    let url = document.location.pathname
+    if (id) {
+      url += '#' + id
+    }
+    const state = {id: id, href: href, url: url}
+
+    if (this.replace) {
+      history.replaceState(state, null, href)
+      this.replace = false
+      return
+    }
 
     // handle home navigation
     if (href === HOME || id === 'top') {
       this.gallery.close()
       if (this.body.scrollTop !== 0) {
+        if (document.location.hash) {
+          const url = document.location.pathname
+          history.pushState(state, '', url)
+        }
         this.scroller.scrollToTop(0)
       }
     // handle navigation to `id` on the page
@@ -95,6 +103,14 @@ class Application {
       if (item) {
         this.gallery.start(item, hash)
       }
+    }
+
+    let push = true
+    if (document.location.hash === ('#' + id)) {
+      push = false
+    }
+    if (push) {
+      history.pushState(state, '', url)
     }
   }
 
