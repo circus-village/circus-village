@@ -40,9 +40,10 @@ function Application () {
 
   this.body = $('body').get(0)
   this.menu = $('.menu')
-  this.leader = $('.leader')
-  this.info = $('.accomodation > div')
 
+  this.leader = $('.leader')
+
+  this.info = $('.accomodation > div')
   // make the entire info div click to the gallery image
   this.info.on('click', function (e) {
     var el = $(e.currentTarget)

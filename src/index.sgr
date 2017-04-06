@@ -17,12 +17,6 @@ extends(src='layout.sgr')
     header.welcome
       div#slider.swipe
         div.swipe-wrap
-          div
-            p Foo
-          div
-            p Bar
-          div
-            p Baz
     .content
       .container
         .intro
