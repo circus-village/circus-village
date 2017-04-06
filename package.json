@@ -10,8 +10,7 @@
     "url": "https://github.com/circus-village/website.git"
   },
   "scripts": {
-    "lint": "standard src/assets/js/*.js",
-    "deploy": "mk site && git subtree push --prefix build deploy master"
+    "lint": "standard src/assets/js/*.js"
   },
   "dependencies": {
     "air": "~0.4.13",

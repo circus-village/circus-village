@@ -67,16 +67,9 @@ npm run lint
 
 ### Deploy
 
-Publish the website for the `master` branch for `circus-village.github.io`:
-
 ```shell
-npm run deploy
-```
-
-Must have a `deploy` remote configured:
-
-```shell
-git remote add deploy git@github.com:circus-village/circus-village.github.io.git
+makestatic --clean --env stage --provider s3
+makestatic --clean --env production --provider s3
 ```
 
 ## License
@@ -88,7 +81,5 @@ MIT
 Created by [mkdoc](https://github.com/mkdoc/mkdoc) on April 6, 2017
 
 [browsersync]: http://browsersync.io
-[jshint]: http://jshint.com
-[jscs]: http://jscs.info
 [makestatic]: https://makestatic.ws
 
