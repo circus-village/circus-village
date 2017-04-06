@@ -16,6 +16,7 @@ class Scroll {
     this.scrollTop = this.onScrollTop.bind(this)
     this.scrollToLink = this.onScrollToLink.bind(this)
     this.popstate = options.popstate || this.onPopState.bind(this)
+    this.navigate = options.navigate
   }
 
   onScrollTop (e) {
@@ -67,8 +68,7 @@ class Scroll {
 
   onScrollToLink (e) {
     e.preventDefault()
-    const id = e.currentTarget.getAttribute('href').replace(/^#/, '')
-    this.scrollToId(id)
+    this.navigate(e.currentTarget.getAttribute('href'))
   }
 
   scrollToId (id, push = true) {

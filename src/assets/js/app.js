@@ -51,10 +51,10 @@ class Application {
     this.gallery = new Gallery({navigate: navigate, back: this.back.bind(this)})
 
     // make the entire info div click to the gallery image
-    this.info.on('click', function (e) {
-      var el = $(e.currentTarget)
-      var href = $(el.find('a[href]').get(0)).attr('href')
-      document.location.hash = href
+    this.info.on('click', (e) => {
+      const el = $(e.currentTarget)
+      const href = $(el.find('a[href]').get(0)).attr('href')
+      this.navigate(href)
     })
   }
 
@@ -125,10 +125,6 @@ class Application {
       } else {
         this.navigate(HOME, true)
       }
-    }
-
-    function popstate (evt) {
-
     }
 
     // stop slideshow on blur
