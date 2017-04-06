@@ -15,8 +15,8 @@ module.exports = {
     transform: [
       {
         plugin: require('makestatic-inline-css'),
-        remove: true,
-        prune: true
+        remove: true
+        // prune: true
       }
     ],
     verify: [
