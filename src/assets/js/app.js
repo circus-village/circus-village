@@ -52,6 +52,7 @@ class Application {
 
     // make the entire info div click to the gallery image
     this.info.on('click', (e) => {
+      e.preventDefault()
       const el = $(e.currentTarget)
       const href = $(el.find('a[href]').get(0)).attr('href')
       this.navigate(href)
@@ -65,16 +66,16 @@ class Application {
 
   navigate (href) {
     console.log('navigate: ' + href)
-    console.log('navigate replace: ' + this.replace)
+
     if (this.replace) {
       history.replaceState({hash: href}, null, href)
       this.replace = false
       return
     }
 
-    var id = href.replace(/^#/, '')
-    var target = id ? $('#' + id) : null
-    var hash = document.location.hash
+    const id = href.replace(/^#/, '')
+    const target = id ? $('#' + id) : null
+    const hash = document.location.hash
 
     // handle home navigation
     if (href === HOME || id === 'top') {
