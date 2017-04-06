@@ -24,7 +24,17 @@ $.plugin([
 function Application () {
   var Slideshow = require('./slideshow')
   var Gallery = require('./image-gallery')
-  this.scroller = new Scroll()
+  this.scroller = new Scroll({popstate: (evt) => {
+    let id = HOME
+    if (evt.state && evt.state.id) {
+      id = '#' + evt.state.id
+    // allow hash changes to navigate to named anchors
+    // when there are no state items in the history
+    } else if (document.location.hash) {
+      id = document.location.hash
+    }
+    this.navigate(id)
+  }})
   this.slideshow = new Slideshow()
   this.gallery = new Gallery(
     {viewport: viewport, navigate: this.navigate.bind(this)})
@@ -32,7 +42,7 @@ function Application () {
   this.body = $('body').get(0)
   this.menu = $('.menu')
   this.leader = $('.leader')
-  this.links = $('a[href^="#"]')
+  // this.links = $('a[href^="#"]')
   this.info = $('.accomodation > div')
 
   // make the entire info div click to the gallery image
@@ -51,21 +61,6 @@ function viewport () {
   var h = Math.max(
     document.documentElement.clientHeight, window.innerHeight || 0)
   return {width: w, height: h}
-}
-
-function onNavigate (e) {
-  e.preventDefault()
-
-  var el = $(e.currentTarget)
-  var href = el.attr('href')
-
-  this.navigate(href)
-
-  if (history) {
-    history.pushState({hash: href}, el.attr('title'), href)
-  }
-
-  return false
 }
 
 function navigate (href, replace) {
@@ -118,6 +113,8 @@ function start () {
   this.body.scrollTop = 0
 
   // gallery navigation on hash change
+  //
+  /*
   function onHashChange (e) {
     e.preventDefault()
     e.stopImmediatePropagation()
@@ -126,12 +123,12 @@ function start () {
       this.navigate(hash)
     }
   }
+  */
 
   // check for hash on load
   function onLoad (e) {
     e.preventDefault()
     e.stopImmediatePropagation()
-
     var hash = document.location.hash
     if (hash) {
       this.navigate(hash)
@@ -153,15 +150,16 @@ function start () {
     }
   }
 
+  window.addEventListener('scroll', onScroll.bind(this))
+
   this.scroller.start()
 
-  $(this.body).on('scroll', onScroll.bind(this))
-  this.links.on('click', onNavigate.bind(this))
+  // this.links.on('click', onNavigate.bind(this))
 
   $(window).on('blur', blur.bind(this))
   $(window).on('focus', focus.bind(this))
 
-  this.onHashChange = onHashChange.bind(this)
+  // this.onHashChange = onHashChange.bind(this)
 
   $(window).on('load', onLoad.bind(this))
   $(window).on('hashchange', this.onHashChange)

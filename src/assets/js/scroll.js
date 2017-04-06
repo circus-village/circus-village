@@ -11,14 +11,14 @@ function easeOutQuad (iteration, start, diff, total) {
  */
 class Scroll {
 
-  constructor () {
+  constructor (options = {}) {
     this.top = document.querySelectorAll('[href="#top"]')
 
     this.links = document.querySelectorAll(
-      'nav.main a, footer a, .permalink[href^="#"]')
+      'nav.main a:not([href^="#photos"]), footer a, .permalink[href^="#"]')
     this.scrollTop = this.onScrollTop.bind(this)
     this.scrollToLink = this.onScrollToLink.bind(this)
-    this.popstate = this.onPopState.bind(this)
+    this.popstate = options.popstate || this.onPopState.bind(this)
   }
 
   onScrollTop (e) {
@@ -76,16 +76,17 @@ class Scroll {
 
   scrollToId (id, push = true) {
     const el = document.getElementById(id)
-    const url = document.location.pathname + '#' + id
-    if (document.location.hash === ('#' + id)) {
-      push = false
+    if (el) {
+      const url = document.location.pathname + '#' + id
+      if (document.location.hash === ('#' + id)) {
+        push = false
+      }
+      if (push) {
+        history.pushState({href: url, id: id}, '', url)
+      }
+      const bounds = el.getBoundingClientRect()
+      this.scrollToTop(bounds.top)
     }
-    if (push) {
-      history.pushState({href: url, id: id}, '', url)
-    }
-    const bounds = el.getBoundingClientRect()
-    console.log('scroll to top: ' + bounds.top)
-    this.scrollToTop(bounds.top)
   }
 
   onPopState (evt) {
