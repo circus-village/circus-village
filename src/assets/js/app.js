@@ -117,18 +117,6 @@ function start () {
   // allow animated scroll on page load
   this.body.scrollTop = 0
 
-  // handle navigation on back button
-  /*
-  function onPopState (e) {
-    e.preventDefault()
-    if (!e.state) {
-      // this.gallery.close();
-    } else {
-      // this.navigate(e.state.hash);
-    }
-  }
-  */
-
   // gallery navigation on hash change
   function onHashChange (e) {
     e.preventDefault()
@@ -177,54 +165,9 @@ function start () {
 
   $(window).on('load', onLoad.bind(this))
   $(window).on('hashchange', this.onHashChange)
-  // $(window).on('popstate', onPopState.bind(this))
 }
-
-/*
-function easeOutQuad (iteration, start, diff, total) {
-  return -diff * (iteration /= total) * (iteration - 2) + start
-}
-
-function scrollTo (val) {
-  var start = this.body.scrollTop
-  var body = this.body
-  var iteration = 0
-  var duration = 50
-  var diff = val > start ? start - val : val - start
-  var requestAnimationFrame = window.requestAnimationFrame ||
-                              window.mozRequestAnimationFrame ||
-                              window.webkitRequestAnimationFrame ||
-                              window.msRequestAnimationFrame
-
-  // catch when fully scrolled to the bottom and attempting to
-  // scroll to last section - which is already visible
-  if (body.offsetHeight + body.scrollTop >= body.scrollHeight && (start < val)) {
-    return
-  }
-
-  // nothing to do
-  if (val === start) {
-    return
-  }
-
-  // perform the animation
-  function doScroll () {
-    var value = easeOutQuad(iteration, start, diff, duration)
-    body.scrollTop = value < 0 ? -value : value
-    if (iteration >= duration) {
-      body.scrollTop = val
-      return
-    }
-    requestAnimationFrame(doScroll)
-    iteration++
-  }
-
-  doScroll()
-}
-*/
 
 proto.start = start
-// proto.scrollTo = scrollTo
 proto.navigate = navigate
 
 module.exports = Application
