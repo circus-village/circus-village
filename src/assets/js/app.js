@@ -28,6 +28,11 @@ class Application {
     const Slideshow = require('./slideshow')
     const Gallery = require('./image-gallery')
 
+    this.body = $('body').get(0)
+    this.menu = $('.menu')
+    this.leader = $('.leader')
+    this.info = $('.accomodation > div')
+
     this.scroller = new Scroll({
       navigate: navigate,
       popstate: (evt) => {
@@ -42,13 +47,9 @@ class Application {
         this.navigate(id)
       }})
 
-    this.slideshow = new Slideshow()
+    this.slideshow = new Slideshow({invisibles: $('.menu, .leader')})
     this.gallery = new Gallery({navigate: navigate})
 
-    this.body = $('body').get(0)
-    this.menu = $('.menu')
-    this.leader = $('.leader')
-    this.info = $('.accomodation > div')
     // make the entire info div click to the gallery image
     this.info.on('click', function (e) {
       var el = $(e.currentTarget)

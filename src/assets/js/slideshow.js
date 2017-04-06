@@ -2,7 +2,7 @@
 const $ = require('air')
 
 class Slideshow {
-  constructor () {
+  constructor (options = {}) {
     const slides = require('./_slides.json')
     const wrap = $('.swipe-wrap')
     wrap.hide()
@@ -35,6 +35,7 @@ class Slideshow {
 
     this.swipe.stop()
     this.wrap = wrap
+    this.options = options
   }
 
   toggle () {
@@ -44,12 +45,14 @@ class Slideshow {
   start () {
     this.swipe.restart()
     this.wrap.show()
+    this.options.invisibles.addClass('transparent')
     this.playing = true
   }
 
   stop () {
     this.swipe.stop()
     this.wrap.hide()
+    this.options.invisibles.removeClass('transparent')
     this.playing = false
   }
 }
