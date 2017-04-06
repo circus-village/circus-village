@@ -36,8 +36,7 @@ function Application () {
     this.navigate(id)
   }})
   this.slideshow = new Slideshow()
-  this.gallery = new Gallery(
-    {viewport: viewport, navigate: this.navigate.bind(this)})
+  this.gallery = new Gallery({navigate: this.navigate.bind(this)})
 
   this.body = $('body').get(0)
   this.menu = $('.menu')
@@ -53,14 +52,6 @@ function Application () {
 }
 
 var proto = Application.prototype
-
-function viewport () {
-  var w = Math.max(
-    document.documentElement.clientWidth, window.innerWidth || 0)
-  var h = Math.max(
-    document.documentElement.clientHeight, window.innerHeight || 0)
-  return {width: w, height: h}
-}
 
 function navigate (href, replace) {
   if (replace) {

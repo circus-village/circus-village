@@ -5,9 +5,6 @@ function easeOutQuad (iteration, start, diff, total) {
 }
 
 /**
- *  Animates the scroll which gives the user an idea of how much of
- *  the page has been scrolled thereby indicating how much more content there is
- *  to read.
  */
 class Scroll {
 
