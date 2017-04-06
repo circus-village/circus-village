@@ -7,7 +7,7 @@ function slides (cb) {
   var files = fs.readdirSync(pth)
 
   fs.writeFileSync(
-    'src/assets/js/slides.json', JSON.stringify(files, undefined, 2))
+    'src/assets/js/_slides.json', JSON.stringify(files, undefined, 2))
 
   if (cb) {
     cb()
@@ -26,7 +26,7 @@ function gallery (cb) {
     // NOTE: useful to inspect the image data
     console.error(list)
     fs.writeFileSync(
-      'src/assets/js/gallery.json', JSON.stringify(list, undefined, 2))
+      'src/assets/js/_gallery.json', JSON.stringify(list, undefined, 2))
     cb()
   }
 

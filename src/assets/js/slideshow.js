@@ -3,7 +3,7 @@ const $ = require('air')
 
 class Slideshow {
   constructor () {
-    const slides = require('./slides.json')
+    const slides = require('./_slides.json')
     const wrap = $('.swipe-wrap')
     wrap.hide()
 
@@ -12,7 +12,8 @@ class Slideshow {
     let div, slide
     for (let i = 0; i < slides.length; i++) {
       div = $.el('div')
-      slide = $.el('div', {class: 'slide', style: `background-image: url("/assets/img/slides/${slides[i]}")`})
+      slide = $.el('div', {
+        class: 'slide', style: `background-image: url("/assets/img/slides/${slides[i]}")`})
       div.append(slide)
       wrap.append(div)
     }
