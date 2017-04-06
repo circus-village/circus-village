@@ -139,7 +139,7 @@ header .swipe
   transition: opacity 0.5s ease
 
 .leader
-  display: inline-block
+  display: none
   position: absolute
   z-index: 4
   color: white
@@ -460,6 +460,9 @@ footer > ul > li
 
 /* logo type for larger screens */
 @media (min-width: 600px)
+  .leader
+    display: inline-block
+
   nav.main
     position: absolute
     top: 1rem
@@ -509,9 +512,6 @@ footer > ul > li
     float: none
 
 @media (max-width: 360px)
-  .leader
-    top: 14rem
-
   .menu + p
     margin-top: 14rem
 
