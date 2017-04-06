@@ -1,3 +1,5 @@
+/* global history */
+
 var $ = require('air')
 var HOME = ''
 var PHOTOS = '#photos'

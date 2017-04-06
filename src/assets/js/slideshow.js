@@ -12,27 +12,6 @@ function Slideshow (opts) {
   this.playing = false
   this.index = -1
 
-  this.controls = $('.controls')
-
-  // initialize the navigation controls for the slideshow
-  for (i = 0; i < this.slides.length; i++) {
-    item = $.el('li')
-    img = $.el('img', {src: 'assets/img/bullet.svg', alt: this.slides[i]})
-    item.append(img)
-    this.controls.find('ul').append(item)
-  }
-
-  this.controls.on('click', function (e) {
-    e.stopImmediatePropagation()
-  })
-
-  this.controls.find('li').each(function (el, index) {
-    el = $(el)
-    el.on('click', function () {
-      scope.select(index)
-    })
-  })
-
   this.resize = opts.resize
 
   // pause between slides
@@ -74,14 +53,6 @@ function preload (index) {
     scope.show(url)
   })
 
-  var items = this.controls.find('li')
-  var item = $(items.get(index))
-
-  items.removeClass('selected')
-  if (item) {
-    item.addClass('selected')
-  }
-
   $('body').append(el)
 }
 
@@ -118,8 +89,10 @@ function show (url) {
   header.css(style)
 
   // inject new slide into the DOM
+  /*
   previous.get(0).parentNode.insertBefore(
     header.get(0), this.controls.get(0))
+  */
 
   this.resize(null, header)
 

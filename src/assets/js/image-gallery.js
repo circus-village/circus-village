@@ -1,3 +1,4 @@
+/* global history */
 const PhotoSwipe = require('./photoswipe/photoswipe')
 const PhotoSwipeUI = require('./photoswipe/photoswipe-ui-default')
 
@@ -11,17 +12,23 @@ function start (item, hash) {
   var items = require('./gallery.json')
 
   var options = {
-    history: true,
-    galleryPIDS: true
+    history: false,
+    galleryPIDS: true,
+    escKey: true,
+    closeOnScroll: false
   }
 
   // Initializes and opens PhotoSwipe
-  var gallery = new PhotoSwipe(pswp, PhotoSwipeUI, items, options)
-  gallery.init()
+  this.gallery = new PhotoSwipe(pswp, PhotoSwipeUI, items, options)
+  this.gallery.init()
 }
 
 function close () {
-  console.log('close gallery')
+  this.gallery.listen('destroy', () => {
+    this.gallery = null
+    history.back()
+  })
+  this.gallery.close()
 }
 
 proto.start = start
