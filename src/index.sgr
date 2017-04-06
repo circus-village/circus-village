@@ -26,6 +26,61 @@ extends(src='layout.sgr')
 
           #events.events
             h2 Events
+            p After ten years hosting the Thai Massage Circus, the Circus Village is now happy to present more events and great international teachers.
+
+            .events
+              .event
+                h3 December 2nd to December 6th 2017
+                h4 Acro Yoga Lunar Immersion
+                p Marc Bauchet and friends
+                //- ![Marc Bauchet](assets/img/teachers/marc-bauchet.jpg)
+                p Waiting for confirmation of acro yoga classes.
+                ul
+                  li
+                    a(href="https://www.facebook.com/acromarcopolo") Registration
+              .event
+                h3 December 9th to December 10th 2017
+                h4 Acro Yoga Solar Weekend
+                p Marc Bauchet and friends
+                p Waiting for confirmation of acro yoga classes.
+                ul
+                  li
+                    a(href="https://www.facebook.com/acromarcopolo") Registration
+              .event
+                h3 February 4th to March 1st 2018
+                h4 Thai Massage Circus
+                p Arno L'Hermitte and friends
+                p
+                  img(src="assets/img/teachers/arno.jpg" alt="arno")
+                  | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.</p>
+                ul
+                  li
+                    a(href="mailto:arnothehermit@hotmail.com" title="arnothehermit@hotmail.com") Information
+                    li
+                      a(href="http://www.thaimassagecircus.com") Registration
+              .event
+                h3 March 3rd to March 8th 2018
+                h4 Acro Yoga Immersion
+                p Luka Agreš and friends
+                p Waiting for confirmation of acro yoga classes.
+                ul
+                  li
+                    a(href="https://www.facebook.com/profile.php?id=100008581514226") Registration
+              .event
+                h3 March 8th to March 14th 2018
+                h4 Transformation Cellular Memory
+                 p Don Hanson
+                p
+                  img(src="assets/img/teachers/don-hanson.jpg" alt="don-hanson")
+                  | Don Hanson M.A. is an international teacher, healer and group process facilitator. He has spent over 40 years unraveling his own fear-based belief systems and mind-sets and has awakened a profound ability to bring through powerful healing energies.
+                p These sacred healing energies combine with Don's psychic, intuitive skills and group process experience. The result is an unlocking on a cellular level of all inherited behavior patterns that keep you stuck in a limited level of consciousness and perspective.
+                ul
+                  li
+                    a(href="http://www.donhanson.com") Information
+                  li
+                    a(href="mailto:pearson_cathy@hotmail.com" title="pearson_cathy@hotmail.com") Registration
+                  li
+                    a(href="http://www.transformingcellularmemory.com")Transforming Cellular Memory
 
           #information.info
             h2 Information
@@ -44,19 +99,19 @@ extends(src='layout.sgr')
                 span Teak House
                 p
                   a(href="#teak-house")
-                    img(src="assets/img/info/teak-house.jpg" alt="Teak House")
+                    img(src="/assets/img/info/teak-house.jpg" alt="Teak House")
                   | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
               #jungle-bungalow.jungle-bungalow
                 span Jungle Bungalow
                 p
                   a(href="#jungle-bungalow")
-                    img(src="assets/img/info/jungle-bungalow.jpg" alt="Jungle Bungalow")
+                    img(src="/assets/img/info/jungle-bungalow.jpg" alt="Jungle Bungalow")
                   | Each bamboo bungalow has a river terrace and electricity.
               #bamboo-hut.bamboo-hut
                 span Bamboo Hut
                 p
                   a(href="#bamboo-hut")
-                    img(src="assets/img/info/bamboo-hut.jpg" alt="Bamboo Hut")
+                    img(src="/assets/img/info/bamboo-hut.jpg" alt="Bamboo Hut")
                   | Bamboo huts are off-grid; ideal for an individual to retreat.
 
           #photos

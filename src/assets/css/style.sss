@@ -114,13 +114,6 @@ header.welcome
 header.welcome .slide
   background-image: url(/assets/img/background.jpg)
 
-/* past events are not shown unless they exist */
-.past
-  display: none
-
-.past > .event
-  opacity: 0.75
-
 .menu, .leader
   opacity: 1
   transition: opacity 0.5s ease
@@ -166,9 +159,11 @@ h1 span:nth-child(2)
   left: 0
   right: 0
   top: 0
-  padding: 10px
+  padding: 10px 10px 0 10px
   background: rgba(0, 0, 0, .35)
 
+footer ul
+  padding: 0
 
 .transparent
   opacity: 0 !important
@@ -315,6 +310,10 @@ p
 .event
   margin-bottom: 3rem
 
+.event ul
+  margin: 0
+  padding: 0
+
 h3
   display: inline-block
   margin-bottom: 1rem
@@ -323,6 +322,7 @@ h3
 
 .event h4
   text-transform: uppercase
+  margin: 0
 
 .event p
   margin-top: 1.5rem
@@ -627,6 +627,7 @@ footer > ul > li
     display: inline-block
   .event > ul:last-child > li:not(:last-child):after
     content: ' | '
+    white-space: pre
 
 /* inline list items for event links */
 @media(min-width: 480px)
