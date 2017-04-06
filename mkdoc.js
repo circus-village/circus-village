@@ -3,11 +3,11 @@ var fs = require('fs-extra')
 
 // @task slides build the list of slideshow images
 function slides (cb) {
-  var pth = 'build/assets/img/slides/'
+  var pth = 'src/assets/img/slides/'
   var files = fs.readdirSync(pth)
 
   fs.writeFileSync(
-    'lib/slides.json', JSON.stringify(files, undefined, 2))
+    'src/assets/js/slides.json', JSON.stringify(files, undefined, 2))
 
   if (cb) {
     cb()
@@ -16,7 +16,7 @@ function slides (cb) {
 
 // @task gallery build the list of photo gallery images and dimensions
 function gallery (cb) {
-  var pth = 'build/assets/img/gallery/'
+  var pth = 'src/assets/img/gallery/'
   var sizeof = require('image-size')
   var files = fs.readdirSync(pth)
   var item
