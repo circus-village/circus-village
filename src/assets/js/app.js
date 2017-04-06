@@ -48,7 +48,7 @@ class Application {
       }})
 
     this.slideshow = new Slideshow({invisibles: $('.menu, .leader')})
-    this.gallery = new Gallery({navigate: navigate})
+    this.gallery = new Gallery({navigate: navigate, back: this.back.bind(this)})
 
     // make the entire info div click to the gallery image
     this.info.on('click', function (e) {
@@ -58,14 +58,22 @@ class Application {
     })
   }
 
-  navigate (href, replace) {
-    if (replace) {
+  back () {
+    this.replace = true
+    history.go(-1)
+  }
+
+  navigate (href) {
+    console.log('navigate: ' + href)
+    console.log('navigate replace: ' + this.replace)
+    if (this.replace) {
       history.replaceState({hash: href}, null, href)
+      this.replace = false
       return
     }
 
     var id = href.replace(/^#/, '')
-    var target = $('#' + id)
+    var target = id ? $('#' + id) : null
     var hash = document.location.hash
 
     // handle home navigation
@@ -117,6 +125,10 @@ class Application {
       } else {
         this.navigate(HOME, true)
       }
+    }
+
+    function popstate (evt) {
+
     }
 
     // stop slideshow on blur

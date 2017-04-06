@@ -3,7 +3,11 @@ const PhotoSwipeUI = require('./photoswipe/photoswipe-ui-default')
 
 class ImageGallery {
 
-  start (item, hash) {
+  constructor (options = {}) {
+    this.options = options
+  }
+
+  start (item, state) {
     var pswp = document.querySelectorAll('.pswp')[0]
     var items = require('./_gallery.json')
     var options = {
@@ -25,6 +29,7 @@ class ImageGallery {
         this.gallery = null
       })
       this.gallery.close()
+      this.options.back()
     }
   }
 }
