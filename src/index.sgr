@@ -112,7 +112,6 @@ extends(src='layout.sgr')
 
         .getting-there
           h2 Getting There
-          div.banner
           div.section
 
             p(mdi) [![satellite map](assets/img/satellite.jpg)](https://www.google.com/maps/@19.7577325,101.9932579,236m/data=!3m1!1e3u)The village is located 15 minutes walk from the extraordinary Kuang Si waterfall national park, 29 kilometres from Luang Prabang, historical capital of Laos.
