@@ -20,9 +20,9 @@ module.exports = {
       }
     ],
     verify: [
-      require('makestatic-verify-id'),
+      require('makestatic-verify-id')
       // require('makestatic-verify-anchor'),
-      require('makestatic-verify-link')
+      // require('makestatic-verify-link')
     ],
     emit: [
       {
