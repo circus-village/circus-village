@@ -122,7 +122,9 @@ extends(src='layout.sgr')
             p
               a(href='https://www.google.com/maps/place/Joma+Bakery+Caf%C3%A9/@19.8885404,102.1305129,17z/data=!3m1!4b1!4m2!3m1!1s0x312f2a426fb70085:0xb1ae7742ff2c3baf' title='Meeting Point')
                 img(src='/assets/img/meeting-point.jpg' alt='meeting point' width='160' height='160')
-              | You can fly to Luang Prabang international airport. [Air Asia](http://www.airasia.com/) often have cheap flights. On the day of the event the circus trucks will collect you from the meeting point at Joma bakery next to the post office in Luang Prabang.
+              | You can fly to Luang Prabang international airport.&nbsp;
+              a(href='http://www.airasia.com/' title='Air Asia') Air Asia
+              | &nbsp;often have cheap flights. On the day of the event the circus trucks will collect you from the meeting point at Joma bakery next to the post office in Luang Prabang.
 
         .contact
           h2 Contact
