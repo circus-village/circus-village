@@ -62,13 +62,11 @@ module.exports = {
         redirects: [
           'www.circus-village.com'
         ],
-        publish: false
-        /*
+        publish: true,
         cloudfront: {
           key: 'cloudfront_distribution_production',
           invalidate: true
         }
-        */
       }
     }
   }

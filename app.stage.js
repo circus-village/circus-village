@@ -29,13 +29,11 @@ conf.deploy = {
       redirects: [
         'www.circus-village.com'
       ],
-      publish: false
-      /*
+      publish: true,
       cloudfront: {
         key: 'cloudfront_distribution_stage',
         invalidate: true
       }
-      */
     }
   }
 }
