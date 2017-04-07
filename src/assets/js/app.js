@@ -32,7 +32,6 @@ class Application {
     this.body = $('body').get(0)
     this.menu = $('.menu')
     this.leader = $('.leader')
-    this.info = $('.accomodation > div')
 
     this.scroller = new Scroll({
       navigate: navigate,
@@ -50,17 +49,6 @@ class Application {
 
     this.slideshow = new Slideshow({invisibles: $('.menu, .leader')})
     this.gallery = new Gallery({navigate: navigate, back: this.back.bind(this)})
-
-    const infoLink = (e) => {
-      e.preventDefault()
-      const el = $(e.currentTarget)
-      const href = $(el.find('a[href]').get(0)).attr('href')
-      this.navigate(href)
-    }
-
-    // make the entire info div click to the gallery image
-    this.info.on('click', infoLink)
-    this.info.on('touchend', infoLink)
   }
 
   back () {
