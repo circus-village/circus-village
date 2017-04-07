@@ -94,21 +94,24 @@ extends(src='layout.sgr')
             #teak-house.teak-house
               span Teak House
               p
-                a(href='#photos' aria-hidden='true')
-                  img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
+                img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
                 | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
+              p
+                a(href='#photos' aria-hidden='true') Photo Gallery
             #jungle-bungalow.jungle-bungalow
               span Jungle Bungalow
               p
-                a(href='#photos' aria-hidden='true')
-                  img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
+                img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
                 | Each bamboo bungalow has a river terrace and electricity.
+              p
+                a(href='#photos' aria-hidden='true') Photo Gallery
             #bamboo-hut.bamboo-hut
               span Bamboo Hut
               p
-                a(href='#photos' aria-hidden='true')
-                  img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
+                img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
                 | Bamboo huts are off-grid; ideal for an individual to retreat.
+              p
+                a(href='#photos' aria-hidden='true') Photo Gallery
 
         .getting-there
           h2 Getting There
