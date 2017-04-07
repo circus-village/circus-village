@@ -50,6 +50,9 @@ module.exports = {
 
   // configure development mode lifecycle
   lifecycle: {
+    build: [
+      require('makestatic-build-version')
+    ],
     parse: parse({js: false}).concat(),
     graph: require('makestatic-graph-resources'),
     transform: [

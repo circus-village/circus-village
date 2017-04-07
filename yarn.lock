@@ -2838,6 +2838,12 @@ makestatic-audit-files@^1.0.8:
   dependencies:
     when "^3.7.8"
 
+makestatic-build-version@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/makestatic-build-version/-/makestatic-build-version-1.0.3.tgz#f0a6e61655ffaf99ca7eb3430388f6677963dd95"
+  dependencies:
+    when "^3.7.8"
+
 makestatic-css-standard@^1.0.22:
   version "1.0.22"
   resolved "https://registry.yarnpkg.com/makestatic-css-standard/-/makestatic-css-standard-1.0.22.tgz#70a194217de3976dd6fc3f8b98001a750c8d5d30"

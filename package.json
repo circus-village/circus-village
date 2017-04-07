@@ -21,6 +21,7 @@
     "image-size": "~0.5.0",
     "makestatic-archive-zip": "^1.0.2",
     "makestatic-audit-files": "^1.0.8",
+    "makestatic-build-version": "^1.0.3",
     "makestatic-css-standard": "^1.0.22",
     "makestatic-deploy-s3": "^1.0.18",
     "makestatic-dom-version": "^1.0.0",
