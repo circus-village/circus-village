@@ -27,19 +27,19 @@ extends(src='layout.sgr')
 
           .events
             .event
-              h3 Acro Yoga Lunar Immersion
+              h3 Acro Yoga Elemental Immersion
               h4 December 2nd to December 6th 2017
-              p Marc Bauchet and friends
+              p Marc Bauchet and Yohann Guichard
               //- ![Marc Bauchet](assets/img/teachers/marc-bauchet.jpg)
-              p Waiting for confirmation of acro yoga classes.
+              p Waiting for confirmation from Acro Yoga.
               ul
                 li
                   a(href='https://www.facebook.com/acromarcopolo') Registration
             .event
               h3 Acro Yoga Solar Weekend
               h4 December 9th to December 10th 2017
-              p Marc Bauchet and friends
-              p Waiting for confirmation of acro yoga classes.
+              p Marc Bauchet and Yohann Guichard
+              p Waiting for confirmation from Acro Yoga.
               ul
                 li
                   a(href='https://www.facebook.com/acromarcopolo') Registration
@@ -56,10 +56,10 @@ extends(src='layout.sgr')
                   li
                     a(href='http://www.thaimassagecircus.com') Registration
             .event
-              h3 Acro Yoga Immersion
+              h3 Acro Yoga Lunar Immersion
               h4 March 3rd to March 8th 2018
-              p Luka Agreš and friends
-              p Waiting for confirmation of acro yoga classes.
+              p Luka Agreš and Pau Castellsague (assisted by Omananda)
+              p Waiting for confirmation from Acro Yoga.
               ul
                 li
                   a(href='https://www.facebook.com/profile.php?id=100008581514226') Registration
