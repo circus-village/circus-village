@@ -111,7 +111,7 @@ class Application {
     if (!val) {
       this.menu.removeClass('transparent')
       this.leader.removeClass('transparent')
-    } else {
+    } else if (!this.menu.hasClass('transparent')) {
       this.slideshow.stop()
       this.menu.addClass('transparent')
       this.leader.addClass('transparent')
