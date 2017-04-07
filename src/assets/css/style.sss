@@ -23,7 +23,7 @@
 
 .swipe
   overflow: hidden
-  visibility: hidden
+  /* visibility: hidden */
   position: relative
   height: 100%
 
@@ -111,7 +111,8 @@ header
   top: 0
   text-align: left
   z-index: 1
-  cursor: pointer
+  &.welcome
+    cursor: pointer
 
 header .slide
   transition: opacity 1s ease-out
@@ -150,7 +151,8 @@ header .swipe
   font-size: 2.8rem
   margin-bottom: 0
   text-align: left
-  pointer-events: none
+  &.disabled
+    pointer-events: none
 
 .leader > span
   border-left: 2px solid rgba(255,255,255,0.3)

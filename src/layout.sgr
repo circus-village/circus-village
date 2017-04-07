@@ -19,9 +19,9 @@ html(lang='en')
       meta(name='keywords' content='circus village, circus, village, retreat, massage, waterfall, river, kuang si, freedom, school of freedom')
 
     block(name='stylesheets')
-      link(rel='stylesheet' href='/assets/css/style.css')
       link(rel="stylesheet" href="/assets/css/photoswipe.css")
       link(rel="stylesheet" href="/assets/css/default-skin/default-skin.css")
+      link(rel='stylesheet' href='/assets/css/style.css')
 
   body(id="top")
     block(name='header')

@@ -1,4 +1,6 @@
 extends(src='layout.sgr')
+  block(name='stylesheets')
+    link(rel='stylesheet' href='/assets/css/style.css')
   block(name='content')
     div.menu
       h1
@@ -6,10 +8,10 @@ extends(src='layout.sgr')
         span ircus
         span Village
     p.leader
-      span Resource not found, please visit the&nbsp;
-        a(href='/' title='Home Page') home page
-    header.welcome
+      span
+        | Resource not found, please visit the&nbsp;
+        a(href='/' title='Home Page') home page.
+    header
       div#slider.swipe
-        div.swipe-wrap
 
   block(name='javascript')
