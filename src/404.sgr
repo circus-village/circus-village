@@ -1,0 +1,15 @@
+extends(src='layout.sgr')
+  block(name='content')
+    div.menu
+      h1
+        span C
+        span ircus
+        span Village
+    p.leader
+      span Resource not found, please visit the&nbsp;
+        a(href='/' title='Home Page') home page
+    header.welcome
+      div#slider.swipe
+        div.swipe-wrap
+
+  block(name='javascript')

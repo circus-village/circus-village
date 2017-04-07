@@ -1,6 +1,5 @@
 extends(src='layout.sgr')
   block(name='content')
-    div#main
     div.menu
       h1
         span C
