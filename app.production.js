@@ -13,6 +13,7 @@ module.exports = {
   // configure optimization lifecycle
   lifecycle: {
     transform: [
+      require('makestatic-dom-version'),
       {
         plugin: require('makestatic-permalink'),
         from: 2,
@@ -61,11 +62,13 @@ module.exports = {
         redirects: [
           'www.circus-village.com'
         ],
-        publish: true,
+        publish: false
+        /*
         cloudfront: {
           key: 'cloudfront_distribution_production',
           invalidate: true
         }
+        */
       }
     }
   }

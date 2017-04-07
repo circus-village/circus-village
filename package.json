@@ -22,6 +22,8 @@
     "makestatic-archive-zip": "^1.0.2",
     "makestatic-audit-files": "^1.0.8",
     "makestatic-css-standard": "^1.0.22",
+    "makestatic-deploy-s3": "^1.0.18",
+    "makestatic-dom-version": "^1.0.0",
     "makestatic-fingerprint": "^1.0.10",
     "makestatic-graph-resources": "^1.1.9",
     "makestatic-html-standard": "^1.0.31",

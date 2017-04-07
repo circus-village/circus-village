@@ -53,6 +53,7 @@ module.exports = {
     parse: parse({js: false}).concat(),
     graph: require('makestatic-graph-resources'),
     transform: [
+      require('makestatic-dom-version'),
       {
         plugin: require('makestatic-permalink'),
         from: 2,
