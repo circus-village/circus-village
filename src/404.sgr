@@ -4,13 +4,14 @@ extends(src='layout.sgr')
   block(name='content')
     div.menu
       h1
-        span C
-        span ircus
-        span Village
+        a(href='/' title='Circus Village Home')
+          span C
+          span ircus
+          span Village
     p.leader
       span
         | Resource not found, please visit the&nbsp;
-        a(href='/' title='Home Page') home page.
+        a(href='/' title='Circus Village Home') home page.
     header
       div#slider.swipe
 
