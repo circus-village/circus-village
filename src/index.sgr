@@ -57,9 +57,18 @@ extends(src='layout.sgr')
                     a(href='http://www.thaimassagecircus.com') Registration
             .event
               h3 Acro Yoga Lunar Immersion
-              h4 March 3rd to March 8th 2018
+              h4 March 1st to March 6th 2018
               p Luka Agreš and Pau Castellsague (assisted by Omananda)
-              p Waiting for confirmation from Acro Yoga.
+              p
+                img(src='assets/img/teachers/luka-agres.jpg' alt='luka-agres' width='128' height='147')
+                img(src='assets/img/teachers/pau-castellsague.jpg' alt='pau-castellsague' width='128' height='147')
+                img(src='assets/img/teachers/omananda.jpg' alt='omananda' width='128' height='147')
+                | Come join us for this journey of true listening with all that you are. Explore the art of mindful touch down to earth and take it up into the air. 
+
+              p The Lunar Immersion focuses on the healing, relaxing and rejuvenating practices of Thai Massage and therapeutic flying. The Lunar Asana Sequence teaches basic body mechanics with a focus on self-love cultivation, in preparation of the dance of Thai massage. The techniques learned on the floor are then translated to the flying work, using the element of gravity to amplify the healing flow of prana (life force). Often, we will work in teams of three for safety and support, and everyone will have the opportunity to base and fly, heal and be healed. 
+
+              p This event fulfills a pre-requisite for AcroYoga teacher training. The immersion will be taught in English.
+
               ul
                 li
                   a(href='https://www.facebook.com/profile.php?id=100008581514226') Registration
