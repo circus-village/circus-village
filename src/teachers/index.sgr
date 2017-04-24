@@ -10,9 +10,6 @@ extends(src='../layout.sgr')
           span Village
     .content
       .teachers
-        h2 Teachers
-        p Learn more about the Circus Village teachers.
-
         .bio
           h3 Arno L'Hermitte
           p

@@ -89,12 +89,14 @@ class Application {
     // show photo gallery
     } else if (href === PHOTOS) {
       this.gallery.start(null, hash)
+    /*
     // handle deep-link to specific photo in the gallery
     } else {
       var item = this.gallery.find(id)
       if (item) {
         this.gallery.start(item, hash)
       }
+    */
     }
 
     let push = true
