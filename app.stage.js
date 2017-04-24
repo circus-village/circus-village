@@ -32,7 +32,8 @@ conf.deploy = {
       publish: true,
       cloudfront: {
         key: 'cloudfront_distribution_stage',
-        invalidate: true
+        invalidate: true,
+        paths: ['/*']
       }
     }
   }

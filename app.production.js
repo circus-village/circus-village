@@ -67,7 +67,8 @@ module.exports = {
         publish: true,
         cloudfront: {
           key: 'cloudfront_distribution_production',
-          invalidate: true
+          invalidate: true,
+          paths: ['/*']
         }
       }
     }
