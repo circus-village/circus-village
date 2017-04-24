@@ -152,7 +152,10 @@ extends(src='layout.sgr')
 
       .contact
         h2 Contact
-        p(mdi) Questions about a specific event should be sent to the event organizer. For other general enquiries email [Arno L&#39;Hermitte](mailto:arnothehermit@hotmail.com 'arnothehermit@hotmail.com').
+        p
+          | Questions about a specific event should be sent to the event organizer. For other general enquiries email
+          a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Arno L&#39;Hermitte
+          | .
 
     footer
       ul
