@@ -23,7 +23,7 @@ html(lang='en')
       link(rel='stylesheet' href='/assets/css/default-skin/default-skin.css')
       link(rel='stylesheet' href='/assets/css/style.css')
 
-  body(id='top')
+  body(id='top' class='{{pageId}}')
     block(name='header')
 
     block(name='content')

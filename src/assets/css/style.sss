@@ -166,9 +166,11 @@ h1
   line-height: 1
   font-weight: normal
   font-size: 4rem
+  cursor: default
+
+body.index h1
   color: white
   text-shadow: 1px 1px 1px #000
-  cursor: default
 
 h1 span:nth-child(2)
   margin-right: 1rem
@@ -184,12 +186,14 @@ h1 a
     border-color: inherit !important
 
 .menu
+  padding: 10px 10px 0 10px
+
+body.index .menu
   z-index: 1000
   position: absolute
   left: 0
   right: 0
   top: 0
-  padding: 10px 10px 0 10px
   background: rgba(0, 0, 0, .55)
 
 footer ul
@@ -238,6 +242,7 @@ footer > ul > li:not(:last-child):after
   background: #fdf6e3
   position: relative
   z-index: 999
+  padding-top: 2rem
   max-width: 980px
   text-align: left
   margin-left: auto
@@ -256,7 +261,7 @@ p
 .event p img
   margin-top: 1rem
 
-.event p img, .info p img
+.event p img, .info p img, .bio p img
   float: left
   margin-right: 2rem
 

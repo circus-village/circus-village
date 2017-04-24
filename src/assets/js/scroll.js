@@ -9,7 +9,7 @@ class Scroll {
   constructor (options = {}) {
     this.top = document.querySelectorAll('[href="#top"]')
     this.links = document.querySelectorAll(
-      'nav.main a:not([href^="#photos"]), footer a, .permalink[href^="#"]')
+      'body.index nav.main a:not([href^="#photos"]), body.index footer a, .permalink[href^="#"]')
     this.scrollTop = this.onScrollTop.bind(this)
     this.scrollToLink = this.onScrollToLink.bind(this)
     this.popstate = options.popstate

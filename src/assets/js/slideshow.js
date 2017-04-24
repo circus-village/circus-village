@@ -19,6 +19,12 @@ class Slideshow {
     }
 
     const element = document.getElementById('slider')
+
+    // no slideshow on this page
+    if (!element) {
+      return
+    }
+
     this.swipe = new Swipe(element, {
       startSlide: 0,
       auto: 1500,
@@ -51,17 +57,21 @@ class Slideshow {
   }
 
   start () {
-    this.swipe.restart()
-    this.wrap.show()
-    this.options.invisibles.addClass('transparent')
-    this.playing = true
+    if (this.swipe) {
+      this.swipe.restart()
+      this.wrap.show()
+      this.options.invisibles.addClass('transparent')
+      this.playing = true
+    }
   }
 
   stop () {
-    this.swipe.stop()
-    this.wrap.hide()
-    this.options.invisibles.removeClass('transparent')
-    this.playing = false
+    if (this.swipe) {
+      this.swipe.stop()
+      this.wrap.hide()
+      this.options.invisibles.removeClass('transparent')
+      this.playing = false
+    }
   }
 }
 
