@@ -30,7 +30,7 @@
     "makestatic-html-standard": "^1.0.31",
     "makestatic-inline-css": "^1.1.15",
     "makestatic-page-id": "^1.0.21",
-    "makestatic-permalink": "^1.0.2",
+    "makestatic-permalink": "^1.0.3",
     "makestatic-preset-optimize": "^1.1.8",
     "makestatic-preset-parse": "^1.0.21",
     "makestatic-sitemap": "^1.2.2",

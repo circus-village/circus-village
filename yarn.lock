@@ -2951,9 +2951,9 @@ makestatic-parse-js@^1.0.27:
     acorn "^4.0.4"
     escodegen "^1.8.1"
 
-makestatic-permalink@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/makestatic-permalink/-/makestatic-permalink-1.0.2.tgz#0660bb64c3f1509a596f197f00c6e324e1c18c97"
+makestatic-permalink@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/makestatic-permalink/-/makestatic-permalink-1.0.3.tgz#4dfc79ddbe149448a629424ec137b6903dd1377f"
   dependencies:
     slugify "^1.1.0"
 
