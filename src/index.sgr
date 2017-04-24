@@ -17,156 +17,155 @@ extends(src='layout.sgr')
       div#slider.swipe
         div.swipe-wrap
     .content
-      .container
-        .intro
-          p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
+      .intro
+        p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
+
+      .events
+        h2 Events
+        p After ten years hosting the Thai Massage Circus, the Circus Village is now happy to present more events and great international teachers.
 
         .events
-          h2 Events
-          p After ten years hosting the Thai Massage Circus, the Circus Village is now happy to present more events and great international teachers.
-
-          .events
-            .event
-              h3 Acro Yoga Elemental Immersion
-              h4 December 2nd to December 6th 2017
-              p Marc Bauchet and Yohann Guichard
-              //- ![Marc Bauchet](assets/img/teachers/marc-bauchet.jpg)
-              p Waiting for confirmation from Acro Yoga.
-              ul
-                li
-                  a(href='https://www.facebook.com/acromarcopolo') Registration
-            .event
-              h3 Acro Yoga Solar Weekend
-              h4 December 9th to December 10th 2017
-              p Marc Bauchet and Yohann Guichard
-              p Waiting for confirmation from Acro Yoga.
-              ul
-                li
-                  a(href='https://www.facebook.com/acromarcopolo') Registration
-            .event
-              h3 Thai Yoga Anatomy: Functional Anatomy of Movement
-              h4 January 18th to January 25th 2018
-              p Arno L'Hermitte and Rachel Ellery
-              p
-                img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
-                img(src='assets/img/teachers/rachel-ellery.jpg' alt='rachel-ellery' width='128' height='147')
-                | Taught by experienced clinical osteopaths this course will facilitate your understanding and use of anatomy for both Thai Masseurs and Yogis.
-
-              p Rachel and Arno will teach you anatomy of movement and how to read anatomy, test it, evaluate and use it. After this intensive course anatomy will no longer be an obscure and complex mystery but rather a practical and useful tool to read the body and help develop your intuition as a practitioner.
-              ul
-                li
-                  a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
-
-            .event
-              h3 Thai Massage Circus
-              h4 February 4th to March 1st 2018
-              p Arno L'Hermitte and friends
-              p
-                img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
-                | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.
-              ul
-                li
-                  a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
-                li
-                  a(href='http://www.thaimassagecircus.com') Registration
-            .event
-              h3 Acro Yoga Lunar Immersion
-              h4 March 1st to March 6th 2018
-              p Luka Agreš and Pau Castellsague (assisted by Omananda)
-              p
-                img(src='assets/img/teachers/luka-agres.jpg' alt='luka-agres' width='128' height='147')
-                img(src='assets/img/teachers/pau-castellsague.jpg' alt='pau-castellsague' width='128' height='147')
-                img(src='assets/img/teachers/omananda.jpg' alt='omananda' width='128' height='147')
-                | Come join us for this journey of true listening with all that you are. Explore the art of mindful touch down to earth and take it up into the air. 
-
-              p The Lunar Immersion focuses on the healing, relaxing and rejuvenating practices of Thai Massage and therapeutic flying. The Lunar Asana Sequence teaches basic body mechanics with a focus on self-love cultivation, in preparation of the dance of Thai massage. The techniques learned on the floor are then translated to the flying work, using the element of gravity to amplify the healing flow of prana (life force). Often, we will work in teams of three for safety and support, and everyone will have the opportunity to base and fly, heal and be healed. 
-
-              p This event fulfills a pre-requisite for AcroYoga teacher training. The immersion will be taught in English.
-
-              ul
-                li
-                  a(href='https://www.facebook.com/profile.php?id=100008581514226') Registration
-            .event
-              h3 Transformation Cellular Memory
-              h4 March 8th to March 14th 2018
-              p Don Hanson
-              p
-                img(src='assets/img/teachers/don-hanson.jpg' alt='don-hanson' width='128' height='147')
-                | Don Hanson M.A. is an international teacher, healer and group process facilitator. He has spent over 40 years unraveling his own fear-based belief systems and mind-sets and has awakened a profound ability to bring through powerful healing energies.
-              p These sacred healing energies combine with Don's psychic, intuitive skills and group process experience. The result is an unlocking on a cellular level of all inherited behavior patterns that keep you stuck in a limited level of consciousness and perspective.
-              ul
-                li
-                  a(href='https://www.donhanson.com') Information
-                li
-                  a(href='mailto:pearson_cathy@hotmail.com' title='pearson_cathy@hotmail.com') Registration
-
-        .info
-          h2 Information
-          p The village has a herbal steam sauna next to a river beach, wood fire ovens and a spacious open Shala for group events.
-          p The land is cultivated with an organic garden producing leafy greens and an orchard with saplings and mature fruit trees. Many species of bamboo have been planted to diversify the ecosystem and supply building materials for the environmentally friendly bungalows.
-
-          h3 Food
-          p We offer delicious Asian and international food using organic produce from the garden or other local farms where possible. The type of food varies for each event please contact your event organizer for more information.
-
-          h3 Accommodation
-          p Our beautiful traditional Laos houses and bungalows are on the river with private natural pools. Bungalows and huts have shared bathrooms and toilets. We provide bedding for everyone.
-
-
-          .accomodation
-            #teak-house.teak-house
-              span Teak House
-              p
-                img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
-                | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
-              p
-                a(href='#photos' aria-hidden='true') Photo Gallery
-            #jungle-bungalow.jungle-bungalow
-              span Jungle Bungalow
-              p
-                img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
-                | Each bamboo bungalow has a river terrace and electricity.
-              p
-                a(href='#photos' aria-hidden='true') Photo Gallery
-            #bamboo-hut.bamboo-hut
-              span Bamboo Hut
-              p
-                img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
-                | Bamboo huts are off-grid; ideal for an individual to retreat.
-              p
-                a(href='#photos' aria-hidden='true') Photo Gallery
-
-        .getting-there
-          h2 Getting There
-          div.section
-
+          .event
+            h3 Acro Yoga Elemental Immersion
+            h4 December 2nd to December 6th 2017
+            p Marc Bauchet and Yohann Guichard
+            //- ![Marc Bauchet](assets/img/teachers/marc-bauchet.jpg)
+            p Waiting for confirmation from Acro Yoga.
+            ul
+              li
+                a(href='https://www.facebook.com/acromarcopolo') Registration
+          .event
+            h3 Acro Yoga Solar Weekend
+            h4 December 9th to December 10th 2017
+            p Marc Bauchet and Yohann Guichard
+            p Waiting for confirmation from Acro Yoga.
+            ul
+              li
+                a(href='https://www.facebook.com/acromarcopolo') Registration
+          .event
+            h3 Thai Yoga Anatomy: Functional Anatomy of Movement
+            h4 January 18th to January 25th 2018
+            p Arno L'Hermitte and Rachel Ellery
             p
-              a(href='https://www.google.com/maps/@19.7577325,101.9932579,236m/data=!3m1!1e3u' title='Map')
-                img(src='/assets/img/satellite.jpg' alt='satellite map' width='160' height='160')
-              | The village is located 15 minutes walk from the extraordinary Kuang Si waterfall national park, 29 kilometres from Luang Prabang, historical capital of Laos.
+              img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
+              img(src='assets/img/teachers/rachel-ellery.jpg' alt='rachel-ellery' width='128' height='147')
+              | Taught by experienced clinical osteopaths this course will facilitate your understanding and use of anatomy for both Thai Masseurs and Yogis.
 
+            p Rachel and Arno will teach you anatomy of movement and how to read anatomy, test it, evaluate and use it. After this intensive course anatomy will no longer be an obscure and complex mystery but rather a practical and useful tool to read the body and help develop your intuition as a practitioner.
+            ul
+              li
+                a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
+
+          .event
+            h3 Thai Massage Circus
+            h4 February 4th to March 1st 2018
+            p Arno L'Hermitte and friends
             p
-              a(href='https://www.google.com/maps/place/Joma+Bakery+Caf%C3%A9/@19.8885404,102.1305129,17z/data=!3m1!4b1!4m2!3m1!1s0x312f2a426fb70085:0xb1ae7742ff2c3baf' title='Meeting Point')
-                img(src='/assets/img/meeting-point.jpg' alt='meeting point' width='160' height='160')
-              | You can fly to Luang Prabang international airport.&nbsp;
-              a(href='http://www.airasia.com/' title='Air Asia') Air Asia
-              | &nbsp;often have cheap flights. On the day of the event the circus trucks will collect you from the meeting point at Joma bakery next to the post office in Luang Prabang.
+              img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
+              | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.
+            ul
+              li
+                a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
+              li
+                a(href='http://www.thaimassagecircus.com') Registration
+          .event
+            h3 Acro Yoga Lunar Immersion
+            h4 March 1st to March 6th 2018
+            p Luka Agreš and Pau Castellsague (assisted by Omananda)
+            p
+              img(src='assets/img/teachers/luka-agres.jpg' alt='luka-agres' width='128' height='147')
+              img(src='assets/img/teachers/pau-castellsague.jpg' alt='pau-castellsague' width='128' height='147')
+              img(src='assets/img/teachers/omananda.jpg' alt='omananda' width='128' height='147')
+              | Come join us for this journey of true listening with all that you are. Explore the art of mindful touch down to earth and take it up into the air. 
 
-        .contact
-          h2 Contact
-          p(mdi) Questions about a specific event should be sent to the event organizer. For other general enquiries email [Arno L&#39;Hermitte](mailto:arnothehermit@hotmail.com 'arnothehermit@hotmail.com').
+            p The Lunar Immersion focuses on the healing, relaxing and rejuvenating practices of Thai Massage and therapeutic flying. The Lunar Asana Sequence teaches basic body mechanics with a focus on self-love cultivation, in preparation of the dance of Thai massage. The techniques learned on the floor are then translated to the flying work, using the element of gravity to amplify the healing flow of prana (life force). Often, we will work in teams of three for safety and support, and everyone will have the opportunity to base and fly, heal and be healed. 
 
-      footer
-        ul
-          li
-            a(href='#events' title='Events') Events
-          li
-            a(href='#information' title='Information') Information
-          li
-            a(href='#photos' title='Photo Gallery') Photos
-          li
-            a(href='#getting-there' title='Getting to the Circus Village') Getting There
-        br
-        nav
-          a(href='#top' title='Back to top') Back to Top
+            p This event fulfills a pre-requisite for AcroYoga teacher training. The immersion will be taught in English.
 
-    include(src='_gallery.sgr')
+            ul
+              li
+                a(href='https://www.facebook.com/profile.php?id=100008581514226') Registration
+          .event
+            h3 Transformation Cellular Memory
+            h4 March 8th to March 14th 2018
+            p Don Hanson
+            p
+              img(src='assets/img/teachers/don-hanson.jpg' alt='don-hanson' width='128' height='147')
+              | Don Hanson M.A. is an international teacher, healer and group process facilitator. He has spent over 40 years unraveling his own fear-based belief systems and mind-sets and has awakened a profound ability to bring through powerful healing energies.
+            p These sacred healing energies combine with Don's psychic, intuitive skills and group process experience. The result is an unlocking on a cellular level of all inherited behavior patterns that keep you stuck in a limited level of consciousness and perspective.
+            ul
+              li
+                a(href='https://www.donhanson.com') Information
+              li
+                a(href='mailto:pearson_cathy@hotmail.com' title='pearson_cathy@hotmail.com') Registration
+
+      .info
+        h2 Information
+        p The village has a herbal steam sauna next to a river beach, wood fire ovens and a spacious open Shala for group events.
+        p The land is cultivated with an organic garden producing leafy greens and an orchard with saplings and mature fruit trees. Many species of bamboo have been planted to diversify the ecosystem and supply building materials for the environmentally friendly bungalows.
+
+        h3 Food
+        p We offer delicious Asian and international food using organic produce from the garden or other local farms where possible. The type of food varies for each event please contact your event organizer for more information.
+
+        h3 Accommodation
+        p Our beautiful traditional Laos houses and bungalows are on the river with private natural pools. Bungalows and huts have shared bathrooms and toilets. We provide bedding for everyone.
+
+
+        .accomodation
+          #teak-house.teak-house
+            span Teak House
+            p
+              img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
+              | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
+            p
+              a(href='#photos' aria-hidden='true') Photo Gallery
+          #jungle-bungalow.jungle-bungalow
+            span Jungle Bungalow
+            p
+              img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
+              | Each bamboo bungalow has a river terrace and electricity.
+            p
+              a(href='#photos' aria-hidden='true') Photo Gallery
+          #bamboo-hut.bamboo-hut
+            span Bamboo Hut
+            p
+              img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
+              | Bamboo huts are off-grid; ideal for an individual to retreat.
+            p
+              a(href='#photos' aria-hidden='true') Photo Gallery
+
+      .getting-there
+        h2 Getting There
+        div.section
+
+          p
+            a(href='https://www.google.com/maps/@19.7577325,101.9932579,236m/data=!3m1!1e3u' title='Map')
+              img(src='/assets/img/satellite.jpg' alt='satellite map' width='160' height='160')
+            | The village is located 15 minutes walk from the extraordinary Kuang Si waterfall national park, 29 kilometres from Luang Prabang, historical capital of Laos.
+
+          p
+            a(href='https://www.google.com/maps/place/Joma+Bakery+Caf%C3%A9/@19.8885404,102.1305129,17z/data=!3m1!4b1!4m2!3m1!1s0x312f2a426fb70085:0xb1ae7742ff2c3baf' title='Meeting Point')
+              img(src='/assets/img/meeting-point.jpg' alt='meeting point' width='160' height='160')
+            | You can fly to Luang Prabang international airport.&nbsp;
+            a(href='http://www.airasia.com/' title='Air Asia') Air Asia
+            | &nbsp;often have cheap flights. On the day of the event the circus trucks will collect you from the meeting point at Joma bakery next to the post office in Luang Prabang.
+
+      .contact
+        h2 Contact
+        p(mdi) Questions about a specific event should be sent to the event organizer. For other general enquiries email [Arno L&#39;Hermitte](mailto:arnothehermit@hotmail.com 'arnothehermit@hotmail.com').
+
+    footer
+      ul
+        li
+          a(href='#events' title='Events') Events
+        li
+          a(href='#information' title='Information') Information
+        li
+          a(href='#photos' title='Photo Gallery') Photos
+        li
+          a(href='#getting-there' title='Getting to the Circus Village') Getting There
+      br
+      nav
+        a(href='#top' title='Back to top') Back to Top
+
+  include(src='_gallery.sgr')
