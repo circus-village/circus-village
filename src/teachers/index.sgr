@@ -10,6 +10,7 @@ extends(src='../layout.sgr')
           span Village
     .content
       .teachers
+        h2 Teachers
         .bio
           h3 Arno L'Hermitte
           p
