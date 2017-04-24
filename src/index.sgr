@@ -76,9 +76,9 @@ extends(src='layout.sgr')
               img(src='assets/img/teachers/luka-agres.jpg' alt='luka-agres' width='128' height='147')
               img(src='assets/img/teachers/pau-castellsague.jpg' alt='pau-castellsague' width='128' height='147')
               img(src='assets/img/teachers/omananda.jpg' alt='omananda' width='128' height='147')
-              | Come join us for this journey of true listening with all that you are. Explore the art of mindful touch down to earth and take it up into the air. 
+              | Come join us for this journey of true listening with all that you are. Explore the art of mindful touch down to earth and take it up into the air.
 
-            p The Lunar Immersion focuses on the healing, relaxing and rejuvenating practices of Thai Massage and therapeutic flying. The Lunar Asana Sequence teaches basic body mechanics with a focus on self-love cultivation, in preparation of the dance of Thai massage. The techniques learned on the floor are then translated to the flying work, using the element of gravity to amplify the healing flow of prana (life force). Often, we will work in teams of three for safety and support, and everyone will have the opportunity to base and fly, heal and be healed. 
+            p The Lunar Immersion focuses on the healing, relaxing and rejuvenating practices of Thai Massage and therapeutic flying. The Lunar Asana Sequence teaches basic body mechanics with a focus on self-love cultivation, in preparation of the dance of Thai massage. The techniques learned on the floor are then translated to the flying work, using the element of gravity to amplify the healing flow of prana (life force). Often, we will work in teams of three for safety and support, and everyone will have the opportunity to base and fly, heal and be healed.
 
             p This event fulfills a pre-requisite for AcroYoga teacher training. The immersion will be taught in English.
 
@@ -168,4 +168,4 @@ extends(src='layout.sgr')
       nav
         a(href='#top' title='Back to top') Back to Top
 
-  include(src='_gallery.sgr')
+    include(src='_gallery.sgr')
