@@ -44,17 +44,31 @@ extends(src='layout.sgr')
                 li
                   a(href='https://www.facebook.com/acromarcopolo') Registration
             .event
+              h3 Thai Yoga Anatomy: Functional Anatomy of Movement
+              h4 January 18th to January 25th 2018
+              p Arno L'Hermitte and Rachel Ellery
+              p
+                img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
+                img(src='assets/img/teachers/rachel-ellery.jpg' alt='rachel-ellery' width='128' height='147')
+                | Taught by experienced clinical osteopaths this course will facilitate your understanding and use of anatomy for both Thai Masseurs and Yogis.
+
+              p Rachel and Arno will teach you anatomy of movement and how to read anatomy, test it, evaluate and use it. After this intensive course anatomy will no longer be an obscure and complex mystery but rather a practical and useful tool to read the body and help develop your intuition as a practitioner.
+              ul
+                li
+                  a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
+
+            .event
               h3 Thai Massage Circus
               h4 February 4th to March 1st 2018
               p Arno L'Hermitte and friends
               p
                 img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
-                | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.</p>
+                | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.
               ul
                 li
                   a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
-                  li
-                    a(href='http://www.thaimassagecircus.com') Registration
+                li
+                  a(href='http://www.thaimassagecircus.com') Registration
             .event
               h3 Acro Yoga Lunar Immersion
               h4 March 1st to March 6th 2018
