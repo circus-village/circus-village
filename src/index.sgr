@@ -1,4 +1,9 @@
 extends(src='layout.sgr')
+  block(name='stylesheets')
+    link(rel='stylesheet' href='/assets/css/photoswipe.css')
+    link(rel='stylesheet' href='/assets/css/default-skin/default-skin.css')
+    link(rel='stylesheet' href='/assets/css/style.css')
+
   block(name='content')
     div.menu
       h1
@@ -170,3 +175,7 @@ extends(src='layout.sgr')
         a(href='#top' title='Back to top') Back to Top
 
     include(src='_gallery.sgr')
+
+    block(name='javascript')
+      script(src='/assets/js/vendor/swipe.js')
+      script(src='/assets/js/main.js' defer)

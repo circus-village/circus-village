@@ -1,6 +1,8 @@
 extends(src='../layout.sgr')
   block(name='title')
     title Teachers
+  block(name='stylesheets')
+    link(rel='stylesheet' href='/assets/css/style.css')
   block(name='content')
     div.menu
       h1
@@ -44,3 +46,6 @@ extends(src='../layout.sgr')
     footer
       nav
         a(href='#top' title='Back to top') Back to Top
+
+    block(name='javascript')
+      script(src='/assets/js/main.js' defer)
