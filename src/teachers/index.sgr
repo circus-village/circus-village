@@ -14,22 +14,6 @@ extends(src='../layout.sgr')
       .teachers
         h2 Teachers
         .bio
-          h3 Arno L'Hermitte
-          p
-            img(src='/assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
-            | Arno L'Hermitte is a French trained Osteopath and physical therapist with 25 years of clinical experience. After extended studies and many years spent with Thai Massage Masters in northern Thailand, Arno created Osteothai, a combination of therapeutical bodywork and eastern and western healing touch.
-
-          p He is  the founder of the Thai Massage Circus where hundreds of students and Thai massage teachers have visited over the last ten years to improve their Thai massage practice and touch.
-
-          p His journey has taken him to teach in nearly 20 countries around the world. He is now based in Bali at the Dragonfly village retreat center in the heart of Ubud.
-
-          p A yoga teacher since 1999, he has been invited to teach anatomy and yoga therapy in various yoga teacher trainings, Thai Veda teacher training, and Osteothai courses and healing festivals round the world .
-
-          p During ten years in the pacific island of Tahiti, having his own clinic,  he was actively in charge of the two professional sport teams. A passionate teacher and healer,  Arno is also an eternal student and keeps exploring movement and touch.
-
-          p He studied the past few years with Gille Marin (Chi Nei Tsang institute), Rolland combe (Wu Tai), Blandine Calais Germain (anatomy of movement), and many more worshops of Chi Kung, Tai Chi and Tantra.
-
-        .bio
           h3 Rachel Ellery
           p
             img(src='/assets/img/teachers/rachel-ellery.jpg' alt='rachel-ellery' width='128' height='147')
@@ -43,9 +27,23 @@ extends(src='../layout.sgr')
 
           p As well as being an Osteopath and a qualified pilates teacher, Rachel is also trained in dry needling, cranio-sacral osteopathy, Garuda mat, pediatrics, wuo thai, zen thai shiatsu and recently ThaiVedic Yoga and the thai massage circus. Over the last two years she has started to incorporate sound healing.
 
+        .bio
+          h3 Arno L'Hermitte
+          p
+            img(src='/assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
+            | Arno L'Hermitte is a French trained Osteopath and physical therapist with 25 years of clinical experience. After extended studies and many years spent with Thai Massage Masters in northern Thailand Arno created Osteothai a combination of therapeutical bodywork and eastern and western healing touch.
+
+          p He is  the founder of the Thai Massage Circus where hundreds of students and many Thai massage teachers have visited over the last ten years to improve their Thai massage practice and touch.
+
+          p His journey has taken him to teach in nearly 20 countries around the world. He is now based in Bali at the Dragonfly-village retreat center in the heart of Ubud.
+
+          p A yoga teacher since 1999, he has been invited to teach anatomy and yoga therapy in various yoga teacher trainings, Osteothai courses and healing festivals around the world. During ten years in his own clinic in Tahiti he was in charge of two professional sport teams.
+
+          p A passionate teacher and healer Arno is also an eternal student and keeps exploring movement and touch.
+
     footer
       nav
         a(href='#top' title='Back to top') Back to Top
 
-    block(name='javascript')
-      script(src='/assets/js/main.js' defer)
+  block(name='javascript')
+    script(src='/assets/js/main.js' defer)

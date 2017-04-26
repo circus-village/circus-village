@@ -126,6 +126,8 @@ class Application {
     // allow animated scroll on page load
     this.body.scrollTop = 0
 
+    // console.log(new Error('mock').stack)
+
     // check for hash on load
     function onLoad (e) {
       e.preventDefault()
@@ -154,6 +156,15 @@ class Application {
     window.addEventListener('scroll', this.onScroll.bind(this))
 
     this.scroller.start()
+
+    console.log('start called')
+
+    const more = $('a.read-more')
+
+    more.on('click', (e) => {
+      e.preventDefault()
+      console.log('read more click')
+    })
 
     $(window).on('blur', blur.bind(this))
     $(window).on('focus', focus.bind(this))

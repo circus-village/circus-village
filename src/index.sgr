@@ -54,10 +54,19 @@ extends(src='layout.sgr')
             img(src='assets/img/teachers/rachel-ellery.jpg' alt='rachel-ellery' width='128' height='147')
             | Taught by experienced clinical osteopaths this course will facilitate your understanding and use of anatomy for both Thai Masseurs and Yogis.
 
-          p Rachel and Arno will teach you anatomy of movement and how to read anatomy, test it, evaluate and use it. After this intensive course anatomy will no longer be an obscure and complex mystery but rather a practical and useful tool to read the body and help develop your intuition as a practitioner.
+          p Rachel and Arno will teach you anatomy of movement and how to read anatomy, test it, evaluate and use it. After this intensive course anatomy will no longer be an obscure and complex mystery but rather a practical and useful tool to read the body and help develop your intuition as a practitioner.&nbsp;
+          p.read-more
+            a(href='#thai-yoga-anatomy--functional-anatomy-of-movement' class='read-more') Read more about this course &#187;
+          p.hidden The aim of this course is to facilitate the understanding of the structure and function of the anatomical form for all various body workers and movement teachers. This will enable functional anatomy to become a practical and useful tool to read the body and help develop your intention and intuition as a practitioner/teacher.
+
+          p.hidden The course will follow a day by day presentation, from embryological development to general systemic anatomy to specific structural and functional details. We will encourage "topographic anatomy" emphasizing a 3D integration of the different regions of the body.
+
+          p.hidden Rachel and Arno will not only teach you structural and functional anatomy of the movement but how to observe the anatomy, practically test it, evaluate it and integrate it into daily practice. They have taught many anatomy courses over the last 20 years to students around the world, yoga teachers, osteopaths, bodyworks and Thai massage therapists. This makes this class unique and precious for whoever wishes to look deeper into the human anatomy of movement, instead of academic dry and boring anatomy charts that can disconnect us from our practice.
           ul
             li
               a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
+            li
+              a(href='/teachers/' title='Teacher Biographies') Teacher Biographies
 
         .event
           h3 Thai Massage Circus
@@ -176,6 +185,6 @@ extends(src='layout.sgr')
 
     include(src='_gallery.sgr')
 
-    block(name='javascript')
-      script(src='/assets/js/vendor/swipe.js')
-      script(src='/assets/js/main.js' defer)
+  block(name='javascript')
+    script(src='/assets/js/vendor/swipe.js')
+    script(src='/assets/js/main.js' defer)
