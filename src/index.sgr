@@ -172,16 +172,16 @@ extends(src='layout.sgr')
     footer
       ul
         li
-          a(href='#events' title='Events') Events
+          a(href='#events' title='Events' aria-hidden='true') Events
         li
-          a(href='#information' title='Information') Information
+          a(href='#information' title='Information' aria-hidden='true') Information
         li
-          a(href='#photos' title='Photo Gallery') Photos
+          a(href='#photos' title='Photo Gallery' aria-hidden='true') Photos
         li
-          a(href='#getting-there' title='Getting to the Circus Village') Getting There
+          a(href='#getting-there' title='Getting to the Circus Village' aria-hidden='true') Getting There
       br
       nav
-        a(href='#top' title='Back to top') Back to Top
+        a(href='#top' title='Back to top' aria-hidden='true') Back to Top
 
     include(src='_gallery.sgr')
 
