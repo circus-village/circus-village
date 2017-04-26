@@ -61,13 +61,11 @@ module.exports = {
         plugin: require('makestatic-permalink'),
         from: 2,
         to: 3
-      }
-      /*
+      },
       {
         plugin: require('makestatic-inline-css'),
         remove: true
       }
-      */
     ],
     verify: [
       require('makestatic-verify-id')
