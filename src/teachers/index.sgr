@@ -43,7 +43,7 @@ extends(src='../layout.sgr')
 
     footer
       nav
-        a(href='#top' title='Back to top') Back to Top
+        a(href='#top' title='Back to top' aria-hidden='true') Back to Top
 
   block(name='javascript')
     script(src='/assets/js/main.js' defer)
