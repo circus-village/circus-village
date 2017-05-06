@@ -1,8 +1,8 @@
 extends(src='layout.sgr')
   block(name='stylesheets')
+    link(rel='stylesheet' href='/assets/css/style.css')
     link(rel='stylesheet' href='/assets/css/photoswipe.css')
     link(rel='stylesheet' href='/assets/css/default-skin/default-skin.css')
-    link(rel='stylesheet' href='/assets/css/style.css')
 
   block(name='content')
     div.menu
@@ -59,9 +59,10 @@ extends(src='layout.sgr')
             a(href='#thai-yoga-anatomy--functional-anatomy-of-movement' class='read-more') Read more about this course &#187;
           p.hidden The aim of this course is to facilitate the understanding of the structure and function of the anatomical form for all various body workers and movement teachers. This will enable functional anatomy to become a practical and useful tool to read the body and help develop your intention and intuition as a practitioner/teacher.
 
+          p.hidden They have taught many anatomy courses over the last 20 years to students around the world, yoga teachers, osteopaths, bodyworks and Thai massage therapists. This makes this class unique and precious for whoever wishes to look deeper into the human anatomy of movement, instead of academic dry and boring anatomy charts that can disconnect us from our practice.
+
           p.hidden The course will follow a day by day presentation, from embryological development to general systemic anatomy to specific structural and functional details. We will encourage "topographic anatomy" emphasizing a 3D integration of the different regions of the body.
 
-          p.hidden Rachel and Arno will not only teach you structural and functional anatomy of the movement but how to observe the anatomy, practically test it, evaluate it and integrate it into daily practice. They have taught many anatomy courses over the last 20 years to students around the world, yoga teachers, osteopaths, bodyworks and Thai massage therapists. This makes this class unique and precious for whoever wishes to look deeper into the human anatomy of movement, instead of academic dry and boring anatomy charts that can disconnect us from our practice.
           ul
             li
               a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information

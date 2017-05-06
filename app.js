@@ -64,7 +64,9 @@ module.exports = {
       },
       {
         plugin: require('makestatic-inline-css'),
-        remove: true
+        options: {
+          remove: true
+        }
       }
     ],
     verify: [
