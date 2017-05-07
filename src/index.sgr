@@ -28,23 +28,23 @@ extends(src='layout.sgr')
       .events
         h2 Events
         p After ten years hosting the Thai Massage Circus, the Circus Village is now happy to present more events and great international teachers.
-        .event
-          h3 Acro Yoga Elemental Immersion
-          h4 December 2nd to December 6th 2017
-          p Marc Bauchet and Yohann Guichard
+        //-.event
+          //- h3 Acro Yoga Elemental Immersion
+          //- h4 December 2nd to December 6th 2017
+          //- p Marc Bauchet and Yohann Guichard
           //- ![Marc Bauchet](assets/img/teachers/marc-bauchet.jpg)
-          p Waiting for confirmation from Acro Yoga.
-          ul
-            li
-              a(href='https://www.facebook.com/acromarcopolo') Registration
-        .event
-          h3 Acro Yoga Solar Weekend
-          h4 December 9th to December 10th 2017
-          p Marc Bauchet and Yohann Guichard
-          p Waiting for confirmation from Acro Yoga.
-          ul
-            li
-              a(href='https://www.facebook.com/acromarcopolo') Registration
+          //- p Waiting for confirmation from Acro Yoga.
+          //- ul
+            //- li
+              //- a(href='https://www.facebook.com/acromarcopolo') Registration
+        //- .event
+          //- h3 Acro Yoga Solar Weekend
+          //- h4 December 9th to December 10th 2017
+          //- p Marc Bauchet and Yohann Guichard
+          //- p Waiting for confirmation from Acro Yoga.
+          //- ul
+            //- li
+              //- a(href='https://www.facebook.com/acromarcopolo') Registration
         .event
           h3 Thai Yoga Anatomy: Functional Anatomy of Movement
           h4 January 18th to January 25th 2018
