@@ -16,7 +16,7 @@ extends(src='../layout.sgr')
         .bio
           h3 Rachel Ellery
           p.video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/ktNI92Ns8tE" frameborder="0" allowfullscreen)
+            iframe(width="560" height="315" src="https://www.youtube.com/embed/ktNI92Ns8tE" allowfullscreen)
           p
             img(src='/assets/img/teachers/rachel-ellery.jpg' alt='rachel-ellery' width='128' height='147')
             | Rachel Ellery, a UK-trained Osteopath, specializes in teaching human anatomy and movement principles to yoga students/teachers from around the world. Her mantra “educating and moving the world one body at a time” stems from over 24 years of hands on experience and 15 years of teaching.
