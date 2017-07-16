@@ -121,10 +121,8 @@ extends(src='layout.sgr')
             img(src='assets/img/teachers/sonia-amalric.jpg' alt='sonia-amalric' width='128' height='147')
             | Sonia is happy to teach in deep connection with nature, creating a space for healing and self inspection. She will be teaching at the Circus Village for the first time, offering a 9 days immersion into the practices of Ashtanga yoga.
           ul
-            //-li
-              //-a(href='https://www.donhanson.com') Information
-            //-li
-              //-a(href='mailto:pearson_cathy@hotmail.com' title='pearson_cathy@hotmail.com') Registration
+            li
+              a(href='/teachers/#sonia' title='Sonia Biography') Biography
 
       .info
         h2 Information

@@ -13,7 +13,7 @@ extends(src='../layout.sgr')
     .content
       .teachers
         h2 Teachers
-        .bio
+        .bio#rachel
           h3 Rachel Ellery
           p.video
             iframe(width="560" height="315" src="https://www.youtube.com/embed/ktNI92Ns8tE" allowfullscreen)
@@ -29,7 +29,21 @@ extends(src='../layout.sgr')
 
           p As well as being an Osteopath and a qualified pilates teacher, Rachel is also trained in dry needling, cranio-sacral osteopathy, Garuda mat, pediatrics, wuo thai, zen thai shiatsu and recently ThaiVedic Yoga and the thai massage circus. Over the last two years she has started to incorporate sound healing.
 
-        .bio
+
+        .bio#sonia
+          h3 Sonia Amalric
+          p
+            img(src='/assets/img/teachers/sonia-yoga.jpg' alt='sonia' width='100%')
+          p
+            img(src='/assets/img/teachers/sonia-amalric.jpg' alt='sonia' width='128' height='147')
+            | It is in the United States that Sonia started practicing yoga when she was 18, and quickly became passionate about Ashtanga Yoga. She wishes to share the different practices of yoga as guidance tools on our journey towards freedom, change and self transformation. After teaching at Ashtanga Yoga Paris school for the past three years, she now spends her time teaching and organizing yoga retreats and workshops over the world. 
+
+          p After starting a career in International development and working in Ivory Coast for a year, she moved back to Paris in 2014. She started studying with Linda Munro and Gerald Disse at Ashtanga Yoga Paris and taught at their yoga school for three years. 
+
+          p Today, she spends her time teaching and organizing yoga retreats and workshops. She keeps evolving in her practice while teaching over the world.  She  frequently studies with the teachers that inspire her (Ron Reid & Marla Meenakshi Joy, Richard Freeman and Danny Paradise).
+
+
+        .bio#arno
           h3 Arno L'Hermitte
           p
             img(src='/assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
