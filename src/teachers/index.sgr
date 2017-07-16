@@ -15,7 +15,7 @@ extends(src='../layout.sgr')
         h2 Teachers
         .bio#rachel
           h3 Rachel Ellery
-          p.video
+          p.lead.video
             iframe(width="560" height="315" src="https://www.youtube.com/embed/ktNI92Ns8tE" allowfullscreen)
           p
             img(src='/assets/img/teachers/rachel-ellery.jpg' alt='rachel-ellery' width='128' height='147')
@@ -32,8 +32,8 @@ extends(src='../layout.sgr')
 
         .bio#sonia
           h3 Sonia Amalric
-          p
-            img(src='/assets/img/teachers/sonia-yoga.jpg' alt='sonia' width='100%' height='auto')
+          p.lead
+            img(src='/assets/img/teachers/sonia-yoga.jpg' alt='sonia' width='1125' height='750')
           p
             img(src='/assets/img/teachers/sonia-amalric.jpg' alt='sonia' width='128' height='147')
             | It is in the United States that Sonia started practicing yoga when she was 18, and quickly became passionate about Ashtanga Yoga. She wishes to share the different practices of yoga as guidance tools on our journey towards freedom, change and self transformation. After teaching at Ashtanga Yoga Paris school for the past three years, she now spends her time teaching and organizing yoga retreats and workshops over the world. 
