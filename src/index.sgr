@@ -122,6 +122,8 @@ extends(src='layout.sgr')
             | Sonia is happy to teach in deep connection with nature, creating a space for healing and self inspection. She will be teaching at the Circus Village for the first time, offering a 9 days immersion into the practices of Ashtanga yoga.
           ul
             li
+              a(href='/assets/files/ashtanga-flyer-laos-2018.pdf') Information &amp; Registration (pdf)
+            li
               a(href='/teachers/#sonia' title='Sonia Biography') Biography
 
       .info
