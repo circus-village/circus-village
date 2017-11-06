@@ -60,7 +60,7 @@ extends(src='layout.sgr')
 
         .event
           h3 Ashtanga Yoga and Self Transformation
-          h4 March 14th to March 23rd 2018
+          h4 March 7th to March 16th 2018
           p Sonia Amalric
           p
             img(src='assets/img/teachers/sonia-amalric.jpg' alt='sonia-amalric' width='128' height='147')
