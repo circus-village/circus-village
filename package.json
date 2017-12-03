@@ -38,9 +38,10 @@
     "makestatic-verify-id": "^1.0.9",
     "makestatic-verify-link": "^1.1.14",
     "postcss-loader": "^1.3.3",
+    "raw-loader": "^0.5.1",
     "reshape-loader": "makestatic/reshape-loader#webpack2",
     "source-loader": "^0.2.0",
     "swipejs": "^2.2.4",
-    "webpack": "2.3.3"
+    "webpack": "2.2.1"
   }
 }

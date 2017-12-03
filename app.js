@@ -7,8 +7,8 @@ module.exports = {
   url: 'https://circus-village.com',
 
   // change these to your preference
-  input: 'src',
-  output: 'public',
+  input: __dirname + '/src',
+  output: __dirname + '/public',
 
   // configure browsersync options
   server: {
