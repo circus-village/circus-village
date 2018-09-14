@@ -40,36 +40,6 @@ extends(src='layout.sgr')
               a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
             li
               a(href='http://www.thaimassagecircus.com') Registration
-        .event
-          h3 Circus Elemental Acro Yoga Immersion
-          h4 March 1st to March 6th 2018
-          p Alexandra Ruiz, Omananda and Luka Agreš
-          p
-            img(src='assets/img/teachers/alexandra-ruiz.jpg' alt='alexandra-ruiz' width='128' height='147')
-            img(src='assets/img/teachers/omananda.jpg' alt='omananda' width='128' height='147')
-            img(src='assets/img/teachers/luka-agres.jpg' alt='luka-agres' width='128' height='147')
-            | Come join us for this journey of true listening with all that you are. Explore the art of mindful touch down to earth and take it up into the air.
-
-          p The Lunar Immersion focuses on the healing, relaxing and rejuvenating practices of Thai Massage and therapeutic flying. The Lunar Asana Sequence teaches basic body mechanics with a focus on self-love cultivation, in preparation of the dance of Thai massage. The techniques learned on the floor are then translated to the flying work, using the element of gravity to amplify the healing flow of prana (life force). Often, we will work in teams of three for safety and support, and everyone will have the opportunity to base and fly, heal and be healed.
-
-          p This event fulfills a pre-requisite for AcroYoga teacher training. The immersion will be taught in English.
-
-          ul
-            li
-              a(href='https://www.facebook.com/profile.php?id=100008581514226') Registration
-
-        .event
-          h3 Ashtanga Yoga and Self Transformation
-          h4 March 7th to March 16th 2018
-          p Sonia Amalric
-          p
-            img(src='assets/img/teachers/sonia-amalric.jpg' alt='sonia-amalric' width='128' height='147')
-            | Sonia is happy to teach in deep connection with nature, creating a space for healing and self inspection. She will be teaching at the Circus Village for the first time, offering a 9 days immersion into the practices of Ashtanga yoga.
-          ul
-            li
-              a(href='/assets/files/ashtanga-flyer-laos-2018.pdf') Information &amp; Registration (pdf)
-            li
-              a(href='/teachers/#sonia' title='Sonia Biography') Biography
 
       .info
         h2 Information
