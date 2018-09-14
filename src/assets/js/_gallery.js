@@ -1,4 +1,4 @@
-[
+module.exports = [
   {
     "pid": "01.bridge",
     "src": "/assets/img/gallery/01.bridge.jpg",

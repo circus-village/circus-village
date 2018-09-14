@@ -9,7 +9,7 @@ class ImageGallery {
 
   start (item, state) {
     var pswp = document.querySelectorAll('.pswp')[0]
-    var items = require('./_gallery.json')
+    var items = require('./_gallery.js')
     var options = {
       history: false,
       galleryPIDS: true,

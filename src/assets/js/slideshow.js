@@ -3,7 +3,7 @@ const $ = require('air')
 
 class Slideshow {
   constructor (options = {}) {
-    const slides = require('./_slides.json')
+    const slides = require('./_slides.js')
     const wrap = $('.swipe-wrap')
     wrap.hide()
 

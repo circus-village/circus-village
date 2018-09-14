@@ -1,4 +1,4 @@
-[
+module.exports = [
   "01.shala.jpg",
   "02.group-massage.jpg",
   "03.teak-room.jpg",
