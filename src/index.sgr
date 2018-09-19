@@ -30,7 +30,7 @@ extends(src='layout.sgr')
         p After ten years hosting the Thai Massage Circus, the Circus Village is now happy to present more events and great international teachers.
         .event
           h3 Thai Massage Circus
-          h4 February 4th to March 1st 2018
+          h4 February 4th to March 1st 2019
           p Arno L'Hermitte and friends
           p
             img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
