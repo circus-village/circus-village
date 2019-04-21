@@ -63,10 +63,10 @@ a[href^="mailto"]:before, a[href^="http"]:before
 .event ul, footer ul
   color: var(--green)
 
-.event a[href^="mailto"]:before
+.event li a[href^="mailto"]:before
   content: '\e800'
 
-.event a[href^="http"]:before
+.event li a[href^="http"]:before
   content: '\e801'
 
 ::selection
@@ -370,8 +370,10 @@ h3
   margin-bottom: 1rem
   box-shadow: none
 
+/*
 p > img, p > a > img, .section > p > a:first-child
   box-shadow: 1px 1px 6px 0px #839496
+*/
 
 .getting-there .section
   margin-top: 2rem

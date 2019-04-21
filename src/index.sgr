@@ -26,15 +26,19 @@ extends(src='layout.sgr')
         p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
 
       .events
-        h2 Events
-        p After ten years hosting the Thai Massage Circus, the Circus Village is now happy to present more events and great international teachers.
+        //-h2 During all of February every year
+        h2 Thai Massage Circus
         .event
-          h3 Thai Massage Circus
-          h4 February 4th to March 1st 2019
+          //-h3 Thai Massage Circus
+          //-h4 February 4th to March 1st 2019
+          h4 Throughout February every year
           p Arno L'Hermitte and friends
           p
             img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
             | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.
+            //-| Advanced practitioners may be interested in the&nbsp;
+            //-a(href='https://osteothai.school' title='Osteothai School') Osteothai School
+            //-| .
           ul
             li
               a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
@@ -56,21 +60,24 @@ extends(src='layout.sgr')
           #teak-house.teak-house
             span Teak House
             p
-              img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
+              a(href='#photos' title='Photo Gallery')
+                img(src='/assets/img/info/teak-house.jpg' alt='Teak House')
               | These traditional Laos houses made using antique teak are located next to the river. They have two large bedrooms, electricity, hot shower and a private bathroom.
             p
               a(href='#photos' aria-hidden='true') Photo Gallery
           #jungle-bungalow.jungle-bungalow
             span Jungle Bungalow
             p
-              img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
+              a(href='#photos' title='Photo Gallery')
+                img(src='/assets/img/info/jungle-bungalow.jpg' alt='Jungle Bungalow')
               | Each bamboo bungalow has a river terrace and electricity.
             p
               a(href='#photos' aria-hidden='true') Photo Gallery
           #bamboo-hut.bamboo-hut
             span Bamboo Hut
             p
-              img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
+              a(href='#photos' title='Photo Gallery')
+                img(src='/assets/img/info/bamboo-hut.jpg' alt='Bamboo Hut')
               | Bamboo huts are off-grid; ideal for an individual to retreat.
             p
               a(href='#photos' aria-hidden='true') Photo Gallery
