@@ -13,36 +13,6 @@ extends(src='../layout.sgr')
     .content
       .teachers
         h2 Teachers
-        .bio#rachel
-          h3 Rachel Ellery
-          p.lead.video
-            iframe(width="560" height="315" src="https://www.youtube.com/embed/ktNI92Ns8tE" allowfullscreen)
-          p
-            img(src='/assets/img/teachers/rachel-ellery.jpg' alt='rachel-ellery' width='128' height='147')
-            | Rachel Ellery, a UK-trained Osteopath, specializes in teaching human anatomy and movement principles to yoga students/teachers from around the world. Her mantra “educating and moving the world one body at a time” stems from over 24 years of hands on experience and 15 years of teaching.
-
-          p Her passion to help others through touch and movement began while practicing sports therapy in the UK and Caribbean. As part of her natural progression Rachel studied for an honors degree from the British School of Osteopathy, where she graduated in 2000.
-
-          p Since then, Rachel has practiced osteopathy, taught anatomy, osteopathic technique and other related workshops such as the importance of touch and cueing in the UK, New Zealand, Australia and Indonesia. Based in Bali, the healing capital of Asia, she travels to yoga schools across the globe to educate yoga students in the importance of human and functional anatomy encouraging them to develop their self-awareness, teaching and to enlighten others.
-
-          p She combines her extensive knowledge of sports therapy, osteopathy, pilates, garuda, yoga and experience into a unique interactive anatomy and movement class, that is both engaging and fun.  As word spread about her detailed holistic approach she has had the privilege to teach with internationally renowned yogis, including: Les Leventhal, Tara Judelle, Kaya Peters, Tanya Capps, Cat Kabira, Emily Kuser, Denise Payn, Bex Tyrer, School of sacred arts and Tina Nance.
-
-          p As well as being an Osteopath and a qualified pilates teacher, Rachel is also trained in dry needling, cranio-sacral osteopathy, Garuda mat, pediatrics, wuo thai, zen thai shiatsu and recently ThaiVedic Yoga and the thai massage circus. Over the last two years she has started to incorporate sound healing.
-
-
-        .bio#sonia
-          h3 Sonia Amalric
-          p.lead
-            img(src='/assets/img/teachers/sonia-yoga.jpg' alt='sonia' width='1125' height='750')
-          p
-            img(src='/assets/img/teachers/sonia-amalric.jpg' alt='sonia' width='128' height='147')
-            | It is in the United States that Sonia started practicing yoga when she was 18, and quickly became passionate about Ashtanga Yoga. She wishes to share the different practices of yoga as guidance tools on our journey towards freedom, change and self transformation. After teaching at Ashtanga Yoga Paris school for the past three years, she now spends her time teaching and organizing yoga retreats and workshops over the world. 
-
-          p After starting a career in International development and working in Ivory Coast for a year, she moved back to Paris in 2014. She started studying with Linda Munro and Gerald Disse at Ashtanga Yoga Paris and taught at their yoga school for three years. 
-
-          p Today, she spends her time teaching and organizing yoga retreats and workshops. She keeps evolving in her practice while teaching over the world.  She  frequently studies with the teachers that inspire her (Ron Reid & Marla Meenakshi Joy, Richard Freeman and Danny Paradise).
-
-
         .bio#arno
           h3 Arno L'Hermitte
           p
