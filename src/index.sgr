@@ -16,13 +16,15 @@ extends(src='layout.sgr')
         a(href='#photos' title='Photo Gallery') Photos
         a(href='#getting-there' title='Getting to the village') Getting There
         a(href='#contact' title='Get in touch') Contact
-    p.leader.disabled
-      span An enchanted private island near the Kuang Si waterfall in Laos where we host events by renowned teachers in an untouched paradise.
     header.welcome
       div#slider.swipe
         div.swipe-wrap
+
     .content
       .intro
+
+        p An enchanted private island near the Kuang Si waterfall in Laos where we host events by renowned teachers in an untouched paradise.
+
         p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
 
       .events
