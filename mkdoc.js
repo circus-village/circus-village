@@ -26,7 +26,7 @@ function gallery (cb) {
     // NOTE: useful to inspect the image data
     console.error(list)
     fs.writeFileSync(
-      'src/assets/js/_gallery.json', JSON.stringify(list, undefined, 2))
+      'src/assets/js/_gallery.js', 'module.exports = ' + JSON.stringify(list, undefined, 2))
     cb()
   }
 
