@@ -47,7 +47,7 @@ class Application {
         this.navigate(id)
       }})
 
-    this.slideshow = new Slideshow({invisibles: $('.menu, .leader')})
+    this.slideshow = new Slideshow()
     this.gallery = new Gallery({navigate: navigate, back: this.back.bind(this)})
   }
 
@@ -109,11 +109,16 @@ class Application {
   }
 
   onScroll () {
-    var val = this.body.scrollTop
-    if (!val) {
+    //var val = $(window).scrollTop
+    var doc = document.documentElement
+    var val = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0)
+
+    if (val === 0) {
       this.menu.removeClass('transparent')
       this.leader.removeClass('transparent')
+      this.slideshow.start()
     } else if (!this.menu.hasClass('transparent')) {
+      console.log('calling stop')
       this.slideshow.stop()
       this.menu.addClass('transparent')
       this.leader.addClass('transparent')

@@ -2,8 +2,10 @@ const Swiper = require('swiper/dist/js/swiper.js')
 
 class SlideShow {
   constructor (options = {}) {
-    const element = document.querySelector('.swipe')
-    const s = new Swiper ('.swiper-container', {
+
+    this.playing = true
+
+    this.swiper = new Swiper ('.swiper-container', {
       loop: true,
       //effect: 'slide',
       autoplay: true,
@@ -22,9 +24,15 @@ class SlideShow {
     })
   }
 
-  start () {}
+  start () {
+    this.swiper.autoplay.start()
+    this.playing = true
+  }
 
-  stop () {}
+  stop () {
+    this.swiper.autoplay.stop()
+    this.playing = false
+  }
 }
 
 module.exports = SlideShow
