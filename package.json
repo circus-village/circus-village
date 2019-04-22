@@ -43,6 +43,7 @@
     "reshape-loader": "makestatic/reshape-loader#webpack2",
     "source-loader": "^0.2.0",
     "swipejs": "^2.2.4",
+    "swiper": "^4.5.0",
     "webpack": "^4",
     "webpack-dev-server": "^3.1.4"
   }

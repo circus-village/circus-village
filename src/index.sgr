@@ -1,6 +1,7 @@
 extends(src='layout.sgr')
   block(name='stylesheets')
     link(rel='stylesheet' href='/assets/css/style.css')
+    link(rel='stylesheet' href='/assets/css/swiper.min.css')
     link(rel='stylesheet' href='/assets/css/photoswipe.css')
     link(rel='stylesheet' href='/assets/css/default-skin/default-skin.css')
 
@@ -17,8 +18,25 @@ extends(src='layout.sgr')
         a(href='#getting-there' title='Getting to the village') Getting There
         a(href='#contact' title='Get in touch') Contact
     header.welcome
-      div#slider.swipe
-        div.swipe-wrap
+      //-div#slider.swipe
+        //-div.swipe-wrap
+
+
+      div.swiper-container.swipe
+        div.swiper-wrapper.no-select
+          div.swiper-slide.slide-01
+          div.swiper-slide.slide-02
+          div.swiper-slide.slide-03
+          div.swiper-slide.slide-04
+          div.swiper-slide.slide-05
+          div.swiper-slide.slide-06
+          div.swiper-slide.slide-07
+          div.swiper-slide.slide-08
+          div.swiper-slide.slide-09
+          div.swiper-slide.slide-10
+        div.swiper-button-next.swiper-button-white
+        div.swiper-button-prev.swiper-button-white
+        div.swiper-pagination
 
     .content
       .intro
@@ -28,11 +46,8 @@ extends(src='layout.sgr')
         p The village is nested between two rivers with countless natural pools, private beaches and the precious shade of a gigantic bamboo garden surrounded by a tropical teak forest.
 
       .events
-        //-h2 During all of February every year
         h2 Thai Massage Circus
         .event
-          //-h3 Thai Massage Circus
-          //-h4 February 4th to March 1st 2019
           h4 Throughout February every year
           p Arno L'Hermitte and friends
           p
@@ -124,5 +139,4 @@ extends(src='layout.sgr')
     include(src='_gallery.sgr')
 
   block(name='javascript')
-    script(src='/assets/js/vendor/swipe.js')
     script(src='/assets/js/main.js' defer)
