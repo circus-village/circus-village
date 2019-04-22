@@ -118,7 +118,6 @@ class Application {
       this.leader.removeClass('transparent')
       this.slideshow.start()
     } else if (!this.menu.hasClass('transparent')) {
-      console.log('calling stop')
       this.slideshow.stop()
       this.menu.addClass('transparent')
       this.leader.addClass('transparent')
