@@ -18,10 +18,6 @@ extends(src='layout.sgr')
         a(href='#getting-there' title='Getting to the village') Getting There
         a(href='#contact' title='Get in touch') Contact
     header.welcome
-      //-div#slider.swipe
-        //-div.swipe-wrap
-
-
       div.swiper-container.swipe
         div.swiper-wrapper.no-select
           div.swiper-slide.slide-01
