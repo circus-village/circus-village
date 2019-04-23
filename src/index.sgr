@@ -11,12 +11,6 @@ extends(src='layout.sgr')
         span C
         span ircus
         span Village
-      nav.main
-        a(href='#events' title='Events') Events
-        a(href='#information' title='Information') Information
-        a(href='#photos' title='Photo Gallery') Photos
-        a(href='#getting-there' title='Getting to the village') Getting There
-        a(href='#contact' title='Get in touch') Contact
     header.welcome
       div.swiper-container.swipe
         div.swiper-wrapper.no-select
