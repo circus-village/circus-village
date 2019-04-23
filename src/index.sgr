@@ -54,7 +54,7 @@ extends(src='layout.sgr')
             //-| .
           ul
             li
-              a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Information
+              a(href='mailto:arno@osteothai.school?subject=Circus Village (Website)' title='arno@osteothai.school') Information
             li
               a(href='http://www.thaimassagecircus.com') Registration
 
@@ -115,7 +115,7 @@ extends(src='layout.sgr')
         h2 Contact
         p
           | Questions about a specific event should be sent to the event organizer. For other general enquiries email&nbsp;
-          a(href='mailto:arnothehermit@hotmail.com' title='arnothehermit@hotmail.com') Arno L&#39;Hermitte
+          a(href='mailto:arno@osteothai.school?subject=Circus Village (Website)' title='arno@osteothai.school') Arno L&#39;Hermitte
           | .
 
     footer
