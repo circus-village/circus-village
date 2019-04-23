@@ -39,7 +39,7 @@ extends(src='layout.sgr')
         h2 Thai Massage Circus
         .event
           h4 Throughout February every year
-          p Arno L'Hermitte and friends
+          p Arno L&#39;Hermitte and friends
           p
             img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
             | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.
