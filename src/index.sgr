@@ -49,12 +49,9 @@ extends(src='layout.sgr')
           p
             img(src='assets/img/teachers/arno.jpg' alt='arno' width='128' height='147')
             | The Thai Massage Circus is an intensive Thai yoga Massage immersion in full nature.  Under the guidance of several international teachers, hundreds of students came the last ten years on the riverbank to transform their practice with precision and repetition.
-            //-| Advanced practitioners may be interested in the&nbsp;
-            //-a(href='https://osteothai.school' title='Osteothai School') Osteothai School
-            //-| .
           ul
             li
-              a(href='mailto:arno@osteothai.school?subject=Circus Village (Website)' title='arno@osteothai.school') Information
+              a(href='mailto:arno@osteothai.school?subject=Circus%20Village%20(Website)' title='arno@osteothai.school') Information
             li
               a(href='http://www.thaimassagecircus.com') Registration
 
@@ -115,7 +112,7 @@ extends(src='layout.sgr')
         h2 Contact
         p
           | Questions about a specific event should be sent to the event organizer. For other general enquiries email&nbsp;
-          a(href='mailto:arno@osteothai.school?subject=Circus Village (Website)' title='arno@osteothai.school') Arno L&#39;Hermitte
+          a(href='mailto:arno@osteothai.school?subject=Circus%20Village%20(Website)' title='arno@osteothai.school') Arno L&#39;Hermitte
           | .
 
     footer
