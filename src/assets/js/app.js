@@ -30,8 +30,6 @@ class Application {
 
     this.history = []
     this.body = $('body').get(0)
-    this.menu = $('.menu')
-    this.leader = $('.leader')
 
     this.scroller = new Scroll({
       navigate: navigate,
@@ -114,13 +112,9 @@ class Application {
     var val = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0)
 
     if (val === 0) {
-      this.menu.removeClass('transparent')
-      this.leader.removeClass('transparent')
       this.slideshow.start()
-    } else if (!this.menu.hasClass('transparent')) {
+    } else if (val > 0) {
       this.slideshow.stop()
-      this.menu.addClass('transparent')
-      this.leader.addClass('transparent')
     }
   }
 
