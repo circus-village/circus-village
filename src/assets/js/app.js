@@ -153,17 +153,6 @@ class Application {
 
     this.scroller.start()
 
-    // read more links
-    const more = $('a.read-more')
-    more.on('click', (e) => {
-      e.preventDefault()
-      const link = e.currentTarget
-      const para = link.parentNode
-      $(para).remove()
-      const text = $('p.hidden', para.parentNode)
-      text.removeClass('hidden')
-    })
-
     $(window).on('blur', blur.bind(this))
     $(window).on('focus', focus.bind(this))
     $(window).on('load', onLoad.bind(this))
